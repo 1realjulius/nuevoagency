@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import Banner from "./Banner";
 import NavbarComponent from "./NavbarComponent";
 
 const Carosel = () => {
@@ -117,9 +118,7 @@ const Carosel = () => {
             >
               {index === currentHeroText && (
                 <div className="flex flex-col items-center justify-center">
-                  <h1 className="text-4xl md:text-7xl font-extrabold">
-                    {hero.heroText}
-                  </h1>
+                  <h1 className="text-4xl md:text-7xl">{hero.heroText}</h1>
                   <h2 className="text-xl py-2">{hero.heroSubTitle}</h2>
                 </div>
               )}
@@ -130,6 +129,7 @@ const Carosel = () => {
         <div className="absolute bottom-6 flex w-full flex-row items-center justify-between px-6 text-white text-base">
           {/* Social Media */}
           <div className="flex flex-row items-center space-x-3">
+            <Banner />
             <Link href="#">
               <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
                 Tw

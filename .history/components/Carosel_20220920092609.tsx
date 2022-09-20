@@ -117,9 +117,7 @@ const Carosel = () => {
             >
               {index === currentHeroText && (
                 <div className="flex flex-col items-center justify-center">
-                  <h1 className="text-4xl md:text-7xl font-extrabold">
-                    {hero.heroText}
-                  </h1>
+                  <h1 className="text-4xl md:text-7xl">{hero.heroText}</h1>
                   <h2 className="text-xl py-2">{hero.heroSubTitle}</h2>
                 </div>
               )}
