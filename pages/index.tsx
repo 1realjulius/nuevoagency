@@ -1,15 +1,20 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Carosel from "../components/Carosel";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen">
       <Head>
-        <title>Create Next App</title>
+        <title>Nuevo Agency</title>
+        <meta name="description" content="Nuevo Creative Agency." />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>Welcomme to Nuevo Photography Agency</div>
+      <div className="max-w-screen flex max-h-screen flex-col items-center justify-center ">
+        <Carosel />
+      </div>
     </div>
   );
 };
