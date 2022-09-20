@@ -10,52 +10,18 @@ const Carosel = () => {
     { id: 4, image: "/Assets/landscape.jpg" },
   ];
 
-  const HeaderImageTexts = [
-    {
-      id: 1,
-      heroText: "This is for image 1",
-      heroSubTitle: "subtitle for hero 1",
-    },
-    {
-      id: 2,
-      heroText: "This is for image 2",
-      heroSubTitle: "subtitle for hero 2",
-    },
-    {
-      id: 3,
-      heroText: "This is for image 3",
-      heroSubTitle: "subtitle for hero 3",
-    },
-    {
-      id: 4,
-      heroText: "This is for image 4",
-      heroSubTitle: "subtitle for hero 4",
-    },
-  ];
-
   const [current, setCurrent] = useState(0);
-  const [currentHeroText, setHeroTextCurrent] = useState(0);
   const slideLength = Images.length;
-  const HeroTextLength = HeaderImageTexts.length;
 
   if (!Array.isArray(Images) || Images.length <= 0) {
-    return null;
-  }
-  if (!Array.isArray(HeaderImageTexts) || HeaderImageTexts.length <= 0) {
     return null;
   }
 
   const nextSlide = () => {
     setCurrent(current === slideLength - 1 ? 0 : current + 1);
-    setHeroTextCurrent(
-      currentHeroText === HeroTextLength - 1 ? 0 : currentHeroText + 1
-    );
   };
   const prevSlide = () => {
     setCurrent(current === 0 ? slideLength - 1 : current - 1);
-    setHeroTextCurrent(
-      currentHeroText === 0 ? HeroTextLength - 1 : currentHeroText - 1
-    );
   };
 
   return (
@@ -82,20 +48,13 @@ const Carosel = () => {
           </div>
         ))}
         {/* Top Section */}
-        <div className="absolute top-6 flex w-full flex-row items-center justify-end px-8">
+        <div className="absolute top-4 flex w-full flex-row items-center justify-between px-6">
           {/* The logo */}
-          <div className="absolute w-[140px] h-[44px] left-4">
-            <Image
-              src="/Assets/logowhite.svg"
-              layout="fill"
-              alt=""
-              className=""
-            />
-          </div>
+          <div>Nuevo</div>
           {/* Call to action And Menu */}
           <div className="flex flex-row items-center space-x-3">
             {/* Bookings */}
-            <div className="rounded-full border-2 border-white px-5 pt-2 flex items-center justify-center pb-3 text-white">
+            <div className="rounded-full border-2 border-white px-3 pt-2 flex items-center justify-center pb-3 text-white">
               <h1 className="text-lg leading-none">Bookings</h1>
             </div>
             {/* Nav Menu */}
@@ -107,7 +66,7 @@ const Carosel = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="h-8 w-8 text-white"
+                  className="h-6 w-6 text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -120,46 +79,23 @@ const Carosel = () => {
           </div>
         </div>
         {/* Down Section */}
-        {/* HeroImgaeTests */}
-        <div className="absolute bottom-12 flex w-full flex-row items-center justify-center py-20 text-white ">
-          {HeaderImageTexts.map((hero, index) => (
-            <div
-              className={index === currentHeroText ? "slide active " : "slide "}
-              key={index}
-            >
-              {index === currentHeroText && (
-                <div className="flex flex-col items-center justify-center">
-                  <h1 className="text-4xl md:text-7xl">{hero.heroText}</h1>
-                  <h2 className="text-xl py-2">{hero.heroSubTitle}</h2>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-        {/* Down btns */}
-        <div className="absolute bottom-6 flex w-full flex-row items-center justify-between px-6 text-white text-base">
+        <div className="absolute bottom-4 flex w-full flex-row items-center justify-between px-4">
           {/* Social Media */}
-          <div className="flex flex-row items-center space-x-3">
+          <div className="flex flex-row items-center space-x-4">
             <Link href="#">
-              <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
-                Tw
-              </div>
+              <div>Tw</div>
             </Link>
             <Link href="#">
-              <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
-                Fb
-              </div>
+              <div>Fb</div>
             </Link>
             <Link href="#">
-              <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
-                Ig
-              </div>
+              <div>Ig</div>
             </Link>
           </div>
           {/* The current Image Count */}
-          <div className="text-lg hidden md:block">
+          <div className="">
             <h1>
-              0{current + 1} | 0{slideLength}
+              {current + 1}/{slideLength}
             </h1>
           </div>
           {/* The btbs */}
@@ -168,7 +104,7 @@ const Carosel = () => {
             <div>
               <div
                 onClick={prevSlide}
-                className="flex items-center justify-center rounded-full p-2 hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-700"
+                className="flex items-center justify-center rounded-full p-2 hover:bg-gray-200 cursor-pointer transition hover:duration-700"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +126,7 @@ const Carosel = () => {
             <div>
               <div
                 onClick={nextSlide}
-                className="flex items-center justify-center rounded-full p-2 hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-700"
+                className="flex items-center justify-center rounded-full p-2 hover:bg-gray-200 cursor-pointer transition hover:duration-700"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

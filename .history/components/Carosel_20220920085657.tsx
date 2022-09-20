@@ -137,23 +137,17 @@ const Carosel = () => {
           ))}
         </div>
         {/* Down btns */}
-        <div className="absolute bottom-6 flex w-full flex-row items-center justify-between px-6 text-white text-base">
+        <div className="absolute bottom-6 flex w-full flex-row items-center justify-between px-6 text-white text-lg">
           {/* Social Media */}
-          <div className="flex flex-row items-center space-x-3">
+          <div className="flex flex-row items-center space-x-6">
             <Link href="#">
-              <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
-                Tw
-              </div>
+              <div>Tw</div>
             </Link>
             <Link href="#">
-              <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
-                Fb
-              </div>
+              <div>Fb</div>
             </Link>
             <Link href="#">
-              <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
-                Ig
-              </div>
+              <div>Ig</div>
             </Link>
           </div>
           {/* The current Image Count */}

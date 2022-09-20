@@ -141,17 +141,17 @@ const Carosel = () => {
           {/* Social Media */}
           <div className="flex flex-row items-center space-x-3">
             <Link href="#">
-              <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
+              <div className="flex items-center justify-center rounded-full w-[40px] h-[40px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
                 Tw
               </div>
             </Link>
             <Link href="#">
-              <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
+              <div className="flex items-center justify-center rounded-full w-[40px] h-[40px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
                 Fb
               </div>
             </Link>
             <Link href="#">
-              <div className="flex items-center justify-center rounded-full w-[50px] h-[50px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
+              <div className="flex items-center justify-center rounded-full w-[40px] h-[40px] hover:bg-gray-200 hover:text-black cursor-pointer transition hover:duration-1000 hover:ease-in-out">
                 Ig
               </div>
             </Link>
