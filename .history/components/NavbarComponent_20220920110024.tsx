@@ -47,7 +47,7 @@ const NavbarComponent = () => {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="relative w-full min-w-screen min-h-screen transform overflow-hidden bg-[#161719] transition-all">
+                  <Dialog.Panel className="relative w-full min-w-screen min-h-screen transform overflow-hidden bg-black  transition-all">
                     <div className="relative flex items-center justify-end">
                       <div className="absolute top-6 w-[140px] h-[44px] left-4">
                         <Image
@@ -132,7 +132,7 @@ const NavbarComponent = () => {
                             </Link>
                           </div>
                           <div className="cursor-pointer">
-                            <Link href="/About">
+                            <Link href="#">
                               <h1>About</h1>
                             </Link>
                           </div>
