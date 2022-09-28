@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import { X } from "react-feather";
 import Image from "next/image";
 
 const NavbarComponent = () => {
@@ -26,7 +25,7 @@ const NavbarComponent = () => {
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
               as={Fragment}
-              enter="ease-out duration-500"
+              enter=" duration-500"
               enterFrom="opacity-0"
               enterTo="opacity-100"
               leave="ease-in duration-400"
