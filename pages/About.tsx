@@ -2,520 +2,464 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import MainNavbar from "../components/MainNavbar";
-import { Instagram } from "react-feather";
+import { Facebook, Instagram, Twitter } from "react-feather";
+import MainFooter from "../components/MainFooter";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const TeamData = [
+    {
+      id: 1,
+      role: "Photo Editor",
+      name: "Dan Makrol",
+      ig: "#",
+      tw: "#",
+      email: "email@email.com",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 2,
+      role: "Video Editor",
+      name: "Benny Sardine",
+      ig: "#",
+      tw: "#",
+      email: "email@email.com",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 3,
+      role: "Video Directo",
+      name: "Teo Addo",
+      ig: "#",
+      tw: "#",
+      email: "email@email.com",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 4,
+      role: "Accountant",
+      name: "Ama Inn",
+      ig: "#",
+      tw: "#",
+      email: "email@email.com",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 5,
+      role: "Events Planner",
+      name: "Mark Pedi",
+      ig: "#",
+      tw: "#",
+      email: "email@email.com",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 6,
+      role: "Snr Coach",
+      name: "Julius Eghan",
+      ig: "#",
+      tw: "#",
+      email: "email@email.com",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 7,
+      role: "Snr Editor",
+      name: "Joshua Eghan",
+      ig: "#",
+      tw: "#",
+      email: "email@email.com",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 8,
+      role: "Jnr Coach",
+      name: "Erica Eghan",
+      ig: "#",
+      tw: "#",
+      email: "email@email.com",
+      img: "/Assets/landscape.jpg",
+    },
+  ];
   return (
-    <div className="bg-[#161719] min-h-screen min-w-full text-white">
+    <div className="bg-[#161719] min-h-screen min-w-full text-white font-FredokaOneRegular">
       {/* navbar */}
       <div className="sticky top-0 z-50">
         <MainNavbar />
       </div>
-      {/* header */}
-      <div className="relative min-h-screen min-w-screen">
-        <div>
-          <Image
-            src="/Assets/moonrise.png"
-            layout="fill"
-            alt=""
-            className=" absolute object-cover"
-          />
-        </div>
-        <div className="absolute flex min-h-screen min-w-full items-center justify-center">
-          <div className="flex flex-col">
-            <h1 className="text-6xl md:text-8xl font-bold">ABOUT ME</h1>
-            <div className="flex flex-row items-center justify-center space-x-4 py-4">
-              <div className="px-3 py-1 rounded-full hover:bg-white hover:text-black transition hover:duration-1000 hover:ease-in-out cursor-pointer">
-                Home
-              </div>
-              <div className="px-3 py-1 rounded-full hover:bg-white hover:text-black transition hover:duration-1000 hover:ease-in-out cursor-pointer">
-                About
-              </div>
-            </div>
-          </div>
-          <div className="absolute bottom-6 px-5 py-2 rounded-full hover:bg-white hover:text-black transition hover:duration-1000 hover:ease-in-out cursor-pointer">
-            <h1>Scroll Down</h1>
-          </div>
-        </div>
-      </div>
       {/* main */}
-      <div>
-        {/* feature Section lets chat */}
-        <div className=" my-20">
-          <div className="flex flex-col md:flex-row px-6">
-            <div className="flex flex-1 ">
-              <div className="md:px-40 pb-8">
-                <h1 className="text-2xl md:text-3xl">
-                  Welcome to nuevo Agency hereCerte, inquam, pertinax non
-                  provident, similique sunt in malis dolor, non intellegamus, tu
-                  paulo ante cum soluta nobis est consecutus?
+      <div className="px-6 md:px-16 pt-16">
+        {/* header */}
+        <div className="h-[8vh] md:h-[20vh] w-full p-2">
+          <h1 className="text-4xl md:pt-4 md:text-8xl md:pr-20 font-FredokaOneRegular pb-4">
+            <span>About </span>
+            <span className="text-[#828282]">Us</span>
+          </h1>
+        </div>
+        {/* About and the CEO */}
+        <div className="p-2">
+          <div className="flex flex-col md:flex-row md:justify-between">
+            <div className="flex-1 flex flex-col justify-between ">
+              <div>
+                <h1 className="text-xl md:text-5xl font-FredokaOneRegular">
+                  Welcome to{" "}
+                  <span className="text-[#828282]">nuevo Agency</span>{" "}
+                  hereCerte, inquam, pertinax non provident, similique sunt in
+                  malis dolor,
+                  <span className="text-[#828282]">
+                    non intellegamus, tu paulo ante cum soluta nobis est
+                    consecutus?
+                  </span>
+                  hereCerte, inquam, pertinax
                 </h1>
-                <div></div>
               </div>
-            </div>
-            <div className="flex flex-1 items-center justify-center">
-              <div className=" flex flex-col md:px-40">
-                <div className="flex flex-col space-y-4  text-base md:text-lg mb-8">
-                  <h1>
-                    Certe, inquam, pertinax non provident, similique sunt in
-                    malis dolor, non intellegamus, tu paulo ante cum soluta
-                    nobis est consecutus? laudem .
-                  </h1>
-                  <h1>
-                    Certe, inquam, pertinax non provident, similique sunt in
-                    malis dolor, non intellegamus, tu paulo ante cum soluta
-                    nobis est consecutus? laudem et
-                  </h1>
-                  <h1>
-                    Certe, inquam, pertinax non provident, similique sunt in
-                    malis dolor, non intellegamus, tu paulo ante cum soluta
-                    nobis est consecutus? laudem .
-                  </h1>
-                  <h1>
-                    Certe, inquam, pertinax non provident, similique sunt in
-                    malis dolor, non intellegamus, tu paulo ante cum soluta
-                    nobis est consecutus? laudem .
-                  </h1>
-                  <h1>
-                    Certe, inquam, pertinax non provident, similique sunt in
-                    malis dolor, non intellegamus, tu paulo ante cum soluta
-                    nobis est consecutus? laudem .
-                  </h1>
-                </div>
-                <Link href="#">
-                  <div className="flex flex-row items-center space-x-3 cursor-pointer group">
-                    <span className="p-1 border-2 border-gray-400 group-hover:border-yellow-600 rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="w-6 h-6 text-yellow-600"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
-                        />
-                      </svg>
-                    </span>
-                    <h1 className="group-hover:text-yellow-600">LET'S CHAT!</h1>
+              <div className="py-2 flex flex-col items-start">
+                <Link href="/Contact">
+                  <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
+                    <h1 className="text-xl font-FredokaOneRegular">
+                      Contact Us
+                    </h1>
                   </div>
                 </Link>
               </div>
             </div>
-          </div>
-        </div>
-        {/*Message from editor feature Section 1 */}
-        <div className="flex flex-col py-20">
-          <div className="flex flex-col items-center px-6">
-            <h1 className="text-xl md:text-3xl text-center md:px-80 py-4">
-              “We Take and Edit amazing shoots for creative people all around
-              the world and help businesses grow. Get your Legend UI kit today
-              and build your perfect website!”
-            </h1>
-            <h2 className="text-lg md:text-2xl">Mr Theophilus</h2>
-            <h2 className="text-base text-gray-500">Lead Photo Editor</h2>
-          </div>
-          <div className="flex flex-col md:flex-row space-y-8 pt-40  px-6 md:px-40">
-            <div className=" flex-1 md:pr-20">
-              <div className="flex flex-col space-y-2">
-                <p className="text-base text-gray-400">Awsome crafts Makings</p>
-                <h1 className="text-2xl md:text-4xl">Mind-Blowing Results</h1>
-                <div className="h-[2px] w-40 rounded-full bg-yellow-600" />
-                <p className="text-xl">
-                  Writing result-oriented ad copy is difficult, as it must
-                  appeal to, entice, and convince consumers to take action.
-                  There is no magic formula to write perfect ad copy; it is
-                  based on a number of factors, including ad placement,
-                  demographic, even the consumer’s mood.
-                </p>
+            <div className="flex-1 flex flex-col md:items-end  md:px-10">
+              {/* img of ceo */}
+              <div className="pt-4 ">
+                <div className="">
+                  <motion.img
+                    layoutId="img"
+                    initial={{ y: 30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -30, opacity: 0 }}
+                    src="/Assets/landscape.jpg"
+                    alt=""
+                    className="object-cover h-[300px] md:h-[400px] w-[100vw] rounded-xl"
+                  />
+                </div>
               </div>
-              <div className="flex items-center py-6">
-                <div className="px-5 py-2 rounded-full border-2 border-white">
-                  <p>Request A Quota</p>
+              <div className="py-2">
+                <h1 className="flex flex-row space-x-2 font-FredokaOneRegular text-base">
+                  <span className="text-[#828282]">Founder, CEO</span>
+                  <span>PRINCE TK. AMPONSAH</span>
+                </h1>
+                <h1 className="flex flex-row space-x-2 font-FredokaOneRegular text-base">
+                  <span>email@email.com</span>
+                </h1>
+              </div>
+              <div className="flex flex-row items-center space-x-4">
+                <div>
+                  <Link href="#">
+                    <div className="bg-white p-2 hover:bg-[#828282] cursor-pointer text-black hover:text-white rounded-full">
+                      <Facebook className=" w-5 h-5" />
+                    </div>
+                  </Link>
+                </div>
+                <div>
+                  <Link href="#">
+                    <div className="bg-white p-2 hover:bg-[#828282] cursor-pointer text-black hover:text-white rounded-full">
+                      <Instagram className=" w-5 h-5" />
+                    </div>
+                  </Link>
+                </div>
+                <div>
+                  <Link href="#">
+                    <div className="bg-white p-2 hover:bg-[#828282] cursor-pointer text-black hover:text-white rounded-full">
+                      <Twitter className=" w-5 h-5" />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
-            <div className="flex-1">
+          </div>
+        </div>
+        {/* The team */}
+        <div>
+          <div>
+            <h1 className="text-4xl md:pt-10 md:text-8xl md:pr-20 font-FredokaOneRegular py-6">
+              <span>OUR </span>
+              <span className="text-[#828282]">TEAM</span>
+            </h1>
+            <h1 className="text-xl md:text-5xl font-FredokaOneRegular  pb-4">
+              <span>These are the </span>
+              <span className="text-[#828282]">Awsome </span>
+              <span>faces behind our </span>
+              <span className="text-[#828282]">Great Works.</span>
+            </h1>
+          </div>
+          <div>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              {TeamData.map((worker) => {
+                return (
+                  <div key={worker.id}>
+                    <div className="pt-4 ">
+                      <div className="">
+                        <motion.img
+                          initial={{ y: 30, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          exit={{ y: -30, opacity: 0 }}
+                          src={worker.img}
+                          alt=""
+                          className="object-cover h-[140px] w-[140px] md:h-[200px] md:w-[200px] rounded-xl"
+                        />
+                      </div>
+                    </div>
+                    <div className="py-2">
+                      <h1 className="flex flex-col md:flex-row md:space-x-2 font-FredokaOneRegular text-sm">
+                        <span className="text-[#828282]">{worker.role}</span>
+                        <span>{worker.name}</span>
+                      </h1>
+                      <h1 className="flex flex-row space-x-2 font-FredokaOneRegular text-sm">
+                        <span>{worker.email}</span>
+                      </h1>
+                    </div>
+                    <div className="flex flex-row items-center space-x-4">
+                      <div>
+                        <Link href={worker.ig}>
+                          <div className="bg-white p-2 hover:bg-[#828282] cursor-pointer text-black hover:text-white rounded-full">
+                            <Instagram className=" w-5 h-5" />
+                          </div>
+                        </Link>
+                      </div>
+                      <div>
+                        <Link href={worker.tw}>
+                          <div className="bg-white p-2 hover:bg-[#828282] cursor-pointer text-black hover:text-white rounded-full">
+                            <Twitter className=" w-5 h-5" />
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        {/* our core values and value propositions*/}
+        <div className="my-6">
+          <div className="flex flex-col md:flex-row md:justify-between">
+            <div className="flex-1 py-2">
               <div>
-                <h1 className="float-left text-7xl  text-yellow-600 pr-2">
-                  A{" "}
+                <h1 className="text-xl md:text-2xl">
+                  <span className="text-[#828282]">Lorem Ipsum </span>is simply
+                  dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy text ever since
+                  the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not
+                  only five centuries,
                 </h1>
-                <p className="text-xl text-gray-400">
-                  successful marketing plan relies heavily on the pulling-power
-                  of advertising copy. Writing result-oriented ad copy is
-                  difficult, as it must appeal to, entice, and convince
-                  consumers to take action. There is no magic formula to write
-                  perfect ad copy; it is based on a number of factors, including
-                  ad placement, demographic, even the consumer’s mood when they
-                  see your ad.
-                </p>
               </div>
-              <div className="py-4">
-                <h1 className="text-2xl py-4">Awsome features:</h1>
-                <ul className="text-lg space-y-2">
-                  <li>• 7 hard copies </li>
-                  <li>• 5 soft copies</li>
-                  <li>• Awsome come together Gift</li>
-                  <li>• Nice packaged box</li>
-                </ul>
-              </div>
-              <div className="py-4">
-                <p className="text-xl text-gray-400">
-                  Grabbing the consumer’s attention isn’t enough; you have to
-                  keep that attention for at least a few seconds. This is where
-                  your benefits come into play or a product description that
-                  sets your offer apart from the others. If it’s a billboard ad,
-                  you’ll need a super catchy headline and simple design due to
-                  the speed at which people will pass.
-                </p>
-              </div>
-              <div className="py-4">
-                <p className="text-xl text-gray-400">
-                  Grabbing the consumer’s attention isn’t enough; you have to
-                  keep that attention for at least a few seconds.
-                </p>
+            </div>
+            <div className="flex-1 py-2">
+              <div>
+                <h1 className="text-xl md:text-2xl">
+                  <span className="text-[#828282]">Lorem Ipsum </span> is simply
+                  dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy text ever since
+                  the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not
+                  only five centuries,
+                </h1>
               </div>
             </div>
           </div>
         </div>
-        {/* simple testimonial feature Section */}
-        <div className="relative w-full h-[580px] bg-white">
-          <div>
-            <Image
-              src="/Assets/moonrise.png"
-              layout="fill"
-              alt=""
-              className=" absolute object-cover"
-            />
+        {/* our clients */}
+        <div className="my-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div className="flex-1 py-2">
+              <div>
+                <h1 className="flex flex-row space-x-2 md:space-x-0 md:flex-col text-4xl md:pt-10 md:text-8xl md:pr-20 font-FredokaOneRegular py-6">
+                  <span>OUR </span>
+                  <span className="text-[#828282]">CLIENTS</span>
+                </h1>
+              </div>
+            </div>
+            <div className="flex-1 py-2">
+              <div className="grid grid-cols-2 gap-2">
+                <h1 className="text-xl md:text-4xl">
+                  <span className="text-[#828282]">Awsome Brand 1 </span>
+                </h1>
+                <h1 className="text-xl md:text-4xl">
+                  <span className="text-[#828282]">Awsome Brand 2 </span>
+                </h1>
+                <h1 className="text-xl md:text-4xl">
+                  <span className="text-[#828282]">Awsome Brand 3</span>
+                </h1>
+                <h1 className="text-xl md:text-4xl">
+                  <span className="text-[#828282]">Awsome Brand 4</span>
+                </h1>
+                <h1 className="text-xl md:text-4xl">
+                  <span className="text-[#828282]">Awsome Brand 5</span>
+                </h1>
+                <h1 className="text-xl md:text-4xl">
+                  <span className="text-[#828282]">Awsome Brand 6</span>
+                </h1>
+              </div>
+            </div>
           </div>
-          <div className="absolute bottom-6 right-6 bg-[#161719] w-[340px] md:w-[580px] p-8 ">
-            <div className="flex flex-row items-center space-x-4 py-2">
-              <div className="relative w-[60px] h-[60px]">
-                <Image
-                  src="/Assets/moonrise.png"
-                  layout="fill"
+        </div>
+        {/* WHAT YOU GET IE SERVICES */}
+        <div>
+          <div className="flex flex-col pb-4 md:flex-row md:py-10">
+            <div className="flex-1 py-2 md:pr-20 order-2 md:order-1">
+              <div className="relative">
+                <motion.img
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -30, opacity: 0 }}
+                  src="/Assets/floss.png"
                   alt=""
-                  className="absolute object-cover rounded-full"
+                  className="object-cover h-[300px] md:h-[400px] w-[100vw] rounded-xl"
+                />
+                <motion.img
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -30, opacity: 0 }}
+                  src="/Assets/moonrise.png"
+                  alt=""
+                  className="absolute -bottom-2 -right-2 md:-bottom-4 md:-right-4 object-cover h-[150px] md:h-[250px] w-[200px] md:w-[400px] rounded-xl"
                 />
               </div>
-              <div className="felx flex-row">
-                <h1 className="text-xl">Julius Eghan</h1>
-                <p className="text-base text-gray-400">
-                  Professional Web developer
-                </p>
-              </div>
             </div>
-            <div>
-              <p className="text-lg">
-                "Templates by these guys perfectly match our needs and internal
-                workflow. I think Webflow is the future of website design and
-                front-end, and Elastic Themes helps to shape that future today
-                by creating some great templates."
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* what i do feature Section */}
-        <div className="flex flex-col md:flex-row md:px-40 py-20 px-6">
-          <div className="flex-1">
-            <div className="relative w-full  h-[456px] md:w-[440px] md:h-[556px]">
-              <Image
-                src="/Assets/moonrise.png"
-                layout="fill"
-                alt=""
-                className="absolute object-cover"
-              />
-              <div className="absolute bottom-0 h[80px] md:h-[70px] bg-black/50 px-4 py-2">
-                <p className="text-start">
-                  We create amazing Webflow templates for creative people all
-                  around the world and help businesses grow.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex-1 py-10 md:py-0">
-            <div>
-              <h1 className="text-2xl md:text-4xl py-2">What I do</h1>
-              <div className="h-[2px] w-40 rounded-full bg-yellow-600" />
-              <p className="py-2 text-xl text-gray-400">
-                Writing result-oriented ad copy is difficult, as it must appeal
-                to, entice, and convince consumers to take action. There is no
-                magic formula to write perfect ad copy; it is based on a number
-                of factors, including ad placement, demographic, even the
-                consumer’s mood.
-              </p>
-              <div className="flex flex-col space-y-6">
-                <Link href="#">
-                  <div className="flex flex-row items-center space-x-3 cursor-pointer group">
-                    <span className="p-1 border-2 border-gray-400 group-hover:border-yellow-600 rounded-full">
+            <div className="flex-1 py-2 order-1 md:order-2">
+              <div className="">
+                <h1 className="text-[#828282] text-lg md:text-xl">
+                  What you get when you
+                </h1>
+                <h1 className="text-4xl md:text-7xl py-2">
+                  <span>Shoot With </span>
+                  <span className="text-[#828282]">Us</span>
+                </h1>
+                <div className="flex flex-col space-y-3 py-2">
+                  <h2 className="flex flex-row items-center text-xl md:text-3xl space-x-2">
+                    <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 text-yellow-600"
+                        className="w-8 h-8 md:w-12 md:h-12"
                       >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
+                          d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"
                         />
                       </svg>
                     </span>
-                    <h1 className="group-hover:text-yellow-600 text-lg">
-                      Consultation!
-                    </h1>
-                  </div>
-                </Link>
-                <Link href="#">
-                  <div className="flex flex-row items-center space-x-3 cursor-pointer group">
-                    <span className="p-1 border-2 border-gray-400 group-hover:border-yellow-600 rounded-full">
+                    <span className="">15</span>
+                    <span className="text-[#828282]">Soft coppies.</span>
+                  </h2>
+                  <h2 className="flex flex-row items-center text-xl md:text-3xl space-x-2">
+                    <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 text-yellow-600"
+                        className="w-8 h-8 md:w-12 md:h-12"
                       >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
+                          d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                         />
                       </svg>
                     </span>
-                    <h1 className="group-hover:text-yellow-600 text-lg">
-                      Photography!
-                    </h1>
-                  </div>
-                </Link>
-                <Link href="#">
-                  <div className="flex flex-row items-center space-x-3 cursor-pointer group">
-                    <span className="p-1 border-2 border-gray-400 group-hover:border-yellow-600 rounded-full">
+                    <span className="">5</span>
+                    <span className="text-[#828282]">Image Retouches.</span>
+                  </h2>
+                  <h2 className="flex flex-row items-center text-xl md:text-3xl space-x-2">
+                    <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6 text-yellow-600"
+                        className="w-8 h-8 md:w-12 md:h-12"
                       >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
+                          d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
                         />
                       </svg>
                     </span>
-                    <h1 className="group-hover:text-yellow-600 text-lg">
-                      Videography!
-                    </h1>
-                  </div>
-                </Link>
-              </div>
-              <div className="py-4">
-                <p className="text-xl">
-                  Grabbing the consumer’s attention isn’t enough; you have to
-                  keep that attention for at least a few seconds. This is where
-                  your benefits come into play.
+                    <span className="">Awsome</span>
+                    <span className="text-[#828282]">Experience.</span>
+                  </h2>
+                </div>
+                <p className="text-[#828282] text-lg md:text-xl">
+                  These and many more you have to see,{" "}
+                  <span className="text-white">lets go</span>
                 </p>
               </div>
-              <div className="flex items-center py-6">
-                <div className="px-5 py-2 rounded-full border-2 border-white">
-                  <p>Request A Quota</p>
-                </div>
+              <div className="py-2 flex flex-col items-start">
+                <Link href="/Contact">
+                  <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
+                    <h1 className="text-xl font-FredokaOneRegular">
+                      Contact Us
+                    </h1>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-        {/* projects completed and happy clients feature Section */}
-        <div className="flex flex-col md:flex-row  items-center justify-center">
-          <div className="flex flex-row">
-            <div className="border-t border-r border-l border-gray-600 p-6 flex flex-col items-center space-y-2">
-              <h1 className="text-6xl">100+</h1>
-              <p className="text-gray-400">Projects Completed</p>
-            </div>
-            <div className="border-t border-r border-gray-600 p-6 flex flex-col items-center space-y-2">
-              <h1 className="text-6xl">30+</h1>
-              <p className="text-gray-400">Happy Clients</p>
-            </div>
-          </div>
-          <div className="flex flex-row">
-            <div className="border-t border-r border-l  border-gray-600 p-6 flex flex-col items-center space-y-2">
-              <h1 className="text-6xl">5</h1>
-              <p className="text-gray-400">Awards Won</p>
-            </div>
-            <div className="border-t border-r  border-gray-600 p-6 flex flex-col items-center space-y-2">
-              <h1 className="text-6xl">10+</h1>
-              <p className="text-gray-400">Years Experiences</p>
-            </div>
-          </div>
-        </div>
-        {/* start contact us feature Section 1 */}
-        <div className="flex relative flex-row items-center justify-center min-h-[200px] py-20">
-          <div>
-            <h1 className="text-9xl md:text-[180px] font-bold text-gray-400/10">
-              START
-            </h1>
-          </div>
-          <div className="absolute items-center justify-center flex flex-col">
-            <p className="text-base text-gray-400">
-              GET YOUR BEAUTIFUL PICTUES AND AWSOME VIDEOS
-            </p>
-            <h1 className="text-3xl md:text-5xl font-medium pb-4 pt-2 text-center">
-              Are You Ready to take your <br /> awsome shots with us?
-            </h1>
-            <div className="px-4 py-2 bg-white rounded-full text-black">
-              <h1>CONTACT US</h1>
-            </div>
-          </div>
-        </div>
-        {/* instagram feature Section 1 */}
-        <div className="flex relative flex-row items-start justify-start min-h-[200px] md:min-h-[300px] max-w-screen overflow-hidden py-20">
-          <div className="flex flex-row items-start justify-start">
-            <div className="flex-1">
-              <Link href="#">
-                <div className="relative group flex flex-col items-center justify-center w-[200px] h-[200px] md:w-[300px] md:h-[300px] cursor-pointer">
-                  <Image
-                    src="/Assets/moonrise.png"
-                    layout="fill"
-                    alt=""
-                    className="absolute object-cover"
-                  />
-                  <div className="hidden group-hover:block absolute ">
-                    <div className="flex items-center justify-center text-center flex-col space-y-2">
-                      <p className="text-base">View on</p>
-                      <h1 className="text-4xl font-bold leading-none pb-4">
-                        Instagram
-                      </h1>
-                      <Instagram size={40} />
-                    </div>
+        {/* contact us */}
+        <div>
+          <div className="flex flex-col md:flex-row md:py-10">
+            <div className="flex-1 py-2">
+              <div className="">
+                <h1 className="text-[#828282] text-lg md:text-xl">
+                  Are You Ready To
+                </h1>
+                <h1 className="text-4xl md:text-7xl py-2">
+                  <span>Capture Your Best </span>
+                  <span className="text-[#828282]">Experiences </span>
+                  <span>And Make Them Awsome </span>
+                  <span className="text-[#828282]">Memories</span>
+                </h1>
+              </div>
+              <div className="py-2 flex flex-col items-start">
+                <Link href="/Contact">
+                  <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
+                    <h1 className="text-xl font-FredokaOneRegular">
+                      Contact Us
+                    </h1>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
-            <div className="flex-1">
-              <Link href="#">
-                <div className="relative group flex flex-col items-center justify-center w-[200px] h-[200px] md:w-[300px] md:h-[300px] cursor-pointer">
-                  <Image
-                    src="/Assets/floss.png"
-                    layout="fill"
-                    alt=""
-                    className="absolute object-cover"
-                  />
-                  <div className="hidden group-hover:block absolute ">
-                    <div className="flex items-center justify-center text-center flex-col space-y-2">
-                      <p className="text-base">View on</p>
-                      <h1 className="text-4xl font-bold leading-none pb-4">
-                        Instagram
-                      </h1>
-                      <Instagram size={40} />
+            <div className="flex-1 py-2 md:pl-20 ">
+              <div className="relative">
+                <motion.img
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -30, opacity: 0 }}
+                  src="/Assets/landscape.jpg"
+                  alt=""
+                  className="object-cover h-[300px] md:h-[400px] w-[100vw] rounded-xl"
+                />
+                <div className="absolute -top-2 -right-2">
+                  <Link href="#">
+                    <div className="bg-white p-2 hover:bg-[#828282] cursor-pointer text-black hover:text-white rounded-full">
+                      <Instagram className=" w-6 h-6 md:w-8 md:h-8" />
                     </div>
-                  </div>
+                  </Link>
                 </div>
-              </Link>
-            </div>
-            <div className="flex-1">
-              <Link href="#">
-                <div className="relative group flex flex-col items-center justify-center w-[200px] h-[200px] md:w-[300px] md:h-[300px] cursor-pointer">
-                  <Image
-                    src="/Assets/bright-rain.png"
-                    layout="fill"
-                    alt=""
-                    className="absolute object-cover"
-                  />
-                  <div className="hidden group-hover:block absolute ">
-                    <div className="flex items-center justify-center text-center flex-col space-y-2">
-                      <p className="text-base">View on</p>
-                      <h1 className="text-4xl font-bold leading-none pb-4">
-                        Instagram
-                      </h1>
-                      <Instagram size={40} />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="flex-1">
-              <Link href="#">
-                <div className="relative group flex flex-col items-center justify-center w-[200px] h-[200px] md:w-[300px] md:h-[300px] cursor-pointer">
-                  <Image
-                    src="/Assets/landscape.jpg"
-                    layout="fill"
-                    alt=""
-                    className="absolute object-cover"
-                  />
-                  <div className="hidden group-hover:block absolute ">
-                    <div className="flex items-center justify-center text-center flex-col space-y-2">
-                      <p className="text-base">View on</p>
-                      <h1 className="text-4xl font-bold leading-none pb-4">
-                        Instagram
-                      </h1>
-                      <Instagram size={40} />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="flex-1">
-              <Link href="#">
-                <div className="relative group flex flex-col items-center justify-center w-[200px] h-[200px] md:w-[300px] md:h-[300px] cursor-pointer">
-                  <Image
-                    src="/Assets/moonrise.png"
-                    layout="fill"
-                    alt=""
-                    className="absolute object-cover"
-                  />
-                  <div className="hidden group-hover:block absolute ">
-                    <div className="flex items-center justify-center text-center flex-col space-y-2">
-                      <p className="text-base">View on</p>
-                      <h1 className="text-4xl font-bold leading-none pb-4">
-                        Instagram
-                      </h1>
-                      <Instagram size={40} />
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
       {/* footer */}
-      <div className="flex flex-col md:flex-row px-4 md:px-20 py-10">
-        <div className="flex-1">
-          <div className="space-y-1">
-            <p className="text-2xl">Get In Touch</p>
-            <h1 className="text-lg">email@email.com</h1>
-            <h1 className="text-lg">+233 549321512</h1>
-            <div className="flex flex-row items-center space-x-4 py-2 text-lg">
-              <div>TW</div>
-              <div>IG</div>
-              <div>YT</div>
-              <div>FB</div>
-            </div>
-          </div>
-        </div>
-        <div className="flex-1 flex items-start py-4">
-          <div className="flex flex-col  space-y-4">
-            <div className="flex flex-row items-center space-x-4 text-xl md:text-4xl font-bold">
-              <div>Home</div>
-              <div>Gallery</div>
-              <div>Services</div>
-              <div>Contact</div>
-            </div>
-            <div>
-              <Link href="www.iamjulius.com">
-                <h1>Made By Julius Eghan</h1>
-              </Link>
-            </div>
-          </div>
-        </div>
+      <div className="">
+        <MainFooter />
       </div>
     </div>
   );

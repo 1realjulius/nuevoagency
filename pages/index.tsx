@@ -5,7 +5,7 @@ import MainNavbar from "../components/MainNavbar";
 
 const Home: NextPage = () => {
   return (
-    <div className="min-w-full min-h-screen bg-black">
+    <div className="min-w-full font-FredokaOneRegular min-h-screen bg-black">
       <Head>
         <title>Nuevo Agency</title>
         <meta name="description" content="Nuevo Creative Agency." />

@@ -20,7 +20,7 @@ const NavbarComponent = () => {
   }
 
   return (
-    <div className=" flex flex-col items-center justify-center">
+    <div className=" flex flex-col items-center justify-center font-FredokaOneRegular">
       <div className="">
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
@@ -73,7 +73,9 @@ const NavbarComponent = () => {
                         <div>
                           <Link href="#">
                             <div className="rounded-full border-2 border-white px-5 pt-2 flex items-center justify-center pb-3 text-white cursor-pointer">
-                              <h1 className="text-lg leading-none">Bookings</h1>
+                              <h1 className="text-xl font-FredokaOneRegular leading-none">
+                                Bookings
+                              </h1>
                             </div>
                           </Link>
                         </div>
@@ -104,15 +106,10 @@ const NavbarComponent = () => {
                     {/* put the subscribe text here */}
                     <div className="flex flex-col md:flex-row md:items-center  min-h-screen min-w-screen px-6 text-white">
                       <div className="flex-1 flex-col  pt-[100px] md:pt-0">
-                        <div className="text-4xl md:text-6xl text-start flex flex-col items-center justify-center font-bold space-y-8">
+                        <div className="text-4xl md:text-6xl text-start flex flex-col items-center justify-center font-FredokaOneRegular space-y-8">
                           <div className="cursor-pointer">
                             <Link href="/">
                               <h1>Home</h1>
-                            </Link>
-                          </div>
-                          <div className="cursor-pointer">
-                            <Link href="/Services">
-                              <h1>Services</h1>
                             </Link>
                           </div>
                           <div className="cursor-pointer">
@@ -128,7 +125,7 @@ const NavbarComponent = () => {
                         </div>
                       </div>
                       <div className="flex-1 flex-col  pt-[100px] md:pt-0">
-                        <div className="text-4xl md:text-6xl text-start flex flex-col items-center justify-center font-bold space-y-8">
+                        <div className="text-4xl md:text-6xl text-start flex flex-col items-center justify-center font-FredokaOneRegular space-y-8">
                           <div className="cursor-pointer">
                             <Link href="/Photography">
                               <h1>Photography</h1>

@@ -9,8 +9,8 @@ const MainHome = () => {
       id: 1,
       catSection: "Photography",
       catImage: "/Assets/bright-rain.png",
-      catHeroText:
-        "We Make Perfect Memories Out Of Your Experiences With Photos",
+      catHeroText: "We Make Perfect Memories Out Of Your",
+      catHeroText1: "Experiences With Photos",
       catLink: "/Photography",
       catIcon: (
         <span className="text-black">
@@ -33,8 +33,8 @@ const MainHome = () => {
       id: 2,
       catSection: "Videography",
       catImage: "/Assets/floss.png",
-      catHeroText:
-        "We Make Perfect Memories Out Of Your Experiences With Videos",
+      catHeroText: "We Make Perfect Memories Out Of Your ",
+      catHeroText1: "Experiences With Videos",
       catLink: "/Videography",
       catIcon: (
         <span className="text-black">
@@ -59,7 +59,8 @@ const MainHome = () => {
       id: 3,
       catSection: "Events",
       catImage: "/Assets/moonrise.png",
-      catHeroText: "We Organize Events That Have Grater Impact On The Society",
+      catHeroText: "We Organize Events That Have Grater",
+      catHeroText1: "Impact On The Society",
       catLink: "/Events",
       catIcon: (
         <span className="text-black">
@@ -84,8 +85,8 @@ const MainHome = () => {
       id: 4,
       catSection: "Mentoring",
       catImage: "/Assets/landscape.jpg",
-      catHeroText:
-        "We Make Perfect Memories Out Of Your Experiences With out sessions",
+      catHeroText: "We Make Perfect Memories for ",
+      catHeroText1: "Experiences With out sessions",
       catLink: "/Mentoring",
       catIcon: (
         <span className="text-black">
@@ -127,7 +128,7 @@ const MainHome = () => {
   };
   return (
     <AnimatePresence>
-      <div className="bg-black flex flex-col items-center justify-center overflow-hidden text-white">
+      <div className="bg-[#161719] flex flex-col items-center justify-center overflow-hidden text-white">
         {AgencyCategories.map((Catslide, index) => (
           <>
             {index === currentCategory && (
@@ -135,8 +136,8 @@ const MainHome = () => {
                 key={Catslide.id}
                 className="relative min-w-screen min-h-screen flex flex-col items-center"
               >
-                <motion.div className="absolute top-16  h-[46vh] md:h-[38vh] w-[90vw] items-center justify-center p-2 z-10">
-                  <motion.div className="text-white text-xl font-bold relative w-full h-full items-center flex flex-col">
+                <motion.div className="absolute top-14   h-[52vh] md:h-[40vh] w-[90vw] items-center justify-center p-2 z-10">
+                  <motion.div className="text-white text-xl font-FredokaOneRegular relative w-full h-full items-center flex flex-col">
                     <motion.div className="absolute top-0 left-0 flex flex-row items-center space-x-2">
                       <motion.div className="bg-white rounded-full p-1">
                         <motion.span
@@ -158,12 +159,16 @@ const MainHome = () => {
                     </motion.div>
                     <motion.div className="absolute left-0 top-10 ">
                       <motion.h1
+                        layoutId="herotxt"
                         initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ y: -50, opacity: 0 }}
-                        className="text-4xl md:text-6xl md:pr-20"
+                        className="text-4xl md:text-7xl md:pr-20 uppercase"
                       >
-                        {Catslide.catHeroText}
+                        <span>{Catslide.catHeroText} </span>
+                        <span className="text-[#828282]">
+                          {Catslide.catHeroText1}
+                        </span>
                       </motion.h1>
                     </motion.div>
                     <div className="absolute bottom-0 left-0 px-3 py-1 bg-white text-black rounded-full cursor-pointer">
@@ -213,8 +218,8 @@ const MainHome = () => {
                   </motion.div>
                 </motion.div>
                 <motion.div className="absolute bottom-5 z-10">
-                  <motion.div className="relative w-[90vw] h-[40vh] md:h-[50vh] flex flex-col items-center justify-center">
-                    <motion.div className="relative w-[90vw] h-[40vh] md:h-[50vh]">
+                  <motion.div className="relative w-[90vw] h-[36vh] md:h-[50vh] flex flex-col items-center justify-center">
+                    <motion.div className="relative w-[90vw] h-[36vh] md:h-[50vh]">
                       <motion.img
                         layoutId="img"
                         initial={{ y: 20, opacity: 0 }}
@@ -222,7 +227,7 @@ const MainHome = () => {
                         exit={{ y: -20, opacity: 0 }}
                         src={Catslide.catImage}
                         alt=""
-                        className="absolute object-cover w-[90vw] h-[40vh] md:h-[50vh] rounded-xl"
+                        className="absolute object-cover w-[90vw] h-[36vh] md:h-[50vh] rounded-xl"
                       />
                     </motion.div>
                   </motion.div>
