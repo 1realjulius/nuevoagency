@@ -31,7 +31,7 @@ const Videography = () => {
         <MainNavbar />
       </div>
       {/* main */}
-      <div className="px-4 md:px-16 pt-16">
+      <div className="px-6 md:px-16 pt-16">
         {/* heder */}
         <div className="flex flex-col  w-full p-2">
           <h1 className="flex flex-row items-center space-x-2">
@@ -298,41 +298,14 @@ const Videography = () => {
                     <span className="text-white">services</span>
                   </p>
                 </div>
-                <div className="py-2 flex flex-row items-start space-x-2">
-                  <div>
-                    <Link href="/Contact">
-                      <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
-                        <h1 className="md:text-xl  font-FredokaOneRegular">
-                          Contact Us
-                        </h1>
-                      </div>
-                    </Link>
-                  </div>
-                  <div>
-                    <Link href="/Contact">
-                      <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
-                        <h1 className="flex flex-row items-center space-x-2 md:text-xl font-FredokaOneRegular">
-                          <span>Get A Quota</span>
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              strokeWidth="1.5"
-                              stroke="currentColor"
-                              className="w-6 h-6"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-                              />
-                            </svg>
-                          </span>
-                        </h1>
-                      </div>
-                    </Link>
-                  </div>
+                <div className="py-2 flex flex-col items-start">
+                  <Link href="/Contact">
+                    <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
+                      <h1 className="text-xl font-FredokaOneRegular">
+                        Contact Us
+                      </h1>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -352,41 +325,14 @@ const Videography = () => {
                     <span className="text-[#828282]">Memories</span>
                   </h1>
                 </div>
-                <div className="py-2 flex flex-row items-start space-x-2">
-                  <div>
-                    <Link href="/Contact">
-                      <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
-                        <h1 className="md:text-xl  font-FredokaOneRegular">
-                          Contact Us
-                        </h1>
-                      </div>
-                    </Link>
-                  </div>
-                  <div>
-                    <Link href="/Contact">
-                      <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
-                        <h1 className="flex flex-row items-center space-x-2 md:text-xl font-FredokaOneRegular">
-                          <span>Get A Quota</span>
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              strokeWidth="1.5"
-                              stroke="currentColor"
-                              className="w-6 h-6"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-                              />
-                            </svg>
-                          </span>
-                        </h1>
-                      </div>
-                    </Link>
-                  </div>
+                <div className="py-2 flex flex-col items-start">
+                  <Link href="/Contact">
+                    <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
+                      <h1 className="text-xl font-FredokaOneRegular">
+                        Contact Us
+                      </h1>
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="flex-1 py-2 md:pl-20 ">

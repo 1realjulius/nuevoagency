@@ -4,23 +4,51 @@ import React, { useState } from "react";
 import MainFooter from "../components/MainFooter";
 import MainNavbar from "../components/MainNavbar";
 import { motion } from "framer-motion";
-import { Instagram, Youtube } from "react-feather";
+import { Instagram } from "react-feather";
 
-const Videography = () => {
+const Events = () => {
   const pFeatureImg = [
     {
       id: 1,
       igLink: "#",
       imgEvent: "Beach",
-      imgType: "trailer for wedding",
+      imgType: "Elmina Fest",
       img: "/Assets/bright-rain.png",
     },
     {
       id: 2,
       igLink: "#",
       imgEvent: "Beach",
-      imgType: "trailer for festival",
+      imgType: "Accra Fest",
       img: "/Assets/floss.png",
+    },
+    {
+      id: 3,
+      igLink: "#",
+      imgEvent: "Beach",
+      imgType: "Fetu Fest",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 4,
+      igLink: "#",
+      imgEvent: "Beach",
+      imgType: "Volta fest",
+      img: "/Assets/moonrise.png",
+    },
+    {
+      id: 5,
+      igLink: "#",
+      imgEvent: "Beach",
+      imgType: "Volta fest",
+      img: "/Assets/moonrise.png",
+    },
+    {
+      id: 6,
+      igLink: "#",
+      imgEvent: "Beach",
+      imgType: "Volta fest",
+      img: "/Assets/moonrise.png",
     },
   ];
 
@@ -31,8 +59,8 @@ const Videography = () => {
         <MainNavbar />
       </div>
       {/* main */}
-      <div className="px-4 md:px-16 pt-16">
-        {/* heder */}
+      <div className="px-6 md:px-16 pt-16">
+        {/* heaer */}
         <div className="flex flex-col  w-full p-2">
           <h1 className="flex flex-row items-center space-x-2">
             <span className="text-black p-1 bg-white rounded-full">
@@ -47,15 +75,15 @@ const Videography = () => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-1.5A1.125 1.125 0 0118 18.375M20.625 4.5H3.375m17.25 0c.621 0 1.125.504 1.125 1.125M20.625 4.5h-1.5C18.504 4.5 18 5.004 18 5.625m3.75 0v1.5c0 .621-.504 1.125-1.125 1.125M3.375 4.5c-.621 0-1.125.504-1.125 1.125M3.375 4.5h1.5C5.496 4.5 6 5.004 6 5.625m-3.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m1.5-3.75C5.496 8.25 6 7.746 6 7.125v-1.5M4.875 8.25C5.496 8.25 6 8.754 6 9.375v1.5m0-5.25v5.25m0-5.25C6 5.004 6.504 4.5 7.125 4.5h9.75c.621 0 1.125.504 1.125 1.125m1.125 2.625h1.5m-1.5 0A1.125 1.125 0 0118 7.125v-1.5m1.125 2.625c-.621 0-1.125.504-1.125 1.125v1.5m2.625-2.625c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125M18 5.625v5.25M7.125 12h9.75m-9.75 0A1.125 1.125 0 016 10.875M7.125 12C6.504 12 6 12.504 6 13.125m0-2.25C6 11.496 5.496 12 4.875 12M18 10.875c0 .621-.504 1.125-1.125 1.125M18 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m-12 5.25v-5.25m0 5.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125m-12 0v-1.5c0-.621-.504-1.125-1.125-1.125M18 18.375v-5.25m0 5.25v-1.5c0-.621.504-1.125 1.125-1.125M18 13.125v1.5c0 .621.504 1.125 1.125 1.125M18 13.125c0-.621.504-1.125 1.125-1.125M6 13.125v1.5c0 .621-.504 1.125-1.125 1.125M6 13.125C6 12.504 5.496 12 4.875 12m-1.5 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M19.125 12h1.5m0 0c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h1.5m14.25 0h1.5"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
                 />
               </svg>
             </span>
-            <span className="text-xl font-FredokaOneRegular">Videography</span>
+            <span className="text-xl font-FredokaOneRegular">Events</span>
           </h1>
           <h1 className="text-4xl md:pt-10 md:text-8xl md:pr-20 font-FredokaOneRegular pt-6 pb-4">
-            <span>We Make Perfect Memories Out Of Your Experiences </span>
-            <span className="text-[#828282]">With Exceptional Videos</span>
+            <span>We Organize Events That Have Grater</span>
+            <span className="text-[#828282]">Impact On The Society</span>
           </h1>
           <div className="py-2 flex flex-row space-x-4 items-start">
             <div>
@@ -67,12 +95,25 @@ const Videography = () => {
             </div>
             <div>
               <Link href="#">
-                <div className="px-4 py-2 bg-white hover:bg-[#FF0000] hover:text-white text-black rounded-full cursor-pointer">
+                <div className="px-4 py-2 bg-white hover:bg-[#828282] hover:text-white text-black rounded-full cursor-pointer">
                   <h1 className="text-lg font-FredokaOneRegular flex flex-row items-center space-x-2">
                     <span>
-                      <Youtube className="w-6 h-6" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="w-6 h-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z"
+                        />
+                      </svg>
                     </span>
-                    <span>Youtube</span>
+                    <span>Get Tickets</span>
                   </h1>
                 </div>
               </Link>
@@ -126,7 +167,7 @@ const Videography = () => {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -30, opacity: 0 }}
-                src="/Assets/floss.png"
+                src="/Assets/moonrise.png"
                 alt=""
                 className="object-cover h-[200px] md:h-[400px] w-[100vw] rounded-xl"
               />
@@ -147,12 +188,13 @@ const Videography = () => {
                 </h1>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 py-4 md:gap-6">
+            <div className="grid md:grid-cols-3 py-4 md:gap-6">
               {pFeatureImg.map((pfeature) => {
                 return (
-                  <div key={pfeature.id} className={`flex flex-col`}>
+                  <div key={pfeature.id} className={` flex flex-col`}>
                     <div className="">
                       <motion.img
+                        // layoutId="img"
                         initial={{ x: 30, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: -30, opacity: 0 }}
@@ -171,25 +213,7 @@ const Videography = () => {
                       <Link href={pfeature.igLink}>
                         <div className="cursor-pointer bg-white rounded-full text-black p-2">
                           <span className="">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              strokeWidth="1.5"
-                              stroke="currentColor"
-                              className="w-6 h-6"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                              />
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"
-                              />
-                            </svg>
+                            <Instagram className="w-6 h-6 md:w-8 md:h-8" />
                           </span>
                         </div>
                       </Link>
@@ -420,4 +444,4 @@ const Videography = () => {
   );
 };
 
-export default Videography;
+export default Events;

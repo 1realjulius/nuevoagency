@@ -31,7 +31,7 @@ const Videography = () => {
         <MainNavbar />
       </div>
       {/* main */}
-      <div className="px-4 md:px-16 pt-16">
+      <div className="px-6 md:px-16 pt-16">
         {/* heder */}
         <div className="flex flex-col  w-full p-2">
           <h1 className="flex flex-row items-center space-x-2">

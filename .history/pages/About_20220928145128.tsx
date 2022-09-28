@@ -88,7 +88,7 @@ const About = () => {
         <MainNavbar />
       </div>
       {/* main */}
-      <div className="px-4 md:px-16 pt-16">
+      <div className="px-6 md:px-16 pt-16">
         {/* header */}
         <div className="h-[8vh] md:h-[20vh] w-full p-2">
           <h1 className="text-4xl md:pt-4 md:text-8xl md:pr-20 font-FredokaOneRegular pb-4">
