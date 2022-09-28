@@ -97,14 +97,14 @@ const Contact = () => {
           </div>
         </div>
         {/* contact form */}
-        <div className="grid md:grid-cols-3 py-10 text-lg">
+        <div className="grid md:grid-cols-4 py-10">
           <div className="md:col-span-2 py-2">
             <form action="submit" className="flex flex-col md:space-y-6">
               <div className="grid md:grid-cols-2 gap-2">
                 <div>
                   <input
                     type="text"
-                    className="border-b-2 border-[#828282] bg-inherit w-80 md:w-[400px] p-2 outline-none"
+                    className="border-b-2 border-[#828282] bg-white w-80 md:w-[400px] p-2 outline-none"
                     // maxLength={256}
                     placeholder="Your name"
                   />

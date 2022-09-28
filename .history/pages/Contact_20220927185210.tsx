@@ -97,14 +97,14 @@ const Contact = () => {
           </div>
         </div>
         {/* contact form */}
-        <div className="grid md:grid-cols-3 py-10 text-lg">
-          <div className="md:col-span-2 py-2">
+        <div className="flex flex-col md:flex-row py-10">
+          <div className="col-span-2 py-2">
             <form action="submit" className="flex flex-col md:space-y-6">
               <div className="grid md:grid-cols-2 gap-2">
                 <div>
                   <input
                     type="text"
-                    className="border-b-2 border-[#828282] bg-inherit w-80 md:w-[400px] p-2 outline-none"
+                    className="border-b-2 border-[#828282] bg-white w-80 md:w-[400px] p-2 outline-none"
                     // maxLength={256}
                     placeholder="Your name"
                   />
@@ -159,7 +159,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="flex flex-row py-2">
+          <div className="flex-2 flex flex-row py-2">
             <div className="">
               <h1 className="font-FredokaOneRegular text-4xl md:text-7xl  md:text-end">
                 <span className="leading-none">Get Your</span>
