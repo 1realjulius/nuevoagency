@@ -172,7 +172,7 @@ const NavbarComponent = () => {
       {navColour ? (
         <div className="w-11/12 flex justify-end items-center">
           <div
-            className="group w-8 h-6 cursor-pointer flex flex-col justify-between items-center"
+            className="group w-6 h-6 cursor-pointer flex flex-col justify-between items-center"
             onClick={openModal}
           >
             {/* the btn */}

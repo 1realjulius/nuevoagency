@@ -11,7 +11,7 @@ const MainFooter = () => {
         <div className="flex flex-col md:flex-row md:justify-between md:items-center">
           <div className="flex flex-col space-y-2">
             {/* logo */}
-            <div className="">
+            <div className="py-4">
               <Link href="/">
                 <div className="md:hidden relative w-[44px] h-[44px] cursor-pointer">
                   <Image
@@ -23,7 +23,7 @@ const MainFooter = () => {
                 </div>
               </Link>
               <Link href="/">
-                <div className="hidden md:block relative w-[195px] h-[76px] cursor-pointer">
+                <div className="hidden md:block relative w-[155px] h-[72px] cursor-pointer">
                   <Image
                     src="/Assets/flogo.png"
                     layout="fill"

@@ -23,7 +23,7 @@ const MainFooter = () => {
                 </div>
               </Link>
               <Link href="/">
-                <div className="hidden md:block relative w-[195px] h-[76px] cursor-pointer">
+                <div className="hidden md:block relative w-[185px] h-[66px] cursor-pointer">
                   <Image
                     src="/Assets/flogo.png"
                     layout="fill"

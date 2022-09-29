@@ -25,8 +25,8 @@ const MainNavbar = () => {
         <div
           className={`${
             navColour
-              ? "py-1 pt-2  flex w-full flex-row items-center justify-between px-4 md:px-6 bg-white shadow-2xl"
-              : "py-1 pt-2 flex w-full flex-row items-center justify-between px-4 md:px-6 bg-inherit"
+              ? "py-1 pt-4  flex w-full flex-row items-center justify-between px-4 md:px-6 bg-white shadow-2xl"
+              : "py-1 pt-4 flex w-full flex-row items-center justify-between px-4 md:px-6 bg-inherit"
           }`}
         >
           {/* logo */}
@@ -45,7 +45,7 @@ const MainNavbar = () => {
               <Link href="/">
                 <div className="hidden md:block relative w-[160px] h-[40px] cursor-pointer">
                   <Image
-                    src="/Assets/simpleblackbg.png"
+                    src="/Assets/simplewhitebg.png"
                     layout="fill"
                     alt=""
                     className="object-contain"

@@ -1,45 +1,73 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { Instagram } from "react-feather";
 import MainFooter from "../components/MainFooter";
 import MainNavbar from "../components/MainNavbar";
-import { motion } from "framer-motion";
-import { Instagram } from "react-feather";
 
-const Mentoring = () => {
+const Photography = () => {
   const pFeatureImg = [
     {
       id: 1,
       igLink: "#",
       imgEvent: "Beach",
-      imgType: "Elmina Fest",
+      imgType: "Potrait",
+      imgStyle: "",
       img: "/Assets/bright-rain.png",
     },
     {
       id: 2,
       igLink: "#",
       imgEvent: "Beach",
-      imgType: "Accra Fest",
+      imgType: "Wedding",
+      imgStyle: "md:col-span-2",
       img: "/Assets/floss.png",
     },
     {
       id: 3,
       igLink: "#",
       imgEvent: "Beach",
-      imgType: "Fetu Fest",
+      imgType: "Festival",
+      imgStyle: "md:col-span-2",
       img: "/Assets/landscape.jpg",
     },
     {
       id: 4,
       igLink: "#",
       imgEvent: "Beach",
-      imgType: "Volta fest",
+      imgType: "Landscape",
+      imgStyle: "",
       img: "/Assets/moonrise.png",
+    },
+    {
+      id: 5,
+      igLink: "#",
+      imgEvent: "Beach",
+      imgType: "Wedding",
+      imgStyle: "",
+      img: "/Assets/floss.png",
+    },
+    {
+      id: 6,
+      igLink: "#",
+      imgEvent: "Beach",
+      imgType: "Festival",
+      imgStyle: "",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 7,
+      igLink: "#",
+      imgEvent: "Beach",
+      imgType: "Festival",
+      imgStyle: "",
+      img: "/Assets/landscape.jpg",
     },
   ];
 
   return (
-    <div className="bg-[#161719] min-h-screen min-w-screen text-white flex flex-col font-FredokaOneRegular">
+    <div className="bg-[#161719] text-white flex flex-col font-FredokaOneRegular">
       {/* navbar */}
       <div className="sticky top-0 z-50">
         <MainNavbar />
@@ -52,43 +80,41 @@ const Mentoring = () => {
             <span className="text-black p-1 bg-white rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
+                viewBox="0 0 20 20"
+                fill="currentColor"
                 className="w-6 h-6"
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  fillRule="evenodd"
+                  d="M1 5.25A2.25 2.25 0 013.25 3h13.5A2.25 2.25 0 0119 5.25v9.5A2.25 2.25 0 0116.75 17H3.25A2.25 2.25 0 011 14.75v-9.5zm1.5 5.81v3.69c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75v-2.69l-2.22-2.219a.75.75 0 00-1.06 0l-1.91 1.909.47.47a.75.75 0 11-1.06 1.06L6.53 8.091a.75.75 0 00-1.06 0l-2.97 2.97zM12 7a1 1 0 11-2 0 1 1 0 012 0z"
+                  clipRule="evenodd"
                 />
               </svg>
             </span>
-            <span className="text-xl font-FredokaOneRegular">Mentoring</span>
+            <span className="text-xl font-FredokaOneRegular">Photography</span>
           </h1>
           <h1 className="text-4xl md:pt-10 md:text-8xl md:pr-20 font-FredokaOneRegular pt-6 pb-4">
-            <span>We Make Perfect Memories for </span>
-            <span className="text-[#828282]">
-              Experiences With out sessions
-            </span>
+            <span>We Make Perfect Memories Out Of Your Experiences </span>
+            <span className="text-[#828282]">With Exceptional Photos</span>
           </h1>
           <div className="py-2 flex flex-row space-x-4 items-start">
             <div>
               <Link href="/Contact">
                 <div className="px-4 py-2 bg-white hover:bg-[#828282] hover:text-white text-black rounded-full cursor-pointer">
-                  <h1 className="text-lg font-FredokaOneRegular flex flex-row items-center space-x-2">
+                  <h1 className="text-lg font-FredokaOneRegular">
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
                         viewBox="0 0 24 24"
-                        fill="currentColor"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
                         className="w-6 h-6"
                       >
                         <path
-                          fillRule="evenodd"
-                          d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                          clipRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
                         />
                       </svg>
                     </span>
@@ -102,22 +128,9 @@ const Mentoring = () => {
                 <div className="px-4 py-2 bg-white hover:bg-[#828282] hover:text-white text-black rounded-full cursor-pointer">
                   <h1 className="text-lg font-FredokaOneRegular flex flex-row items-center space-x-2">
                     <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="w-6 h-6"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"
-                        />
-                      </svg>
+                      <Instagram className="w-6 h-6" />
                     </span>
-                    <span>Join Us</span>
+                    <span>Our IG</span>
                   </h1>
                 </div>
               </Link>
@@ -171,7 +184,7 @@ const Mentoring = () => {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -30, opacity: 0 }}
-                src="/Assets/landscape.jpg"
+                src="/Assets/bright-rain.png"
                 alt=""
                 className="object-cover h-[200px] md:h-[400px] w-[100vw] rounded-xl"
               />
@@ -195,7 +208,10 @@ const Mentoring = () => {
             <div className="grid md:grid-cols-3 py-4 md:gap-6">
               {pFeatureImg.map((pfeature) => {
                 return (
-                  <div key={pfeature.id} className={` flex flex-col`}>
+                  <div
+                    key={pfeature.id}
+                    className={`${pfeature.imgStyle} flex flex-col`}
+                  >
                     <div className="">
                       <motion.img
                         // layoutId="img"
@@ -329,23 +345,9 @@ const Mentoring = () => {
                 <div className="py-2 flex flex-row items-start space-x-2">
                   <div>
                     <Link href="/Contact">
-                      <div className="px-4 py-2 bg-white hover:bg-[#828282] hover:text-white text-black rounded-full cursor-pointer">
-                        <h1 className="text-lg font-FredokaOneRegular flex flex-row items-center space-x-2">
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              className="w-6 h-6"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          </span>
-                          <span>Book A Shoot</span>
+                      <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
+                        <h1 className="md:text-xl  font-FredokaOneRegular">
+                          Contact Us
                         </h1>
                       </div>
                     </Link>
@@ -397,23 +399,9 @@ const Mentoring = () => {
                 <div className="py-2 flex flex-row items-start space-x-2">
                   <div>
                     <Link href="/Contact">
-                      <div className="px-4 py-2 bg-white hover:bg-[#828282] hover:text-white text-black rounded-full cursor-pointer">
-                        <h1 className="text-lg font-FredokaOneRegular flex flex-row items-center space-x-2">
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              className="w-6 h-6"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          </span>
-                          <span>Book A Shoot</span>
+                      <div className="bg-white hover:bg-[#828282] hover:text-white cursor-pointer text-black px-5 py-2 rounded-lg flex flex-row items-center justify-center">
+                        <h1 className="md:text-xl  font-FredokaOneRegular">
+                          Contact Us
                         </h1>
                       </div>
                     </Link>
@@ -476,4 +464,4 @@ const Mentoring = () => {
   );
 };
 
-export default Mentoring;
+export default Photography;

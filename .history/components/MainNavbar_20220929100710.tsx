@@ -25,12 +25,12 @@ const MainNavbar = () => {
         <div
           className={`${
             navColour
-              ? "py-1 pt-2  flex w-full flex-row items-center justify-between px-4 md:px-6 bg-white shadow-2xl"
-              : "py-1 pt-2 flex w-full flex-row items-center justify-between px-4 md:px-6 bg-inherit"
+              ? "py-1 pt-4  flex w-full flex-row items-center justify-between px-4 md:px-6 bg-[#828282] shadow-2xl"
+              : "py-1 pt-4 flex w-full flex-row items-center justify-between px-4 md:px-6"
           }`}
         >
           {/* logo */}
-          <div className="">
+          <div className="py-4">
             <Link href="/">
               <div className="md:hidden relative w-[44px] h-[44px] cursor-pointer">
                 <Image
@@ -41,29 +41,16 @@ const MainNavbar = () => {
                 />
               </div>
             </Link>
-            {navColour ? (
-              <Link href="/">
-                <div className="hidden md:block relative w-[160px] h-[40px] cursor-pointer">
-                  <Image
-                    src="/Assets/simpleblackbg.png"
-                    layout="fill"
-                    alt=""
-                    className="object-contain"
-                  />
-                </div>
-              </Link>
-            ) : (
-              <Link href="/">
-                <div className="hidden md:block relative w-[160px] h-[40px] cursor-pointer">
-                  <Image
-                    src="/Assets/simplewhitebg.png"
-                    layout="fill"
-                    alt=""
-                    className="object-contain"
-                  />
-                </div>
-              </Link>
-            )}
+            <Link href="/">
+              <div className="hidden md:block relative w-[260px] h-[20px] cursor-pointer">
+                <Image
+                  src="/Assets/white.png"
+                  layout="fill"
+                  alt=""
+                  className="object-contain"
+                />
+              </div>
+            </Link>
           </div>
           {/* Call to action And Menu */}
           <div className="flex flex-row items-center space-x-9">
