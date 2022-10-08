@@ -25,7 +25,7 @@ const MainNavbar = () => {
         <div
           className={`${
             navColour
-              ? "py-1 pt-2  flex w-full flex-row items-center justify-between px-4 md:px-6 bg-white shadow-2xl"
+              ? "py-1 pt-2  flex w-full flex-row items-center justify-between px-4 md:px-6 bg-[#242424] shadow-2xl"
               : "py-1 pt-2 flex w-full flex-row items-center justify-between px-4 md:px-6 bg-inherit"
           }`}
         >
