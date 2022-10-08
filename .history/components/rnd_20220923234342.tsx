@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const Rnd = () => {
+const rnd = () => {
   const PhotographyImages = [
     {
       id: 1,
@@ -549,4 +549,4 @@ const Rnd = () => {
   );
 };
 
-export default Rnd;
+export default rnd;

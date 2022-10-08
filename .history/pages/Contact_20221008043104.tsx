@@ -147,7 +147,7 @@ const Contact = () => {
                     />
                   </svg>
                 </span>
-                <span>Email Address.</span>
+                Email Address.
               </h2>
               <Link href="mailto:support@nuevo.com?subject=Booking A Shoot.">
                 <h1 className="font-FredokaOneRegular text-3xl md:text-7xl cursor-pointer">

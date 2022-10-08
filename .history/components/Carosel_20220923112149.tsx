@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import NavbarComponent from "./NavbarComponent";
 
 const Carosel = () => {
   const Images = [
@@ -100,7 +101,11 @@ const Carosel = () => {
               <h1 className="text-lg leading-none">Bookings</h1>
             </div>
             {/* Nav Menu */}
-            <div></div>
+            <div>
+              <div>
+                <NavbarComponent />
+              </div>
+            </div>
           </div>
         </div>
         {/* Down Section */}

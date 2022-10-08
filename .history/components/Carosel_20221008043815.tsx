@@ -100,7 +100,11 @@ const Carosel = () => {
               <h1 className="text-lg leading-none">Bookings</h1>
             </div>
             {/* Nav Menu */}
-            <div></div>
+            <div>
+              <div>
+                <NavbarComponent />
+              </div>
+            </div>
           </div>
         </div>
         {/* Down Section */}
