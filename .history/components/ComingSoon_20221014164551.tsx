@@ -80,13 +80,18 @@ const ComingSoon = () => {
               initial={{ y: -30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-[40px] md:text-8xl px-2 md:px-5 py-3 leading-none space-y-3"
+              className="text-[40px] md:text-8xl px-2 md:px-5 py-5 leading-none space-y-3"
             >
               <motion.h1>
-                <motion.span>Make </motion.span> <br />
-                <motion.span>Aswome </motion.span> <br />
-                <motion.span>Memories </motion.span> <br />
-                <motion.span>With Us </motion.span>
+                <motion.span>Make </motion.span>
+
+                <motion.span>Aswome </motion.span>
+                <motion.span>Memories </motion.span>
+              </motion.h1>
+              <motion.h1>
+                <motion.span>Your Best </motion.span>
+                <br />
+                <motion.span>Experiences </motion.span>
               </motion.h1>
             </motion.div>
             {/* coming soon text */}

@@ -34,7 +34,7 @@ const ComingSoon = () => {
     },
     {
       id: 4,
-      imgContainerStyle: "col-span-1 md:col-span-1",
+      imgContainerStyle: "hidden col-span-1 md:col-span-1",
       imgStyle: "h-28 md:h-56 w-[100vw]",
       img: "/Assets/nHero3.jpg",
     },
@@ -51,8 +51,8 @@ const ComingSoon = () => {
 
   return (
     <div className="w-[100vw] h-[100vh]">
-      <div className="relative h-full w-full flex flex-col justify-end overflow-hidden">
-        <div className="absolute top-[2px] left-[0px] w-full md:w-[50vw] p-2 h-full space-y-2">
+      <div className="relative h-full w-full flex flex-col items-center justify-end overflow-hidden">
+        <div className="absolute top-[2px] left-[2px] w-full md:w-[50vw] p-2 h-full space-y-2">
           <div className="grid grid-cols-2  md:grid-cols-2 gap-2 md:gap-4 h-64 w-full z-10">
             {bgImages.map((img) => (
               <div
@@ -73,20 +73,24 @@ const ComingSoon = () => {
         <div className="bg-white w-[100vw] py-3 text-black">
           footer content here
         </div>
-        <div className="z-20 absolute bottom-10 left-0 md:py-10 md:right-2 md:text-end">
+        <div className="z-20 absolute bottom-10 right-1 md:top-0 md:right-2 px-5 md:px-4 md:text-end">
           <div>
             {/* herotext */}
             <motion.div
               initial={{ y: -30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-[40px] md:text-8xl px-2 md:px-5 py-3 leading-none space-y-3"
+              className="text-[54px] md:text-8xl px-5 py-5 leading-none space-y-3"
             >
               <motion.h1>
-                <motion.span>Make </motion.span> <br />
-                <motion.span>Aswome </motion.span> <br />
-                <motion.span>Memories </motion.span> <br />
-                <motion.span>With Us </motion.span>
+                <motion.span>Make Your </motion.span> <br />
+                <motion.span>Aswome </motion.span> <br className="" />
+                <motion.span>Experiences </motion.span>
+              </motion.h1>
+              <motion.h1>
+                <motion.span>Your Best </motion.span>
+                <br />
+                <motion.span>Memories </motion.span>
               </motion.h1>
             </motion.div>
             {/* coming soon text */}

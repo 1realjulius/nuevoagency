@@ -83,10 +83,12 @@ const ComingSoon = () => {
               className="text-[40px] md:text-8xl px-2 md:px-5 py-3 leading-none space-y-3"
             >
               <motion.h1>
-                <motion.span>Make </motion.span> <br />
-                <motion.span>Aswome </motion.span> <br />
-                <motion.span>Memories </motion.span> <br />
-                <motion.span>With Us </motion.span>
+                <motion.span>Make </motion.span>
+                <motion.span>Aswome </motion.span>
+                <motion.span>Memories </motion.span>
+                <motion.span>Out Of </motion.span>
+                <motion.span>Your Best </motion.span>
+                <motion.span>Experiences </motion.span>
               </motion.h1>
             </motion.div>
             {/* coming soon text */}

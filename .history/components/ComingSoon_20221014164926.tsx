@@ -86,7 +86,9 @@ const ComingSoon = () => {
                 <motion.span>Make </motion.span> <br />
                 <motion.span>Aswome </motion.span> <br />
                 <motion.span>Memories </motion.span> <br />
-                <motion.span>With Us </motion.span>
+                <motion.span>With Us </motion.span> <br />
+                <motion.span>Your Best </motion.span> <br />
+                <motion.span>Experiences </motion.span>
               </motion.h1>
             </motion.div>
             {/* coming soon text */}
