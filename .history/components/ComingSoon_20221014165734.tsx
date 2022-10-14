@@ -34,7 +34,7 @@ const ComingSoon = () => {
     },
     {
       id: 4,
-      imgContainerStyle: "",
+      imgContainerStyle: "col-span-1 md:col-span-1",
       imgStyle: "h-28 md:h-56 w-[100vw]",
       img: "/Assets/nHome5.jpg",
     },
