@@ -9,7 +9,7 @@ import NewHome from "../components/NewHome";
 
 const Home: NextPage = () => {
   return (
-    <div className="min-w-full font-FredokaOneRegular min-h-screen bg-black text-white">
+    <div className="min-w-full font-FredokaOneRegular min-h-screen bg-black">
       <Head>
         <title>Nuevo Agency</title>
         <meta name="description" content="Nuevo Creative Agency." />
