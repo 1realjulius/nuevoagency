@@ -14,6 +14,7 @@ const Contact = () => {
   const [B1Active, setB1Active] = useState(false);
   const [B2Active, setB2Active] = useState(false);
   const [B3Active, setB3Active] = useState(false);
+  const [inputBorder, setinputBorder] = useState(false);
 
   const checkWedding = () => {
     if (checkWeddingActive === false) {
@@ -60,6 +61,14 @@ const Contact = () => {
       setB3Active(false);
     }
   };
+
+  const setBorderWhite = () => {
+    if (!inputBorder) {
+      setinputBorder(true);
+    } else {
+      setinputBorder(false);
+    }
+  };
   return (
     <div className="bg-[#161719] min-h-screen min-w-full text-white font-FredokaOneRegular">
       {/* navbar */}
@@ -79,7 +88,7 @@ const Contact = () => {
         </div>
         {/* interested Services */}
         <div className="flex flex-col items-start justify-start">
-          <div className="pb-4">
+          <div>
             <h1 className="text-3xl text-[#828282]">I'm Interested in...</h1>
           </div>
           {/* checkboxes */}
@@ -128,8 +137,11 @@ const Contact = () => {
             >
               <div className="py-6">
                 <input
+                  onClick={setBorderWhite}
                   type="text"
-                  className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
+                  className={`${
+                    inputBorder ? "border-white" : "border-[#828282]"
+                  } border-b-[3px]  bg-inherit w-80 md:w-[70vw] p-2 md:py-4 outline-none placeholder:text-[#828282]`}
                   // maxLength={256}
                   placeholder="Your name"
                 />
@@ -146,6 +158,7 @@ const Contact = () => {
                 <input
                   type="number"
                   className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
+                  onClick={setBorderWhite}
                   // maxLength={256}
                   placeholder="Your Contact Phone"
                 />

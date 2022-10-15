@@ -46,20 +46,6 @@ const Contact = () => {
       setB1Active(false);
     }
   };
-  const checkB2 = () => {
-    if (B2Active === false) {
-      setB2Active(true);
-    } else {
-      setB2Active(false);
-    }
-  };
-  const checkB3 = () => {
-    if (B3Active === false) {
-      setB3Active(true);
-    } else {
-      setB3Active(false);
-    }
-  };
   return (
     <div className="bg-[#161719] min-h-screen min-w-full text-white font-FredokaOneRegular">
       {/* navbar */}
@@ -79,7 +65,7 @@ const Contact = () => {
         </div>
         {/* interested Services */}
         <div className="flex flex-col items-start justify-start">
-          <div className="pb-4">
+          <div>
             <h1 className="text-3xl text-[#828282]">I'm Interested in...</h1>
           </div>
           {/* checkboxes */}
@@ -129,7 +115,7 @@ const Contact = () => {
               <div className="py-6">
                 <input
                   type="text"
-                  className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
+                  className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 md:py-4 outline-none placeholder:text-[#828282]"
                   // maxLength={256}
                   placeholder="Your name"
                 />
@@ -154,7 +140,7 @@ const Contact = () => {
                 <textarea
                   // id="Contact-v2-Info"
                   // name="Contact-v2-Info"
-                  placeholder="Tell Us About Your Event"
+                  placeholder="Describe your project..."
                   maxLength={5000}
                   // data-name="Contact v2 Info"
                   className="border-b-[3px] border-[#828282] bg-inherit w-84 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
@@ -162,13 +148,11 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col items-start justify-start">
-                <div className="pb-4">
-                  <h1 className="text-3xl text-[#828282]">
-                    Project Budget (GHS)
-                  </h1>
+                <div>
+                  <h1 className="text-3xl text-[#828282]">Project Budget...</h1>
                 </div>
                 {/* checkboxes */}
-                <div className="grid grid-cols-3 md:grid-cols-5 gap-2 py-4 text-lg">
+                <div className="grid grid-cols-3 md:grid-cols-5 gap-2 py-4 text-base">
                   {/* checkbox */}
                   <div
                     onClick={checkB1}
@@ -179,28 +163,6 @@ const Contact = () => {
                     }`}
                   >
                     <h1>10 - 20k</h1>
-                  </div>
-                  {/* checkbox */}
-                  <div
-                    onClick={checkB2}
-                    className={`${
-                      B2Active
-                        ? "flex flex-col items-center bg-white text-black rounded-full px-6 py-3"
-                        : "flex flex-col items-center border-[#828282] border-2 rounded-full px-6 py-3"
-                    }`}
-                  >
-                    <h1>20 - 50k</h1>
-                  </div>
-                  {/* checkbox */}
-                  <div
-                    onClick={checkB3}
-                    className={`${
-                      B3Active
-                        ? "flex flex-col items-center bg-white text-black rounded-full px-6 py-3"
-                        : "flex flex-col items-center border-[#828282] border-2 rounded-full px-6 py-3"
-                    }`}
-                  >
-                    <h1>{">"} 50k</h1>
                   </div>
                 </div>
               </div>

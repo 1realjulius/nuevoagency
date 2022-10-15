@@ -79,7 +79,7 @@ const Contact = () => {
         </div>
         {/* interested Services */}
         <div className="flex flex-col items-start justify-start">
-          <div className="pb-4">
+          <div>
             <h1 className="text-3xl text-[#828282]">I'm Interested in...</h1>
           </div>
           {/* checkboxes */}
@@ -129,7 +129,7 @@ const Contact = () => {
               <div className="py-6">
                 <input
                   type="text"
-                  className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
+                  className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 md:py-4 outline-none placeholder:text-[#828282]"
                   // maxLength={256}
                   placeholder="Your name"
                 />
@@ -145,7 +145,7 @@ const Contact = () => {
               <div className="py-6">
                 <input
                   type="number"
-                  className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
+                  className="border-b-[3px] border-[#828282] active:border-white bg-inherit w-80 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
                   // maxLength={256}
                   placeholder="Your Contact Phone"
                 />

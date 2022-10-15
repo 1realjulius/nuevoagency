@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "FredokaOneRegular";
+    src: url("/Fonts/FredokaOne-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SignikaMedium";
+    src: url("/Fonts/Signika-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "SignikaBold";
+    src: url("/Fonts/Signika-Bold.woff2") format("woff2");
+  }
+}
+
+@layer base{
+  input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+      -webkit-appearance: none;
+      margin: 0;
+      -moz-appearance: textfield !important;
+}

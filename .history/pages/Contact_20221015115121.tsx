@@ -7,13 +7,11 @@ import MainFooter from "../components/MainFooter";
 import NavBar from "../components/NavBar";
 
 const Contact = () => {
+  const formData = new FormData();
   const formCheckBoxBata = ["joy"];
   const [checkWeddingActive, setCheckWeddingActive] = useState(false);
   const [checkGraduationActive, setCheckGraduationActive] = useState(false);
   const [checkBirthdayActive, setCheckBirthdayActive] = useState(false);
-  const [B1Active, setB1Active] = useState(false);
-  const [B2Active, setB2Active] = useState(false);
-  const [B3Active, setB3Active] = useState(false);
 
   const checkWedding = () => {
     if (checkWeddingActive === false) {
@@ -39,37 +37,16 @@ const Contact = () => {
       setCheckBirthdayActive(false);
     }
   };
-  const checkB1 = () => {
-    if (B1Active === false) {
-      setB1Active(true);
-    } else {
-      setB1Active(false);
-    }
-  };
-  const checkB2 = () => {
-    if (B2Active === false) {
-      setB2Active(true);
-    } else {
-      setB2Active(false);
-    }
-  };
-  const checkB3 = () => {
-    if (B3Active === false) {
-      setB3Active(true);
-    } else {
-      setB3Active(false);
-    }
-  };
   return (
     <div className="bg-[#161719] min-h-screen min-w-full text-white font-FredokaOneRegular">
       {/* navbar */}
-      <div className="sticky top-0 z-50 hidden">
+      <div className="sticky top-0 z-50">
         <NavBar />
       </div>
       {/* main */}
       <div className="px-4 md:px-40 md:pt-20 pt-16">
         {/* Hero text */}
-        <div className="py-10">
+        <div>
           <div className="py-4">
             <h1 className="py-4 text-4xl md:text-7xl">
               <span>Hey! Tell Us </span> <br />
@@ -79,21 +56,21 @@ const Contact = () => {
         </div>
         {/* interested Services */}
         <div className="flex flex-col items-start justify-start">
-          <div className="pb-4">
-            <h1 className="text-3xl text-[#828282]">I'm Interested in...</h1>
+          <div>
+            <h1>I'm Interested in...</h1>
           </div>
           {/* checkboxes */}
-          <div className="grid grid-cols-3 md:grid-cols-5 gap-2 py-4">
+          <div className="grid grid-col-3 md:grid-cols-5 gap-2 py-4">
             {/* checkbox */}
             <div
               onClick={checkWedding}
               className={`${
                 checkWeddingActive
                   ? "flex flex-col items-center bg-white text-black rounded-full px-4 py-3"
-                  : "flex flex-col items-center border-[#828282] border-2 rounded-full px-4 py-3"
+                  : "flex flex-col items-center border-white border-2 rounded-full px-4 py-3"
               }`}
             >
-              <h1>Wedding</h1>
+              <h1>Wedding Shoot</h1>
             </div>
             {/* checkbox */}
             <div
@@ -101,10 +78,10 @@ const Contact = () => {
               className={`${
                 checkGraduationActive
                   ? "flex flex-col items-center bg-white text-black rounded-full px-4 py-3"
-                  : "flex flex-col items-center border-[#828282] border-2 rounded-full px-4 py-3"
+                  : "flex flex-col items-center border-white border-2 rounded-full px-4 py-3"
               }`}
             >
-              <h1>Graduations</h1>
+              <h1>Graduation Shoot</h1>
             </div>
             {/* checkbox */}
             <div
@@ -112,10 +89,10 @@ const Contact = () => {
               className={`${
                 checkBirthdayActive
                   ? "flex flex-col items-center bg-white text-black rounded-full px-4 py-3"
-                  : "flex flex-col items-center border-[#828282] border-2 rounded-full px-4 py-3"
+                  : "flex flex-col items-center border-white border-2 rounded-full px-4 py-3"
               }`}
             >
-              <h1>Birthday</h1>
+              <h1>Birthday Shoot</h1>
             </div>
           </div>
         </div>
@@ -124,94 +101,51 @@ const Contact = () => {
           <div>
             <form
               action="submit"
-              className="flex flex-col md:space-y-6 text-3xl "
+              className="flex flex-col md:space-y-6 text-3xl"
             >
               <div className="py-6">
                 <input
                   type="text"
-                  className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
+                  className="border-b-4 border-[#828282] bg-white bg-inherit w-80 md:w-[70vw] p-2 md:py-4 outline-none"
                   // maxLength={256}
                   placeholder="Your name"
                 />
               </div>
-              <div className="py-6">
+              <div className="py-4">
                 <input
                   type="email"
-                  className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
+                  className="border-b-2 border-[#828282] bg-inherit w-80 md:w-[40vw] p-2 outline-none"
                   // maxLength={256}
                   placeholder="Your Email"
                 />
               </div>
-              <div className="py-6">
+              <div className="py-4">
                 <input
                   type="number"
-                  className="border-b-[3px] border-[#828282] bg-inherit w-80 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
+                  className="border-b-2 border-[#828282] bg-inherit w-80 md:w-[40vw] p-2 outline-none"
                   // maxLength={256}
                   placeholder="Your Contact Phone"
                 />
               </div>
-              <div className="py-6">
+              <div className="py-4">
                 <textarea
                   // id="Contact-v2-Info"
                   // name="Contact-v2-Info"
-                  placeholder="Tell Us About Your Event"
+                  placeholder="Describe your project..."
                   maxLength={5000}
                   // data-name="Contact v2 Info"
-                  className="border-b-[3px] border-[#828282] bg-inherit w-84 md:w-[70vw] p-2 outline-none placeholder:text-[#828282]"
+                  className="border-b-2 border-[#828282] bg-inherit w-84 md:w-[40vw] p-2 pb-10 outline-none"
                   spellCheck="false"
                 />
               </div>
-              <div className="flex flex-col items-start justify-start">
-                <div className="pb-4">
-                  <h1 className="text-3xl text-[#828282]">
-                    Project Budget (GHS)
-                  </h1>
-                </div>
-                {/* checkboxes */}
-                <div className="grid grid-cols-3 md:grid-cols-5 gap-2 py-4 text-lg">
-                  {/* checkbox */}
-                  <div
-                    onClick={checkB1}
-                    className={`${
-                      B1Active
-                        ? "flex flex-col items-center bg-white text-black rounded-full px-6 py-3"
-                        : "flex flex-col items-center border-[#828282] border-2 rounded-full px-6 py-3"
-                    }`}
-                  >
-                    <h1>10 - 20k</h1>
-                  </div>
-                  {/* checkbox */}
-                  <div
-                    onClick={checkB2}
-                    className={`${
-                      B2Active
-                        ? "flex flex-col items-center bg-white text-black rounded-full px-6 py-3"
-                        : "flex flex-col items-center border-[#828282] border-2 rounded-full px-6 py-3"
-                    }`}
-                  >
-                    <h1>20 - 50k</h1>
-                  </div>
-                  {/* checkbox */}
-                  <div
-                    onClick={checkB3}
-                    className={`${
-                      B3Active
-                        ? "flex flex-col items-center bg-white text-black rounded-full px-6 py-3"
-                        : "flex flex-col items-center border-[#828282] border-2 rounded-full px-6 py-3"
-                    }`}
-                  >
-                    <h1>{">"} 50k</h1>
-                  </div>
-                </div>
-              </div>
               <div>
-                <div className="py-6 md:pt-0 text-base">
+                <div className="py-4 md:pt-0">
                   <input
                     type="submit"
                     value="Submit Message"
                     data-wait="Please wait..."
                     // id="w-node-_6ff1d45d-b2d3-3275-5478-e8f208e3f136-bf8cdb21"
-                    className=" px-6 py-4 border-2 border-white rounded-full cursor-pointer"
+                    className=" px-5 py-2 border-2 border-white rounded-full cursor-pointer"
                   />
                 </div>
               </div>

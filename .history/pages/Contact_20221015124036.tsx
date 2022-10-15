@@ -79,7 +79,7 @@ const Contact = () => {
         </div>
         {/* interested Services */}
         <div className="flex flex-col items-start justify-start">
-          <div className="pb-4">
+          <div>
             <h1 className="text-3xl text-[#828282]">I'm Interested in...</h1>
           </div>
           {/* checkboxes */}
