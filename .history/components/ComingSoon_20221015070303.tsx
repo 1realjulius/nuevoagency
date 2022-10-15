@@ -54,6 +54,7 @@ const ComingSoon = () => {
 
   return (
     <div className="w-[100vw] h-[100vh]">
+      <CustomCursor />
       <div className="relative h-full w-full flex flex-col justify-end overflow-hidden">
         <div className="absolute top-[2px] left-[0px] w-full md:w-[50vw] p-2 h-full space-y-2">
           <div className="grid grid-cols-2  md:grid-cols-2 gap-2 md:gap-4 h-64 w-full z-10">

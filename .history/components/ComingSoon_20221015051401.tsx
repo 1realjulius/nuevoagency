@@ -13,7 +13,6 @@ import { wrap } from "@motionone/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { Instagram } from "react-feather";
-import CustomCursor from "./CustomCursor";
 
 const ComingSoon = () => {
   const bgImages = [

@@ -13,7 +13,6 @@ import { wrap } from "@motionone/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { Instagram } from "react-feather";
-import CustomCursor from "./CustomCursor";
 
 const ComingSoon = () => {
   const bgImages = [
@@ -120,7 +119,7 @@ const ComingSoon = () => {
             </motion.div>
             {/* Hero Secondary text */}
             <div className="px-4 flex flex-col md:items-end">
-              <p className="text-[#828282] flex flex-row items-center text-base md:text-xl">
+              <p className="text-[#828282] flex flex-row items-center text-base">
                 <span>• We Make Memories From Your Experiences.</span>
               </p>
             </div>
