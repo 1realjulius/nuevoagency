@@ -96,8 +96,8 @@ const ComingSoon = () => {
             </div>
           </div>
           <div>
-            <Link href="tel:+233550120087">
-              <h1 className="cursor-pointer">+233 550 120 087</h1>
+            <Link href="tel:+233549321512">
+              <h1 className="cursor-pointer">+233 549 321 512</h1>
             </Link>
           </div>
         </div>

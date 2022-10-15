@@ -95,11 +95,7 @@ const ComingSoon = () => {
               <span className="pb-1">• 2022</span>
             </div>
           </div>
-          <div>
-            <Link href="tel:+233550120087">
-              <h1 className="cursor-pointer">+233 550 120 087</h1>
-            </Link>
-          </div>
+          <div>1234567890</div>
         </div>
         <div className="z-20 absolute bottom-12 left-0 md:py-10 md:right-2 md:text-end">
           <div>

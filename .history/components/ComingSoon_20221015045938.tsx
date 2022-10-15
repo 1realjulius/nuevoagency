@@ -73,7 +73,7 @@ const ComingSoon = () => {
             ))}
           </div>
         </div>
-        <div className="bg-white pt-1 text-black flex flex-row justify-between px-4">
+        <div className="bg-white pt-1 text-black flex flex-row px-4">
           <div>
             <div className="flex flex-row items-center">
               <span className="text-lg pb-1">©</span>
@@ -94,11 +94,6 @@ const ComingSoon = () => {
               </span>
               <span className="pb-1">• 2022</span>
             </div>
-          </div>
-          <div>
-            <Link href="tel:+233550120087">
-              <h1 className="cursor-pointer">+233 550 120 087</h1>
-            </Link>
           </div>
         </div>
         <div className="z-20 absolute bottom-12 left-0 md:py-10 md:right-2 md:text-end">
@@ -161,7 +156,7 @@ const ComingSoon = () => {
                   <Link href="#">
                     <div className="bg-white p-2 text-black">
                       <h1>
-                        <Instagram className="w-6 h-6" />
+                        <Instagram className="w-5 h-5" />
                       </h1>
                     </div>
                   </Link>

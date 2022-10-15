@@ -12,7 +12,6 @@ import {
 import { wrap } from "@motionone/utils";
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram } from "react-feather";
 
 const ComingSoon = () => {
   const bgImages = [
@@ -73,18 +72,21 @@ const ComingSoon = () => {
             ))}
           </div>
         </div>
-        <div className="bg-white pt-1 text-black flex flex-row justify-between px-4">
+        <div className=" py-3 text-white flex flex-row justify-between px-4">
           <div>
-            <div className="flex flex-row items-center">
-              <span className="text-lg pb-1">©</span>
+            <h1>NuevoAgency</h1>
+          </div>
+          <div>
+            <div className="flex flex-row items-center space-x-2">
+              <span>©</span>
               <span>
-                <span className="">
+                <span>
                   <Link href="/">
-                    <span className="relative cursor-pointer">
+                    <span className="relative w-[90px] h-[24px] bg-green-400 cursor-pointer">
                       <Image
-                        src="/Assets/footerlogo.png"
-                        width="102px"
-                        height="20px"
+                        src="/Assets/whiteLogo.png"
+                        width="98px"
+                        height="36px"
                         alt=""
                         className="object-contain"
                       />
@@ -92,23 +94,17 @@ const ComingSoon = () => {
                   </Link>
                 </span>
               </span>
-              <span className="pb-1">• 2022</span>
             </div>
           </div>
-          <div>
-            <Link href="tel:+233550120087">
-              <h1 className="cursor-pointer">+233 550 120 087</h1>
-            </Link>
-          </div>
         </div>
-        <div className="z-20 absolute bottom-12 left-0 md:py-10 md:right-2 md:text-end">
+        <div className="z-20 absolute bottom-10 left-0 md:py-10 md:right-2 md:text-end">
           <div>
             {/* herotext */}
             <motion.div
               initial={{ y: -30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-[72px] md:text-[110px] px-2 md:px-5 py-2 leading-none space-y-3"
+              className="text-[72px] md:text-[110px] px-2 md:px-5 py-3 leading-none space-y-3"
             >
               <motion.h1>
                 <motion.span>Make </motion.span> <br />
@@ -117,15 +113,9 @@ const ComingSoon = () => {
                 <motion.span>With Us </motion.span>
               </motion.h1>
             </motion.div>
-            {/* Hero Secondary text */}
-            <div className="px-4 flex flex-col md:items-end">
-              <p className="text-[#828282] flex flex-row items-center text-base">
-                <span>• We Make Memories From Your Experiences.</span>
-              </p>
-            </div>
             {/* coming soon text */}
             <div className="px-4 flex flex-col md:items-end">
-              <p className="text-[#828282] flex flex-row items-center space-x-2 text-base">
+              <p className="text-[#828282] flex flex-row items-center space-x-2 text-lg">
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -159,10 +149,8 @@ const ComingSoon = () => {
                 {/* ig page */}
                 <div>
                   <Link href="#">
-                    <div className="bg-white p-2 text-black">
-                      <h1>
-                        <Instagram className="w-6 h-6" />
-                      </h1>
+                    <div className="bg-white px-4 py-2 text-black">
+                      <h1>Ig</h1>
                     </div>
                   </Link>
                 </div>
