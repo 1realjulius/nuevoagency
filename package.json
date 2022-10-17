@@ -8,10 +8,13 @@
   "dependencies": {
     "@headlessui/react": "^1.6.4",
     "framer-motion": "^7.3.6",
+    "gsap": "^3.11.3",
+    "mouse-follower": "^1.1.2",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-feather": "^2.0.10"
+    "react-feather": "^2.0.10",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
