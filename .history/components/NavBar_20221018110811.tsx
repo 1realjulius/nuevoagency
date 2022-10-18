@@ -88,19 +88,6 @@ const NavBar = () => {
                   className="relative pt-20 w-full h-screen"
                 >
                   <div className="flex flex-col justify-between h-full">
-                    <div className="px-8 ">
-                      <Link href="/">
-                        <div className="border-b-2 border-[#E8EAED] cursor-pointer">
-                          <Image
-                            src="/Assets/footerlogo.png"
-                            width="182px"
-                            height="40px"
-                            alt=""
-                            className="object-contain"
-                          />
-                        </div>
-                      </Link>
-                    </div>
                     <div>
                       <div className="flex flex-col items-start justify-start text-4xl md:text-6xl">
                         <div className="py-2 px-8">
@@ -110,28 +97,28 @@ const NavBar = () => {
                             </div>
                           </Link>
                         </div>
-                        <div className="py-2 px-8">
+                        <div className="py-2 px-4">
                           <Link href="/Photography">
                             <div>
                               <h1>Photography</h1>
                             </div>
                           </Link>
                         </div>
-                        <div className="py-2 px-8">
+                        <div className="py-2 px-4">
                           <Link href="/Videography">
                             <div>
                               <h1>Videography</h1>
                             </div>
                           </Link>
                         </div>
-                        <div className="py-2 px-8">
+                        <div className="py-2 px-4">
                           <Link href="/Events">
                             <div>
                               <h1>Events</h1>
                             </div>
                           </Link>
                         </div>
-                        <div className="py-2 px-8">
+                        <div className="py-2 px-4">
                           <Link href="/Mentoring">
                             <div>
                               <h1>Mentoring</h1>
@@ -141,37 +128,33 @@ const NavBar = () => {
                       </div>
                     </div>
                     <div className="flex flex-col  w-full">
-                      <div className="py-4 px-8 ">
-                        <div className="border-t-2 pt-4 border-[#E8EAED]">
+                      <div className="py-4 px-8">
+                        <div>Socials</div>
+                        <div className="flex flex-row items-center space-x-2">
                           <div>
-                            <h1 className="text-xl">Socials</h1>
+                            <Link href="#">
+                              <div className="cursor-pointer">
+                                <h1>Instagram</h1>
+                              </div>
+                            </Link>
                           </div>
-                          <div className="flex flex-row items-center space-x-2">
-                            <div>
-                              <Link href="#">
-                                <div className="cursor-pointer">
-                                  <h1>Instagram</h1>
-                                </div>
-                              </Link>
-                            </div>
-                            <div>
-                              <Link href="#">
-                                <div className="cursor-pointer">
-                                  <h1>Twitter</h1>
-                                </div>
-                              </Link>
-                            </div>
-                            <div>
-                              <Link href="#">
-                                <div className="cursor-pointer">
-                                  <h1>Facebook</h1>
-                                </div>
-                              </Link>
-                            </div>
+                          <div>
+                            <Link href="#">
+                              <div className="cursor-pointer">
+                                <h1>Twitter</h1>
+                              </div>
+                            </Link>
+                          </div>
+                          <div>
+                            <Link href="#">
+                              <div className="cursor-pointer">
+                                <h1>Facebook</h1>
+                              </div>
+                            </Link>
                           </div>
                         </div>
                       </div>
-                      <div className="bg-neutral-200 py-10 pb-6 md:pb-10 px-8">
+                      <div className="bg-neutral-300 py-10 pb-6 md:pb-10 px-8">
                         <div className="">
                           <h1 className="text-3xl md:text-5xl">
                             <span className="py-2 select-none">
@@ -180,7 +163,7 @@ const NavBar = () => {
                           </h1>
                           <Link href="/Contact">
                             <h2 className="py-2 cursor-pointer">
-                              <span className="border-b-2 text-2xl text-[#828282] select-none border-[#828282] pr-2 py-2">
+                              <span className="border-b-2 text-2xl text-[#828282] hover:text-white hover:border-white select-none border-[#828282] pr-2 py-2">
                                 Tell Us About It
                               </span>
                             </h2>

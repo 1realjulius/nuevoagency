@@ -90,7 +90,7 @@ const NavBar = () => {
                   <div className="flex flex-col justify-between h-full">
                     <div className="px-8 ">
                       <Link href="/">
-                        <div className="border-b-2 border-[#E8EAED] cursor-pointer">
+                        <div className="border-b-2 border-[#E8EAED]">
                           <Image
                             src="/Assets/footerlogo.png"
                             width="182px"

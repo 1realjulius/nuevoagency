@@ -90,7 +90,7 @@ const NavBar = () => {
                   <div className="flex flex-col justify-between h-full">
                     <div className="px-8 ">
                       <Link href="/">
-                        <div className="border-b-2 border-[#E8EAED] cursor-pointer">
+                        <div className="border-b-2 border-[#E8EAED]">
                           <Image
                             src="/Assets/footerlogo.png"
                             width="182px"
@@ -180,7 +180,7 @@ const NavBar = () => {
                           </h1>
                           <Link href="/Contact">
                             <h2 className="py-2 cursor-pointer">
-                              <span className="border-b-2 text-2xl text-[#828282] select-none border-[#828282] pr-2 py-2">
+                              <span className="border-b-2 text-2xl text-[#828282] hover:text-white hover:border-white select-none border-[#828282] pr-2 py-2">
                                 Tell Us About It
                               </span>
                             </h2>

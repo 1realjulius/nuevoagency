@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black min-h-screen min-w-full text-white font-FredokaOneRegular select-none">
+    <div className="bg-black min-h-screen min-w-full text-white font-FredokaOneRegular">
       {/* navbar */}
       <div className="z-40">
         <NavBar />
