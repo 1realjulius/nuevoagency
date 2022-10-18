@@ -74,6 +74,10 @@ const MainHome = () => {
     default: {
       x: mousePosition.x - 8,
       y: mousePosition.y - 8,
+      transition: {
+        type: "spring",
+        mass: 0.6,
+      },
     },
     project: {
       x: mousePosition.x - 34,
@@ -94,16 +98,6 @@ const MainHome = () => {
     btnHover: {
       opacity: 1,
       fontSize: "32px",
-      x: mousePosition.x - 8,
-      y: mousePosition.y - 8,
-    },
-    btn1Hover: {
-      opacity: 1,
-      fontSize: "32px",
-      x: mousePosition.x - 8,
-      y: mousePosition.y - 8,
-    },
-    aboutPage: {
       x: mousePosition.x - 8,
       y: mousePosition.y - 8,
     },
@@ -131,14 +125,10 @@ const MainHome = () => {
 
   const btnEnter = () => setCursorVariant("btnHover");
   const btnLeave = () => setCursorVariant("default");
-  const btn1Enter = () => setCursorVariant("btn1Hover");
-  const btn1Leave = () => setCursorVariant("default");
-  const aboutSectionEnter = () => setCursorVariant("aboutPage");
-  const aboutSectionLeave = () => setCursorVariant("default");
   return (
     <div className="">
       {/* ParentElement */}
-      <main className="bg-black min-h-[100vh] min-w-[100vw] m-0">
+      <main className="bg-purple-200 min-h-[100vh] min-w-[100vw] m-0">
         <section className="w-[100%] h-[100vh] snap-y snap-mandatory overflow-y-scroll overflow-hidden scrollbar-hide scroll-smooth">
           {/* childern */}
           <div>
@@ -151,21 +141,18 @@ const MainHome = () => {
             className={`${
               cursorVariant === "default"
                 ? "bg-white h-[10px] w-[10px] rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50"
-                : cursorVariant === "btnHover"
-                ? "bg-blue-400 rounded-full fixed top-0 left-0 pointer-event"
-                : cursorVariant === "btn1Hover"
-                ? "bg-blue-400 rounded-full fixed top-0 left-0 pointer-event"
-                : cursorVariant === "aboutPage"
-                ? "bg-black h-[10px] w-[10px] rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50"
+                : cursorVariant === "project"
+                ? "bg-blue-400 h-[60px] w-[60px] rounded-full fixed top-0 left-0 pointer-events-none hidden md:flex z-50 md:flex-col items-center justify-center"
                 : " bg-green-200 h-24 w-24 rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50 mix-blend-difference"
             }`}
           >
             {cursorVariant === "project" && <h1>{cursorText}</h1>}
           </motion.div>
           {/* home */}
-          <section className="w-[100vw] h-[100vh] snap-start">
+          <section className="bg-green-800 w-[100vw] h-[100vh] snap-start">
             <div className="w-[100vw] h-[100vh] bg-black text-white font-FredokaOneRegular">
               <div className="relative h-full w-full flex flex-col justify-end overflow-hidden">
+                <div className="cursor"></div>
                 <div className="absolute top-[2px] left-[0px] w-full md:w-[50vw] p-2 h-full space-y-2">
                   <div className="grid grid-cols-2  md:grid-cols-2 gap-2 md:gap-4 h-64 w-full z-10">
                     {bgImages.map((img) => (
@@ -246,7 +233,7 @@ const MainHome = () => {
                                 whileTap={{ scale: 1 }}
                                 transition={{ ease: "easeOut", duration: 0.2 }}
                                 className={` ${
-                                  cursorVariant === "btnHover"
+                                  curVar === "btnHover"
                                     ? "px-4 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
                                     : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer "
                                 }`}
@@ -266,7 +253,7 @@ const MainHome = () => {
                                 initial={{ opacity: 1 }}
                                 transition={{ ease: "easeOut", duration: 0.2 }}
                                 className={` ${
-                                  cursorVariant === "btn1Hover"
+                                  curVar === "btn1Hover"
                                     ? "px-2 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
                                     : "px-2 py-2 border-2 border-white text-white rounded-full cursor-pointer "
                                 }`}
@@ -283,55 +270,8 @@ const MainHome = () => {
               </div>
             </div>
           </section>
-          <section className="bg w-[100vw] h-[100vh] snap-start  ">
-            <div
-              onMouseEnter={aboutSectionEnter}
-              onMouseLeave={aboutSectionLeave}
-              className="w-full bg-white text-black h-full flex flex-col items-center justify-center px-4"
-            >
-              {/* about text */}
-              <div>
-                <h1 className="text-3xl md:text-7xl text-center">
-                  <span>Here at </span>
-                  <span>Nuevo</span>{" "}
-                  <span>Our Aim is to make Exceptional Memories</span>{" "}
-                  <span>From Our Clients Memories</span>
-                </h1>
-              </div>
-              {/* text writer and btns */}
-              <div className="py-6 flex flex-col w-full items-center justify-center">
-                {/* text writer */}
-                <div className="flex flex-col md:flex-row items-center justify-center space-x-4">
-                  <div>
-                    <div className="p-2">
-                      <Image
-                        src="/Assets/prince-01.jpg"
-                        width="60px"
-                        height="60px"
-                        alt=""
-                        className="object-cover rounded-full"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <h1 className="text-lg md:text-2xl">
-                      <span className="text-[#828282]">CEO, </span>
-                      <span>Lead Photographer.</span>
-                    </h1>
-                  </div>
-                </div>
-                {/* btns */}
-                <div className="py-4">
-                  <div>
-                    <Link href="/About">
-                      <div className="px-4 py-3 border-2 border-black rounded-full">
-                        <h1 className="text-xl">About Us</h1>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <section className="bg-pink-800 w-[100vw] h-[100vh] snap-start ">
+            page2
           </section>
           <section className="bg-blue-800 w-[100vw] h-[100vh] snap-start ">
             page3

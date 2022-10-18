@@ -74,6 +74,10 @@ const MainHome = () => {
     default: {
       x: mousePosition.x - 8,
       y: mousePosition.y - 8,
+      transition: {
+        type: "spring",
+        mass: 0.6,
+      },
     },
     project: {
       x: mousePosition.x - 34,
@@ -104,6 +108,8 @@ const MainHome = () => {
       y: mousePosition.y - 8,
     },
     aboutPage: {
+      opacity: 1,
+      fontSize: "32px",
       x: mousePosition.x - 8,
       y: mousePosition.y - 8,
     },
@@ -287,11 +293,11 @@ const MainHome = () => {
             <div
               onMouseEnter={aboutSectionEnter}
               onMouseLeave={aboutSectionLeave}
-              className="w-full bg-white text-black h-full flex flex-col items-center justify-center px-4"
+              className="w-full bg-white text-black h-full flex flex-col items-center justify-center"
             >
               {/* about text */}
               <div>
-                <h1 className="text-3xl md:text-7xl text-center">
+                <h1 className="text-xl md:text-7xl text-center">
                   <span>Here at </span>
                   <span>Nuevo</span>{" "}
                   <span>Our Aim is to make Exceptional Memories</span>{" "}
@@ -299,9 +305,9 @@ const MainHome = () => {
                 </h1>
               </div>
               {/* text writer and btns */}
-              <div className="py-6 flex flex-col w-full items-center justify-center">
+              <div className="py-6">
                 {/* text writer */}
-                <div className="flex flex-col md:flex-row items-center justify-center space-x-4">
+                <div className="flex flex-row items-center justify-center space-x-4">
                   <div>
                     <div className="p-2">
                       <Image
@@ -313,19 +319,14 @@ const MainHome = () => {
                       />
                     </div>
                   </div>
-                  <div>
-                    <h1 className="text-lg md:text-2xl">
-                      <span className="text-[#828282]">CEO, </span>
-                      <span>Lead Photographer.</span>
-                    </h1>
-                  </div>
+                  <div>details</div>
                 </div>
                 {/* btns */}
                 <div className="py-4">
                   <div>
-                    <Link href="/About">
+                    <Link href="/Photography">
                       <div className="px-4 py-3 border-2 border-black rounded-full">
-                        <h1 className="text-xl">About Us</h1>
+                        <h1>View Photography</h1>
                       </div>
                     </Link>
                   </div>

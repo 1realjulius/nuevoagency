@@ -49,12 +49,16 @@ const MainHome = () => {
   const { h1, h2 } = bgImages3;
   const h1name = h1?.name;
 
+  const magnet = withMouseOverArea;
+  //Custom cursor
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
   });
-  const [cursorText, setCursorText] = useState("");
-  const [cursorVariant, setCursorVariant] = useState("default");
+  const [textImgActive, setTextImgActive] = useState(false);
+
+  const btnx = useSpring(10, { stiffness: 100, damping: 100 });
+  const btny = useSpring(10, { stiffness: 100, damping: 100 });
 
   useEffect(() => {
     const mouseMove = (movement: any) => {
@@ -70,102 +74,66 @@ const MainHome = () => {
       window.removeEventListener("mousemove", mouseMove);
     };
   }, []);
+
   const variants = {
     default: {
       x: mousePosition.x - 8,
       y: mousePosition.y - 8,
+
+      transition: { ease: "easeOut", duration: 0.5 },
     },
-    project: {
-      x: mousePosition.x - 34,
-      y: mousePosition.y - 34,
-      transition: {
-        ease: "easeOut",
-        type: "spring",
-        mass: 0.6,
-        dur: 0.8,
-      },
-    },
-    contact: {
-      opacity: 1,
-      fontSize: "32px",
-      x: mousePosition.x - 8,
-      y: mousePosition.y - 8,
+    text: {
+      x: mousePosition.x - 48,
+      y: mousePosition.y - 48,
+      transition: { ease: "easeOut", duration: 0.5 },
     },
     btnHover: {
-      opacity: 1,
-      fontSize: "32px",
-      x: mousePosition.x - 8,
-      y: mousePosition.y - 8,
+      x: mousePosition.x - 10,
+      y: mousePosition.y - 10,
+      transition: { ease: "easeOut", duration: 0.5 },
     },
     btn1Hover: {
-      opacity: 1,
-      fontSize: "32px",
-      x: mousePosition.x - 8,
-      y: mousePosition.y - 8,
-    },
-    aboutPage: {
-      x: mousePosition.x - 8,
-      y: mousePosition.y - 8,
+      x: mousePosition.x - 10,
+      y: mousePosition.y - 10,
+      transition: { ease: "easeOut", duration: 0.5 },
     },
   };
 
-  const projectEnter = () => {
-    setCursorVariant("project");
-    setCursorText("try");
-  };
+  const [curVar, setCurVar] = useState("default");
+  const textEnter = () => setCurVar("text");
+  const textLeave = () => setCurVar("default");
+  const btnEnter = () => setCurVar("btnHover");
+  const btnLeave = () => setCurVar("default");
+  const btn1Enter = () => setCurVar("btn1Hover");
+  const btn1Leave = () => setCurVar("default");
 
-  function projectLeave() {
-    setCursorText("");
-    setCursorVariant("default");
-  }
-
-  function contactEnter(event: any) {
-    setCursorText("heloo");
-    setCursorVariant("contact");
-  }
-
-  function contactLeave(event: any) {
-    setCursorText("");
-    setCursorVariant("default");
-  }
-
-  const btnEnter = () => setCursorVariant("btnHover");
-  const btnLeave = () => setCursorVariant("default");
-  const btn1Enter = () => setCursorVariant("btn1Hover");
-  const btn1Leave = () => setCursorVariant("default");
-  const aboutSectionEnter = () => setCursorVariant("aboutPage");
-  const aboutSectionLeave = () => setCursorVariant("default");
   return (
     <div className="">
       {/* ParentElement */}
-      <main className="bg-black min-h-[100vh] min-w-[100vw] m-0">
+      <main className="bg-purple-200 min-h-[100vh] min-w-[100vw] m-0">
         <section className="w-[100%] h-[100vh] snap-y snap-mandatory overflow-y-scroll overflow-hidden scrollbar-hide scroll-smooth">
           {/* childern */}
           <div>
             <NavBar />
           </div>
-          {/* custom cursor */}
-          <motion.div
-            variants={variants}
-            animate={cursorVariant}
-            className={`${
-              cursorVariant === "default"
-                ? "bg-white h-[10px] w-[10px] rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50"
-                : cursorVariant === "btnHover"
-                ? "bg-blue-400 rounded-full fixed top-0 left-0 pointer-event"
-                : cursorVariant === "btn1Hover"
-                ? "bg-blue-400 rounded-full fixed top-0 left-0 pointer-event"
-                : cursorVariant === "aboutPage"
-                ? "bg-black h-[10px] w-[10px] rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50"
-                : " bg-green-200 h-24 w-24 rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50 mix-blend-difference"
-            }`}
-          >
-            {cursorVariant === "project" && <h1>{cursorText}</h1>}
-          </motion.div>
-          {/* home */}
-          <section className="w-[100vw] h-[100vh] snap-start">
+          <section className="bg-green-800 w-[100vw] h-[100vh] snap-start">
             <div className="w-[100vw] h-[100vh] bg-black text-white font-FredokaOneRegular">
+              {/* custom Cursor */}
+              <motion.div
+                variants={variants}
+                animate={curVar}
+                className={`${
+                  curVar === "default"
+                    ? "bg-white h-4 w-4 rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50"
+                    : curVar === "btnHover"
+                    ? "bg-blue-400 rounded-full fixed top-0 left-0 pointer-event"
+                    : curVar === "btn1Hover"
+                    ? "bg-blue-400 rounded-full fixed top-0 left-0 pointer-event"
+                    : " bg-white h-24 w-24 rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50 mix-blend-difference"
+                }`}
+              />
               <div className="relative h-full w-full flex flex-col justify-end overflow-hidden">
+                <div className="cursor"></div>
                 <div className="absolute top-[2px] left-[0px] w-full md:w-[50vw] p-2 h-full space-y-2">
                   <div className="grid grid-cols-2  md:grid-cols-2 gap-2 md:gap-4 h-64 w-full z-10">
                     {bgImages.map((img) => (
@@ -246,7 +214,7 @@ const MainHome = () => {
                                 whileTap={{ scale: 1 }}
                                 transition={{ ease: "easeOut", duration: 0.2 }}
                                 className={` ${
-                                  cursorVariant === "btnHover"
+                                  curVar === "btnHover"
                                     ? "px-4 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
                                     : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer "
                                 }`}
@@ -266,7 +234,7 @@ const MainHome = () => {
                                 initial={{ opacity: 1 }}
                                 transition={{ ease: "easeOut", duration: 0.2 }}
                                 className={` ${
-                                  cursorVariant === "btn1Hover"
+                                  curVar === "btn1Hover"
                                     ? "px-2 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
                                     : "px-2 py-2 border-2 border-white text-white rounded-full cursor-pointer "
                                 }`}
@@ -283,55 +251,23 @@ const MainHome = () => {
               </div>
             </div>
           </section>
-          <section className="bg w-[100vw] h-[100vh] snap-start  ">
-            <div
-              onMouseEnter={aboutSectionEnter}
-              onMouseLeave={aboutSectionLeave}
-              className="w-full bg-white text-black h-full flex flex-col items-center justify-center px-4"
-            >
-              {/* about text */}
-              <div>
-                <h1 className="text-3xl md:text-7xl text-center">
-                  <span>Here at </span>
-                  <span>Nuevo</span>{" "}
-                  <span>Our Aim is to make Exceptional Memories</span>{" "}
-                  <span>From Our Clients Memories</span>
-                </h1>
-              </div>
-              {/* text writer and btns */}
-              <div className="py-6 flex flex-col w-full items-center justify-center">
-                {/* text writer */}
-                <div className="flex flex-col md:flex-row items-center justify-center space-x-4">
-                  <div>
-                    <div className="p-2">
-                      <Image
-                        src="/Assets/prince-01.jpg"
-                        width="60px"
-                        height="60px"
-                        alt=""
-                        className="object-cover rounded-full"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <h1 className="text-lg md:text-2xl">
-                      <span className="text-[#828282]">CEO, </span>
-                      <span>Lead Photographer.</span>
-                    </h1>
-                  </div>
-                </div>
-                {/* btns */}
-                <div className="py-4">
-                  <div>
-                    <Link href="/About">
-                      <div className="px-4 py-3 border-2 border-black rounded-full">
-                        <h1 className="text-xl">About Us</h1>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <section className="bg-pink-800 w-[100vw] h-[100vh] snap-start ">
+            page2
+          </section>
+          <section className="bg-blue-800 w-[100vw] h-[100vh] snap-start ">
+            page3
+          </section>
+          <section className="bg-blue-800 w-[100vw] h-[100vh] snap-start ">
+            page3
+          </section>
+          <section className="bg-blue-800 w-[100vw] h-[100vh] snap-start ">
+            page3
+          </section>
+          <section className="bg-blue-800 w-[100vw] h-[100vh] snap-start ">
+            page3
+          </section>
+          <section className="bg-blue-800 w-[100vw] h-[100vh] snap-start ">
+            page3
           </section>
           <section className="bg-blue-800 w-[100vw] h-[100vh] snap-start ">
             page3

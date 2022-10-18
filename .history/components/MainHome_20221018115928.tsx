@@ -74,6 +74,10 @@ const MainHome = () => {
     default: {
       x: mousePosition.x - 8,
       y: mousePosition.y - 8,
+      transition: {
+        type: "spring",
+        mass: 0.6,
+      },
     },
     project: {
       x: mousePosition.x - 34,
@@ -103,10 +107,6 @@ const MainHome = () => {
       x: mousePosition.x - 8,
       y: mousePosition.y - 8,
     },
-    aboutPage: {
-      x: mousePosition.x - 8,
-      y: mousePosition.y - 8,
-    },
   };
 
   const projectEnter = () => {
@@ -133,8 +133,6 @@ const MainHome = () => {
   const btnLeave = () => setCursorVariant("default");
   const btn1Enter = () => setCursorVariant("btn1Hover");
   const btn1Leave = () => setCursorVariant("default");
-  const aboutSectionEnter = () => setCursorVariant("aboutPage");
-  const aboutSectionLeave = () => setCursorVariant("default");
   return (
     <div className="">
       {/* ParentElement */}
@@ -151,12 +149,12 @@ const MainHome = () => {
             className={`${
               cursorVariant === "default"
                 ? "bg-white h-[10px] w-[10px] rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50"
+                : cursorVariant === "project"
+                ? "bg-blue-400 h-[60px] w-[60px] rounded-full fixed top-0 left-0 pointer-events-none hidden md:flex z-50 md:flex-col items-center justify-center"
                 : cursorVariant === "btnHover"
                 ? "bg-blue-400 rounded-full fixed top-0 left-0 pointer-event"
                 : cursorVariant === "btn1Hover"
                 ? "bg-blue-400 rounded-full fixed top-0 left-0 pointer-event"
-                : cursorVariant === "aboutPage"
-                ? "bg-black h-[10px] w-[10px] rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50"
                 : " bg-green-200 h-24 w-24 rounded-full fixed top-0 left-0 pointer-events-none hidden md:block z-50 mix-blend-difference"
             }`}
           >
@@ -283,15 +281,11 @@ const MainHome = () => {
               </div>
             </div>
           </section>
-          <section className="bg w-[100vw] h-[100vh] snap-start  ">
-            <div
-              onMouseEnter={aboutSectionEnter}
-              onMouseLeave={aboutSectionLeave}
-              className="w-full bg-white text-black h-full flex flex-col items-center justify-center px-4"
-            >
+          <section className="bg w-[100vw] h-[100vh] snap-start ">
+            <div className="w-full bg-white text-black h-full">
               {/* about text */}
               <div>
-                <h1 className="text-3xl md:text-7xl text-center">
+                <h1>
                   <span>Here at </span>
                   <span>Nuevo</span>{" "}
                   <span>Our Aim is to make Exceptional Memories</span>{" "}
@@ -299,38 +293,7 @@ const MainHome = () => {
                 </h1>
               </div>
               {/* text writer and btns */}
-              <div className="py-6 flex flex-col w-full items-center justify-center">
-                {/* text writer */}
-                <div className="flex flex-col md:flex-row items-center justify-center space-x-4">
-                  <div>
-                    <div className="p-2">
-                      <Image
-                        src="/Assets/prince-01.jpg"
-                        width="60px"
-                        height="60px"
-                        alt=""
-                        className="object-cover rounded-full"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <h1 className="text-lg md:text-2xl">
-                      <span className="text-[#828282]">CEO, </span>
-                      <span>Lead Photographer.</span>
-                    </h1>
-                  </div>
-                </div>
-                {/* btns */}
-                <div className="py-4">
-                  <div>
-                    <Link href="/About">
-                      <div className="px-4 py-3 border-2 border-black rounded-full">
-                        <h1 className="text-xl">About Us</h1>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              <div></div>
             </div>
           </section>
           <section className="bg-blue-800 w-[100vw] h-[100vh] snap-start ">

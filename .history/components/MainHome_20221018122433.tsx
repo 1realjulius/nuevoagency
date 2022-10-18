@@ -287,11 +287,11 @@ const MainHome = () => {
             <div
               onMouseEnter={aboutSectionEnter}
               onMouseLeave={aboutSectionLeave}
-              className="w-full bg-white text-black h-full flex flex-col items-center justify-center px-4"
+              className="w-full bg-white text-black h-full flex flex-col items-center justify-center"
             >
               {/* about text */}
               <div>
-                <h1 className="text-3xl md:text-7xl text-center">
+                <h1 className="text-xl md:text-7xl text-center">
                   <span>Here at </span>
                   <span>Nuevo</span>{" "}
                   <span>Our Aim is to make Exceptional Memories</span>{" "}
@@ -301,7 +301,7 @@ const MainHome = () => {
               {/* text writer and btns */}
               <div className="py-6 flex flex-col w-full items-center justify-center">
                 {/* text writer */}
-                <div className="flex flex-col md:flex-row items-center justify-center space-x-4">
+                <div className="flex flex-row items-center justify-center space-x-4">
                   <div>
                     <div className="p-2">
                       <Image
@@ -314,7 +314,7 @@ const MainHome = () => {
                     </div>
                   </div>
                   <div>
-                    <h1 className="text-lg md:text-2xl">
+                    <h1 className="text-2xl">
                       <span className="text-[#828282]">CEO, </span>
                       <span>Lead Photographer.</span>
                     </h1>
