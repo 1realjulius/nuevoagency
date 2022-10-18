@@ -49,7 +49,7 @@ const NavBar = () => {
         {/* Hanburger Manu Itself */}
         <div
           className={`fixed top-3 right-3 z-40
-            ${open ? "p-3" : "p-3"}
+            ${open ? "p-2" : "p-2"}
             ${menuColour ? "bg-white rounded-full" : ""}
           `}
         >

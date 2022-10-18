@@ -53,7 +53,7 @@ const NavBar = () => {
             ${menuColour ? "bg-white rounded-full" : ""}
           `}
         >
-          <div className="w-6 flex justify-end items-center">
+          <div className="w-5 flex justify-end items-center">
             <div
               className="group w-6 h-6 cursor-pointer flex flex-col justify-between items-center"
               onClick={handleHanburgerManu}

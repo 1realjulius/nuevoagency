@@ -111,7 +111,7 @@ const Videography = () => {
         </motion.div>
       </div>
       {/* navbar */}
-      <div className="z-40">
+      <div className="z-40 fixed top-3 right-3">
         <NavBar />
       </div>
       {/* main */}

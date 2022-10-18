@@ -49,13 +49,13 @@ const NavBar = () => {
         {/* Hanburger Manu Itself */}
         <div
           className={`fixed top-3 right-3 z-40
-            ${open ? "p-3" : "p-3"}
+            ${open ? "p-2" : "p-2"}
             ${menuColour ? "bg-white rounded-full" : ""}
           `}
         >
-          <div className="w-6 flex justify-end items-center">
+          <div className="w-5 flex justify-end items-center">
             <div
-              className="group w-6 h-6 cursor-pointer flex flex-col justify-between items-center"
+              className="group w-5 h-5 cursor-pointer flex flex-col justify-between items-center"
               onClick={handleHanburgerManu}
             >
               {/* the btn */}

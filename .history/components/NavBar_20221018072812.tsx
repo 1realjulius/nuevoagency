@@ -6,19 +6,19 @@ const NavBar = () => {
   const [open, setOpen] = useState(false); // State to manage the full screen Menu.If false it is closed and if true it is opened
   const [menuBtnState, setMenuBtnState] = useState(false); // State to manage the hamburger Menu.If false it is closed and if true it is opened
   const [openBtn, setBtnOpen] = useState(false);
-  const [menuColour, setMenuColour] = useState(false);
+  const [navColour, setNavColour] = useState(false);
 
-  const changeMenuColour = () => {
+  const changeNavColour = () => {
     if (window.scrollY >= 10) {
-      setMenuColour(true);
+      setNavColour(true);
     } else {
-      setMenuColour(false);
+      setNavColour(false);
     }
   };
 
   useEffect(() => {
     // Client-side-only code
-    window.addEventListener("scroll", changeMenuColour);
+    window.addEventListener("scroll", changeNavColour);
   });
 
   const handleHanburgerManu = () => {
@@ -48,9 +48,8 @@ const NavBar = () => {
       <div className="flex flex-col items-center justify-center ">
         {/* Hanburger Manu Itself */}
         <div
-          className={`fixed top-3 right-3 z-40
-            ${open ? "p-3" : "p-3"}
-            ${menuColour ? "bg-white rounded-full" : ""}
+          className={`fixed top-3 right-3 
+            ${open ? "bg-green-300 p-2" : "bg-red-300 p-2"}
           `}
         >
           <div className="w-6 flex justify-end items-center">
@@ -60,22 +59,19 @@ const NavBar = () => {
             >
               {/* the btn */}
               <span
-                className={`h-1 w-full bg-white rounded-lg cursor-pointer transform transition duration-300 ease-in-out 
-                ${openBtn ? "rotate-45 translate-y-2.5 bg-black" : ""}
-                ${menuColour ? "bg-black" : ""}
-                `}
+                className={`h-1 w-full bg-white rounded-lg group-hover:text-red cursor-pointer transform transition duration-300 ease-in-out ${
+                  openBtn ? "rotate-45 translate-y-2.5" : ""
+                }`}
               />
               <span
-                className={`h-1 w-full bg-white rounded-lg cursor-pointer transform transition duration-300 ease-in-out 
-                ${openBtn ? "w-0" : "w-full"}
-                ${menuColour ? "bg-black" : ""}
-                `}
+                className={`h-1 w-full bg-white rounded-lg group-hover:text-red cursor-pointer transform transition duration-300 ease-in-out ${
+                  openBtn ? "w-0" : "w-full"
+                }`}
               />
               <span
-                className={`h-1 w-full bg-white rounded-lg cursor-pointer transform transition duration-300 ease-in-out 
-                ${openBtn ? "-rotate-45 -translate-y-2.5 bg-black" : ""}
-                ${menuColour ? "bg-black" : ""}
-                `}
+                className={`h-1 w-full bg-white rounded-lg group-hover:text-red cursor-pointer transform transition duration-300 ease-in-out ${
+                  openBtn ? "-rotate-45 -translate-y-2.5" : ""
+                }`}
               />
             </div>
           </div>
@@ -83,10 +79,8 @@ const NavBar = () => {
         {/* MainMenu */}
         <div>
           {open && (
-            <div className="fixed top-0 w-full min-h-screen bg-white z-30 text-black">
-              <div className="relative top-14 w-full bg-blue-300 flex flex-col items-center justify-center h-screen">
-                <div>haa</div>
-              </div>
+            <div className="fixed top-0 w-full bg-white z-40 text-black">
+              <div className="">haa</div>
             </div>
           )}
         </div>
