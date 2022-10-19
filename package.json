@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.6.4",
+    "@sendgrid/mail": "^7.7.0",
     "framer-motion": "^7.3.6",
     "next": "latest",
     "react": "18.1.0",
