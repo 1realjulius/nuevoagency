@@ -5,7 +5,6 @@ import { Facebook, Instagram, Twitter } from "react-feather";
 import MainFooter from "../components/MainFooter";
 import { motion } from "framer-motion";
 import NavBar from "../components/NavBar";
-import NewFooter from "../components/NewFooter";
 
 const About = () => {
   const TeamData = [
@@ -271,15 +270,15 @@ const About = () => {
           </div>
         </div>
         {/* Email And Location */}
-        <div className="flex flex-col items-center">
-          <div className="pb-8">
-            <h1 className="text-2xl md:text-7xl">support@nuevostodios.com</h1>
+        <div className="flex flex-col items-center bg-blue-300">
+          <div>
+            <h1 className="text-sm md:text-7xl">support @nuevostodios.com</h1>
           </div>
         </div>
       </div>
       {/* footer */}
-      <div className="">
-        <NewFooter />
+      <div className="hidden">
+        <MainFooter />
       </div>
     </div>
   );

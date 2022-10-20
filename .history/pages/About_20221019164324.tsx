@@ -5,7 +5,6 @@ import { Facebook, Instagram, Twitter } from "react-feather";
 import MainFooter from "../components/MainFooter";
 import { motion } from "framer-motion";
 import NavBar from "../components/NavBar";
-import NewFooter from "../components/NewFooter";
 
 const About = () => {
   const TeamData = [
@@ -83,8 +82,8 @@ const About = () => {
       <div className="px-4 pt-8">
         {/* header */}
         <div className="">
-          <div className="md:px-10 py-4">
-            <h1 className="text-4xl md:pt-10  pt-10 md:text-8xl md:pr-20 font-FredokaOneRegular py-2">
+          <div className="md:px-10">
+            <h1 className="text-4xl md:pt-20 pt-10 md:text-8xl md:pr-20 font-FredokaOneRegular py-2">
               <span>Our </span>
               <span className="text-[#828282]">Team</span>
             </h1>
@@ -195,13 +194,13 @@ const About = () => {
         </div>
         {/* Our Goals */}
         <div>
-          <div className="flex flex-col md:flex-row md:px-16 py-4 md:py-12">
+          <div className="flex flex-col md:flex-row md:px-16 py-10">
             <div className="flex-1 flex flex-col items-start px-2">
-              <div className="border-b-[3px] border-[#828282] mb-4 pb-1 pr-2 ">
-                <h2 className="text-xl md:text-2xl">Our Aims</h2>
+              <div className="border-b-[3px] border-[#828282] my-4 py-1 pr-2 ">
+                <h2 className="text-sm md:text-2xl">Our Aims</h2>
               </div>
               <div>
-                <h1 className="text-2xl md:text-4xl">
+                <h1 className="text-base md:text-4xl">
                   From the moment our company was founded, we have helped our
                   clients find exceptional solutions for their businesses ,
                   creating memorable brands and digital products. Our expertise
@@ -210,32 +209,19 @@ const About = () => {
                 </h1>
               </div>
             </div>
-            <div className="flex-1 hidden md:flex px-2">
-              <div className="">
-                <div className="">
-                  <motion.img
-                    initial={{ y: 30, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -30, opacity: 0 }}
-                    src="/Assets/landscape.jpg"
-                    alt=""
-                    className="object-cover h-[300px] md:h-[420px] w-[100vw] rounded-xl"
-                  />
-                </div>
-              </div>
-            </div>
+            <div className="flex-1">kljasnd</div>
           </div>
         </div>
         {/* The Numbers */}
         <div>
-          <div className="flex flex-row justify-between px-5 text-lg md:text-6xl md:px-40 md:py-10">
+          <div className="flex flex-row justify-between px-5 text-lg md:text-6xl md:px-40">
             <div>
               <div className="flex flex-col items-start justify-start pt-6 pb-6 ">
-                <h1 className="text-4xl md:text-8xl font-FredokaOneRegular flex flex-row ">
+                <h1 className="text-4xl md:text-6xl font-FredokaOneRegular flex flex-row ">
                   <span>140</span>
                   <span className="text-[#828282]">+</span>
                 </h1>
-                <h2 className="text-sm md:text-2xl font-FredokaOneRegular text-[#828282] md:px-2">
+                <h2 className="text-sm md:text-base font-FredokaOneRegular text-[#828282] md:px-2">
                   <span>PROJECCTS</span>
                   <br />
                   <span className="text-white">COMPLETED</span>
@@ -244,11 +230,11 @@ const About = () => {
             </div>
             <div>
               <div className="flex flex-col items-start justify-center pt-6 pb-6 ">
-                <h1 className="text-4xl md:text-8xl font-FredokaOneRegular flex flex-row items-center justify-center">
+                <h1 className="text-4xl md:text-6xl font-FredokaOneRegular flex flex-row items-center justify-center">
                   <span>8.5</span>
                   <span className="text-[#828282]">+</span>
                 </h1>
-                <h2 className="text-sm md:text-2xl font-FredokaOneRegular text-[#828282] md:px-2">
+                <h2 className="text-sm md:text-base font-FredokaOneRegular text-[#828282] md:px-2">
                   <span>YEARS OF</span>
                   <br />
                   <span className="text-white">EXPERIENCE</span>
@@ -257,11 +243,11 @@ const About = () => {
             </div>
             <div>
               <div className="flex flex-col items-start justify-center pt-6 pb-6 ">
-                <h1 className="text-4xl md:text-8xl font-FredokaOneRegular flex flex-row items-center justify-center">
+                <h1 className="text-4xl md:text-6xl font-FredokaOneRegular flex flex-row items-center justify-center">
                   <span>1.2K</span>
                   <span className="text-[#828282]">+</span>
                 </h1>
-                <h2 className="text-sm md:text-2xl font-FredokaOneRegular text-[#828282] md:px-2">
+                <h2 className="text-sm md:text-base font-FredokaOneRegular text-[#828282] md:px-2">
                   <span>TRUSTED</span>
                   <br />
                   <span className="text-white">COMPANIES</span>
@@ -271,15 +257,15 @@ const About = () => {
           </div>
         </div>
         {/* Email And Location */}
-        <div className="flex flex-col items-center">
-          <div className="pb-8">
-            <h1 className="text-2xl md:text-7xl">support@nuevostodios.com</h1>
+        <div className="flex flex-col items-center bg-blue-300">
+          <div>
+            <h1>support @nuevostodios.com</h1>
           </div>
         </div>
       </div>
       {/* footer */}
-      <div className="">
-        <NewFooter />
+      <div className="hidden">
+        <MainFooter />
       </div>
     </div>
   );

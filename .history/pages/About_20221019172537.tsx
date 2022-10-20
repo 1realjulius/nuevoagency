@@ -272,7 +272,7 @@ const About = () => {
         </div>
         {/* Email And Location */}
         <div className="flex flex-col items-center">
-          <div className="pb-8">
+          <div className="pb-4">
             <h1 className="text-2xl md:text-7xl">support@nuevostodios.com</h1>
           </div>
         </div>

@@ -5,7 +5,6 @@ import { Facebook, Instagram, Twitter } from "react-feather";
 import MainFooter from "../components/MainFooter";
 import { motion } from "framer-motion";
 import NavBar from "../components/NavBar";
-import NewFooter from "../components/NewFooter";
 
 const About = () => {
   const TeamData = [
@@ -228,14 +227,14 @@ const About = () => {
         </div>
         {/* The Numbers */}
         <div>
-          <div className="flex flex-row justify-between px-5 text-lg md:text-6xl md:px-40 md:py-10">
+          <div className="flex flex-row justify-between px-5 text-lg md:text-6xl md:px-40">
             <div>
               <div className="flex flex-col items-start justify-start pt-6 pb-6 ">
                 <h1 className="text-4xl md:text-8xl font-FredokaOneRegular flex flex-row ">
                   <span>140</span>
                   <span className="text-[#828282]">+</span>
                 </h1>
-                <h2 className="text-sm md:text-2xl font-FredokaOneRegular text-[#828282] md:px-2">
+                <h2 className="text-sm md:text-base font-FredokaOneRegular text-[#828282] md:px-2">
                   <span>PROJECCTS</span>
                   <br />
                   <span className="text-white">COMPLETED</span>
@@ -248,7 +247,7 @@ const About = () => {
                   <span>8.5</span>
                   <span className="text-[#828282]">+</span>
                 </h1>
-                <h2 className="text-sm md:text-2xl font-FredokaOneRegular text-[#828282] md:px-2">
+                <h2 className="text-sm md:text-base font-FredokaOneRegular text-[#828282] md:px-2">
                   <span>YEARS OF</span>
                   <br />
                   <span className="text-white">EXPERIENCE</span>
@@ -261,7 +260,7 @@ const About = () => {
                   <span>1.2K</span>
                   <span className="text-[#828282]">+</span>
                 </h1>
-                <h2 className="text-sm md:text-2xl font-FredokaOneRegular text-[#828282] md:px-2">
+                <h2 className="text-sm md:text-xl font-FredokaOneRegular text-[#828282] md:px-2">
                   <span>TRUSTED</span>
                   <br />
                   <span className="text-white">COMPANIES</span>
@@ -271,15 +270,15 @@ const About = () => {
           </div>
         </div>
         {/* Email And Location */}
-        <div className="flex flex-col items-center">
-          <div className="pb-8">
-            <h1 className="text-2xl md:text-7xl">support@nuevostodios.com</h1>
+        <div className="flex flex-col items-center bg-blue-300">
+          <div>
+            <h1>support @nuevostodios.com</h1>
           </div>
         </div>
       </div>
       {/* footer */}
-      <div className="">
-        <NewFooter />
+      <div className="hidden">
+        <MainFooter />
       </div>
     </div>
   );
