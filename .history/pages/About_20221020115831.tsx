@@ -272,8 +272,9 @@ const About = () => {
         </div>
         {/* Email And Location */}
         <div className="flex flex-col items-center md:py-20">
-          <div className="py-10 pb-20">
+          <div className="py-8">
             <h1 className="text-2xl md:text-7xl">support@nuevostodios.com</h1>
+            <h2>Have Enquires to make send a message to us!</h2>
           </div>
         </div>
       </div>

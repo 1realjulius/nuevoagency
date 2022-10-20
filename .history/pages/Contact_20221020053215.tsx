@@ -241,7 +241,7 @@ const Contact = () => {
             {/* Project Budgets */}
             <div className="flex flex-col items-start justify-start">
               <div className="pb-4 pt-6">
-                <h1 className="text-2xl md:text-3xl text-[#828282]">
+                <h1 className="text-xl md:text-2xl text-[#828282]">
                   Project Budget (GHS)
                 </h1>
               </div>

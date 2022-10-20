@@ -105,35 +105,35 @@ const NavBar = () => {
                       <div className="flex flex-col items-start justify-start text-4xl md:text-6xl">
                         <div className="py-2 px-8">
                           <Link href="/About">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div className="cursor-pointer">
                               <h1>About</h1>
                             </div>
                           </Link>
                         </div>
                         <div className="py-2 px-8">
                           <Link href="/Photography">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div className="cursor-pointer">
                               <h1>Photography</h1>
                             </div>
                           </Link>
                         </div>
                         <div className="py-2 px-8">
                           <Link href="/Videography">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div className="cursor-pointer">
                               <h1>Videography</h1>
                             </div>
                           </Link>
                         </div>
                         <div className="py-2 px-8">
                           <Link href="/Events">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div className="cursor-pointer">
                               <h1>Events</h1>
                             </div>
                           </Link>
                         </div>
                         <div className="py-2 px-8">
                           <Link href="/Mentoring">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div className="cursor-pointer">
                               <h1>Mentoring</h1>
                             </div>
                           </Link>

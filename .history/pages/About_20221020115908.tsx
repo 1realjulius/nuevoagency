@@ -71,7 +71,7 @@ const About = () => {
     { id: 3, img: "/Assets/landscape.jpg", name: "Mentoring" },
   ];
   return (
-    <div className="bg-[#161719] min-h-screen min-w-full text-white font-FredokaOneRegular">
+    <div className="bg-[#161719] min-h-screen min-w-full text-white font-FredokaOneRegular overflow-hidden">
       {/* navbar */}
       <div className="sticky top-0 z-50">
         <NavBar />
@@ -272,7 +272,7 @@ const About = () => {
         </div>
         {/* Email And Location */}
         <div className="flex flex-col items-center md:py-20">
-          <div className="py-10 pb-20">
+          <div className="py-8">
             <h1 className="text-2xl md:text-7xl">support@nuevostodios.com</h1>
           </div>
         </div>

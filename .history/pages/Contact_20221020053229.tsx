@@ -119,7 +119,7 @@ const Contact = () => {
         <div>Nuevo Logo</div>
       </div>
       {/* main */}
-      <div className="px-4 md:px-20 md:py-10 pt-6">
+      <div className="px-4 md:px-10 md:py-10 pt-6">
         {/* Hero text */}
         <div className="py-10">
           <div className="py-4">

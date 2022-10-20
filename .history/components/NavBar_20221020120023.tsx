@@ -80,7 +80,7 @@ const NavBar = () => {
         <div>
           <AnimatePresence mode="sync">
             {open && (
-              <div className="fixed top-0 right-0 w-full md:w-[50vw] min-h-screen bg-white z-30 text-black overflow-hidden md:border-l-[6px] ">
+              <div className="fixed top-0 right-0 w-full md:w-[50vw] min-h-screen bg-white z-30 text-black overflow-hidden shadow-sm">
                 <motion.div
                   initial={{ x: 100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -105,35 +105,35 @@ const NavBar = () => {
                       <div className="flex flex-col items-start justify-start text-4xl md:text-6xl">
                         <div className="py-2 px-8">
                           <Link href="/About">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div>
                               <h1>About</h1>
                             </div>
                           </Link>
                         </div>
                         <div className="py-2 px-8">
                           <Link href="/Photography">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div>
                               <h1>Photography</h1>
                             </div>
                           </Link>
                         </div>
                         <div className="py-2 px-8">
                           <Link href="/Videography">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div>
                               <h1>Videography</h1>
                             </div>
                           </Link>
                         </div>
                         <div className="py-2 px-8">
                           <Link href="/Events">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div>
                               <h1>Events</h1>
                             </div>
                           </Link>
                         </div>
                         <div className="py-2 px-8">
                           <Link href="/Mentoring">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                            <div>
                               <h1>Mentoring</h1>
                             </div>
                           </Link>
@@ -143,7 +143,7 @@ const NavBar = () => {
                     <div className="flex flex-col  w-full">
                       <div className="py-4 px-8 ">
                         <div className="border-t-2 pt-4 border-[#E8EAED]">
-                          <div className="flex flex-row items-center space-x-4">
+                          <div className="flex flex-row items-center space-x-2">
                             <div>
                               <Link href="#">
                                 <div className="cursor-pointer">
