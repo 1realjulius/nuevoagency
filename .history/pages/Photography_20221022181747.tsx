@@ -303,7 +303,7 @@ const Photography = () => {
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -30, opacity: 0 }}
-                    src="/Assets/nHero4.jpg"
+                    src="/Assets/nHome5.jpg"
                     alt=""
                     className="object-cover h-[90vh] w-[100vw] rounded-lg"
                   />
@@ -395,7 +395,7 @@ const Photography = () => {
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -30, opacity: 0 }}
-                    src="/Assets/nHero1.jpg"
+                    src="/Assets/nHome5.jpg"
                     alt=""
                     className="object-cover h-[90vh] w-[100vw] rounded-lg"
                   />

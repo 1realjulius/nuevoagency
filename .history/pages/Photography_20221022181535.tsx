@@ -182,7 +182,7 @@ const Photography = () => {
                   <div className="py-4">
                     <motion.div className="">
                       <div className="my-2">
-                        <Link href="#">
+                        <Link href="/Contact">
                           <motion.div
                             layout
                             whileHover={{ scale: 1.1 }}
@@ -230,7 +230,7 @@ const Photography = () => {
                 <div>
                   <motion.div className="">
                     <div className="my-2">
-                      <Link href="#">
+                      <Link href="/Contact">
                         <motion.div
                           layout
                           whileHover={{ scale: 1.1 }}
@@ -256,232 +256,34 @@ const Photography = () => {
           </div>
           {/* image Two */}
           <div className="sticky top-3">
-            <div className="relative h-[90vh] flex flex-col md:flex-row md:space-x-2">
-              <div className="w-full h-full hidden md:flex md:flex-1">
-                <div className="w-full h-full flex flex-col items-center justify-center p-4">
-                  <div className="border-b-[3px] py-2 my-2 px-2 border-[#828282]">
-                    <h1 className="text-xl">
-                      <span>Graduation </span>
-                      <span className="text-[#828282] ">Photography</span>
-                    </h1>
-                  </div>
-                  <div>
-                    <h1 className="text-6xl text-center">
-                      <span>An Investment In KNowledge Always </span>
-                      <span>Pays The Best Interst</span>
-                    </h1>
-                  </div>
-                  <div className="py-4">
-                    <motion.div className="">
-                      <div className="my-2">
-                        <Link href="#">
-                          <motion.div
-                            layout
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 1 }}
-                            transition={{ ease: "easeOut", duration: 0.2 }}
-                            className={` ${
-                              1 < 2
-                                ? "px-4 py-2 border text-white hover:bg-white hover:text-black rounded-full hover:border-transparent border-white cursor-pointer flex flex-row items-center space-x-2"
-                                : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer flex flex-row items-center space-x-2 "
-                            }`}
-                          >
-                            <span>
-                              <Instagram className="w-6 h-6" />
-                            </span>
-                            <span className="text-base">Instagram</span>
-                          </motion.div>
-                        </Link>
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
+            <div className="relative h-[90vh] bg-blue-200 flex flex-col md:flex-row md:space-x-2">
+              <div className="bg-pink-200 w-full h-full hidden md:flex md:flex-1">
+                content
               </div>
-              <div className="w-full h-full flex-1">
+              <div className="bg-green-200 w-full h-full flex-1">
                 <div className="">
                   <motion.img
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -30, opacity: 0 }}
-                    src="/Assets/nHero4.jpg"
+                    src="/Assets/nHome5.jpg"
                     alt=""
-                    className="object-cover h-[90vh] w-[100vw] rounded-lg"
+                    className="object-cover h-[90vh] w-[100vw]"
                   />
                 </div>
               </div>
-              <div className="bg-black/30 absolute bottom-0 rounded-b-lg right-0 md:hidden flex flex-col items-center p-4">
-                <div>
-                  <h1>Graduation Photography</h1>
-                </div>
-                <div>
-                  <h1 className="text-4xl text-center">
-                    <span>An Investment In Knowledge Always </span>
-                    <span>Pays The Best Interst</span>
-                  </h1>
-                </div>
-                <div>
-                  <motion.div className="">
-                    <div className="my-2">
-                      <Link href="#">
-                        <motion.div
-                          layout
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 1 }}
-                          transition={{ ease: "easeOut", duration: 0.2 }}
-                          className={` ${
-                            1 < 2
-                              ? "px-4 py-2 border text-white hover:bg-white hover:text-black rounded-full hover:border-transparent border-white cursor-pointer flex flex-row items-center space-x-2"
-                              : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer flex flex-row items-center space-x-2 "
-                          }`}
-                        >
-                          <span>
-                            <Instagram className="w-6 h-6" />
-                          </span>
-                          <span className="text-base">Instagram</span>
-                        </motion.div>
-                      </Link>
-                    </div>
-                  </motion.div>
-                </div>
+              <div className="bg-pink-200 absolute bottom-0 right-0 md:hidden">
+                content
               </div>
             </div>
           </div>
           {/* Image three */}
           <div className="sticky top-3">
-            <div className="relative h-[90vh] flex flex-col md:flex-row md:space-x-2">
-              <div className="w-full h-full hidden md:flex md:flex-1">
-                <div className="w-full h-full flex flex-col items-center justify-center p-4">
-                  <div className="border-b-[3px] py-2 my-2 px-2 border-[#828282]">
-                    <h1 className="text-xl">
-                      <span>Graduation </span>
-                      <span className="text-[#828282] ">Photography</span>
-                    </h1>
-                  </div>
-                  <div>
-                    <h1 className="text-6xl text-center">
-                      <span>An Investment In KNowledge Always </span>
-                      <span>Pays The Best Interst</span>
-                    </h1>
-                  </div>
-                  <div className="py-4">
-                    <motion.div className="">
-                      <div className="my-2">
-                        <Link href="#">
-                          <motion.div
-                            layout
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 1 }}
-                            transition={{ ease: "easeOut", duration: 0.2 }}
-                            className={` ${
-                              1 < 2
-                                ? "px-4 py-2 border text-white hover:bg-white hover:text-black rounded-full hover:border-transparent border-white cursor-pointer flex flex-row items-center space-x-2"
-                                : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer flex flex-row items-center space-x-2 "
-                            }`}
-                          >
-                            <span>
-                              <Instagram className="w-6 h-6" />
-                            </span>
-                            <span className="text-base">Instagram</span>
-                          </motion.div>
-                        </Link>
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
+            <div className="relative h-[90vh] bg-blue-200 flex flex-col md:flex-row md:space-x-2">
+              <div className="bg-pink-200 w-full h-full hidden md:flex md:flex-1">
+                content
               </div>
-              <div className="w-full h-full flex-1">
-                <div className="">
-                  <motion.img
-                    initial={{ y: 30, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -30, opacity: 0 }}
-                    src="/Assets/nHero1.jpg"
-                    alt=""
-                    className="object-cover h-[90vh] w-[100vw] rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="bg-black/30 absolute bottom-0 rounded-b-lg right-0 md:hidden flex flex-col items-center p-4">
-                <div>
-                  <h1>Graduation Photography</h1>
-                </div>
-                <div>
-                  <h1 className="text-4xl text-center">
-                    <span>An Investment In Knowledge Always </span>
-                    <span>Pays The Best Interst</span>
-                  </h1>
-                </div>
-                <div>
-                  <motion.div className="">
-                    <div className="my-2">
-                      <Link href="#">
-                        <motion.div
-                          layout
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 1 }}
-                          transition={{ ease: "easeOut", duration: 0.2 }}
-                          className={` ${
-                            1 < 2
-                              ? "px-4 py-2 border text-white hover:bg-white hover:text-black rounded-full hover:border-transparent border-white cursor-pointer flex flex-row items-center space-x-2"
-                              : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer flex flex-row items-center space-x-2 "
-                          }`}
-                        >
-                          <span>
-                            <Instagram className="w-6 h-6" />
-                          </span>
-                          <span className="text-base">Instagram</span>
-                        </motion.div>
-                      </Link>
-                    </div>
-                  </motion.div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Image Four */}
-          <div className="sticky top-3">
-            <div className="relative h-[90vh] flex flex-col md:flex-row md:space-x-2">
-              <div className="w-full h-full hidden md:flex md:flex-1">
-                <div className="w-full h-full flex flex-col items-center justify-center p-4">
-                  <div className="border-b-[3px] py-2 my-2 px-2 border-[#828282]">
-                    <h1 className="text-xl">
-                      <span>Graduation </span>
-                      <span className="text-[#828282] ">Photography</span>
-                    </h1>
-                  </div>
-                  <div>
-                    <h1 className="text-6xl text-center">
-                      <span>An Investment In KNowledge Always </span>
-                      <span>Pays The Best Interst</span>
-                    </h1>
-                  </div>
-                  <div className="py-4">
-                    <motion.div className="">
-                      <div className="my-2">
-                        <Link href="#">
-                          <motion.div
-                            layout
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 1 }}
-                            transition={{ ease: "easeOut", duration: 0.2 }}
-                            className={` ${
-                              1 < 2
-                                ? "px-4 py-2 border text-white hover:bg-white hover:text-black rounded-full hover:border-transparent border-white cursor-pointer flex flex-row items-center space-x-2"
-                                : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer flex flex-row items-center space-x-2 "
-                            }`}
-                          >
-                            <span>
-                              <Instagram className="w-6 h-6" />
-                            </span>
-                            <span className="text-base">Instagram</span>
-                          </motion.div>
-                        </Link>
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full h-full flex-1">
+              <div className="bg-green-200 w-full h-full flex-1">
                 <div className="">
                   <motion.img
                     initial={{ y: 30, opacity: 0 }}
@@ -489,44 +291,35 @@ const Photography = () => {
                     exit={{ y: -30, opacity: 0 }}
                     src="/Assets/nHero2.jpg"
                     alt=""
-                    className="object-cover h-[90vh] w-[100vw] rounded-lg"
+                    className="object-cover h-[90vh] w-[100vw]"
                   />
                 </div>
               </div>
-              <div className="bg-black/30 absolute bottom-0 rounded-b-lg right-0 md:hidden flex flex-col items-center p-4">
-                <div>
-                  <h1>Graduation Photography</h1>
+              <div className="bg-pink-200 absolute bottom-0 right-0 md:hidden">
+                content
+              </div>
+            </div>
+          </div>
+          {/* Image Four */}
+          <div className="sticky top-3">
+            <div className="relative h-[90vh] bg-blue-200 flex flex-col md:flex-row md:space-x-2">
+              <div className="bg-pink-200 w-full h-full hidden md:flex md:flex-1">
+                content
+              </div>
+              <div className="bg-green-200 w-full h-full flex-1">
+                <div className="">
+                  <motion.img
+                    initial={{ y: 30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -30, opacity: 0 }}
+                    src="/Assets/nHome5.jpg"
+                    alt=""
+                    className="object-cover h-[90vh] w-[100vw]"
+                  />
                 </div>
-                <div>
-                  <h1 className="text-4xl text-center">
-                    <span>An Investment In Knowledge Always </span>
-                    <span>Pays The Best Interst</span>
-                  </h1>
-                </div>
-                <div>
-                  <motion.div className="">
-                    <div className="my-2">
-                      <Link href="#">
-                        <motion.div
-                          layout
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 1 }}
-                          transition={{ ease: "easeOut", duration: 0.2 }}
-                          className={` ${
-                            1 < 2
-                              ? "px-4 py-2 border text-white hover:bg-white hover:text-black rounded-full hover:border-transparent border-white cursor-pointer flex flex-row items-center space-x-2"
-                              : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer flex flex-row items-center space-x-2 "
-                          }`}
-                        >
-                          <span>
-                            <Instagram className="w-6 h-6" />
-                          </span>
-                          <span className="text-base">Instagram</span>
-                        </motion.div>
-                      </Link>
-                    </div>
-                  </motion.div>
-                </div>
+              </div>
+              <div className="bg-pink-200 absolute bottom-0 right-0 md:hidden">
+                content
               </div>
             </div>
           </div>

@@ -1,34 +1,141 @@
+import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { Instagram } from "react-feather";
+import { text } from "stream/consumers";
 import MainFooter from "../components/MainFooter";
-import { Instagram, Youtube } from "react-feather";
 import NavBar from "../components/NavBar";
-import { motion, useTransform } from "framer-motion";
 import NewFooter from "../components/NewFooter";
 
-const Videography = () => {
+const Photography = () => {
   const pFeatureImg = [
     {
       id: 1,
       igLink: "#",
       imgEvent: "Beach",
-      imgType: "trailer for wedding",
+      imgType: "Potrait",
+      imgStyle: "",
       img: "/Assets/bright-rain.png",
     },
     {
       id: 2,
       igLink: "#",
       imgEvent: "Beach",
-      imgType: "trailer for festival",
+      imgType: "Wedding",
+      imgStyle: "md:col-span-2",
       img: "/Assets/floss.png",
+    },
+    {
+      id: 3,
+      igLink: "#",
+      imgEvent: "Beach",
+      imgType: "Festival",
+      imgStyle: "md:col-span-2",
+      img: "/Assets/landscape.jpg",
+    },
+    {
+      id: 4,
+      igLink: "#",
+      imgEvent: "Beach",
+      imgType: "Landscape",
+      imgStyle: "",
+      img: "/Assets/moonrise.png",
     },
   ];
 
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0,
+  });
+  const [textImgActive, setTextImgActive] = useState(false);
+  const [textImg, setTextImg] = useState("/Assets/landscape.jpg");
+  const textBgImg = useState("/Assets/landscape.jpg");
+
+  const btnx = useSpring(10, { stiffness: 100, damping: 100 });
+  const btny = useSpring(10, { stiffness: 100, damping: 100 });
+
+  useEffect(() => {
+    const mouseMove = (movement: any) => {
+      setMousePosition({
+        x: movement.clientX,
+        y: movement.clientY,
+      });
+    };
+
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    };
+  }, []);
+
+  const variants = {
+    default: {
+      x: mousePosition.x - 8,
+      y: mousePosition.y - 8,
+
+      transition: { ease: "easeOut", duration: 0.5 },
+    },
+    text: {
+      x: mousePosition.x - 48,
+      y: mousePosition.y - 48,
+      transition: { ease: "easeOut", duration: 0.5 },
+    },
+    btnHover: {
+      x: mousePosition.x - 10,
+      y: mousePosition.y - 10,
+      transition: { ease: "easeOut", duration: 0.5 },
+    },
+    imgHover: {
+      x: mousePosition.x - 140,
+      y: mousePosition.y - 140,
+      transition: { ease: "easeOut", duration: 0.5, scale: 0.8 },
+    },
+    textbgimg: {
+      x: mousePosition.x - 20,
+      y: mousePosition.y - 20,
+      transition: { ease: "easeOut", duration: 0.5 },
+    },
+  };
+  const spring = {
+    type: "spring",
+    stiffness: 500,
+    damping: 28,
+  };
+
+  const magnetbtn = (e: any) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+
+    btnx.set(e.clientX - rect.left);
+    btny.set(e.clientY - rect.top);
+  };
+
+  const magnetbtnRest = () => {
+    btnx.set(10, true);
+    btny.set(10, true);
+  };
+
+  const [curVar, setCurVar] = useState("default");
+  const textEnter = () => setCurVar("text");
+  const textLeave = () => setCurVar("default");
+  const btnEnter = () => setCurVar("btnHover");
+  const btnLeave = () => setCurVar("default");
+  const imgLeave = () => {
+    setCurVar("default");
+    setTextImgActive(false);
+  };
+
+  const imgEnter = () => {
+    setCurVar("imgHover");
+    setTextImgActive(true);
+  };
+
+  // console.log(curVar.length > 0 ? "hiii" : "fuc You");
   return (
-    <div className="bg-black min-h-screen min-w-screen text-white flex flex-col font-FredokaOneRegular">
+    <div className="bg-[#161719] text-white flex flex-col font-FredokaOneRegular z-10 ">
       {/* navbar */}
-      <div className="z-40">
+      <div className="sticky top-0 z-50">
         <NavBar />
       </div>
       {/* Logo */}
@@ -52,7 +159,7 @@ const Videography = () => {
         <div className="flex flex-col  w-full py-2 pb-6">
           <h1 className="text-[38px] md:pt-10 md:text-8xl md:pr-20 font-FredokaOneRegular pt-6 pb-4 leading-none">
             <span>We Make Perfect Memories From Experiences </span>
-            <span className="text-[#828282]">With Awsome Videos</span>
+            <span className="text-[#828282]">With Awsome Photos</span>
           </h1>
           <div className="py-2 flex flex-row space-x-2 md:space-x-4 items-start">
             <motion.div className="">
@@ -90,7 +197,7 @@ const Videography = () => {
               </div>
             </motion.div>
             <motion.div className="">
-              <div className="m-2">
+              <div className="my-2">
                 <Link href="/Contact">
                   <motion.div
                     layout
@@ -104,27 +211,27 @@ const Videography = () => {
                     }`}
                   >
                     <span>
-                      <Youtube className="w-6 h-6" />
+                      <Instagram className="w-6 h-6" />
                     </span>
-                    <span className="text-base">Youtube</span>
+                    <span className="text-base">Instagram</span>
                   </motion.div>
                 </Link>
               </div>
             </motion.div>
           </div>
         </div>
-        {/* hero Video */}
+        {/* hero Images */}
         <div>
+          {/* Make this Image Parallax */}
           <div className="">
-            {/* Make Video Parallax */}
             <motion.img
               layoutId="img"
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -30, opacity: 0 }}
-              src="/Assets/floss.png"
+              src="/Assets/nHero2.jpg"
               alt=""
-              className="object-cover h-[300px] md:h-[600px] w-[100vw] rounded-xl"
+              className="object-cover h-[200px] md:h-[600px] w-[100vw] rounded-xl"
             />
           </div>
         </div>
@@ -143,15 +250,37 @@ const Videography = () => {
               </h1>
             </div>
           </div>
-          <div>Sticky Scroll of the video Projects here</div>
+          {/* Sticky Scroll Effect for the pictures */}
+          <div>
+            <div className="relative h-[90vh] bg-blue-200 flex flex-col md:flex-row md:space-x-2">
+              <div className="bg-pink-200 w-full h-full hidden md:flex md:flex-1">
+                content
+              </div>
+              <div className="bg-green-200 w-full h-full flex-1">
+                <div className="">
+                  <motion.img
+                    initial={{ y: 30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -30, opacity: 0 }}
+                    src="/Assets/nHero3.jpg"
+                    alt=""
+                    className="object-cover h-[90vh] w-[100vw]"
+                  />
+                </div>
+              </div>
+              <div className="bg-pink-200 absolute bottom-0 right-0 md:hidden">
+                content
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/* footer */}
-      <div>
+      <div className="">
         <NewFooter />
       </div>
     </div>
   );
 };
 
-export default Videography;
+export default Photography;
