@@ -97,7 +97,7 @@ const Contact = () => {
     }
   };
 
-  // console.log(formData);
+  console.log(formData);
   //The State Manager for the Custom Radio Boxes.
   const handleBudgetChange = (event: any) => {
     setEventBudget(event.target.value);

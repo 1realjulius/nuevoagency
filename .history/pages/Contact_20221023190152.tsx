@@ -23,7 +23,7 @@ const Contact = () => {
   const [senderName, setSenderName] = useState("");
   const [senderEmail, setSenderEmail] = useState("");
   const [senderMessage, setSenderMessage] = useState("");
-  const senderID = `#${mytoday}${senderName.slice(0, 3)}`;
+  const senderID = useState(`#${mytoday}${senderName.slice(0, 3)}`);
   console;
   const [eType1, setEType1] = useState("");
   const [eType2, setEType2] = useState("");
@@ -97,7 +97,7 @@ const Contact = () => {
     }
   };
 
-  // console.log(formData);
+  console.log(formData);
   //The State Manager for the Custom Radio Boxes.
   const handleBudgetChange = (event: any) => {
     setEventBudget(event.target.value);
