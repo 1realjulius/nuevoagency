@@ -101,7 +101,7 @@ const NavBar = () => {
                         </div>
                       </Link>
                     </div>
-                    <div className="flex-1 flex flex-col justify-center">
+                    <div className="">
                       <div className="flex flex-col items-start justify-start text-4xl md:text-6xl">
                         <div className="py-2 px-8">
                           <Link href="/About">
@@ -143,9 +143,9 @@ const NavBar = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex flex-col  w-full pb-10 px-4">
+                    <div className="flex flex-col  w-full pb-10 border-t-2 pt-4 border-[#E8EAED]">
                       {/* email Subscribe */}
-                      <div className="flex flex-row items-center mb-10  border-t-2 pt-4 border-[#E8EAED]">
+                      <div className="flex flex-row items-center mb-10 px-4">
                         {/* icon for Subscribe */}
                         <div className="hidden md:flex">
                           <span>

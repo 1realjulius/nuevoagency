@@ -7,7 +7,6 @@ import {
   useSpring,
   useTransform,
   useMotionValue,
-  useScroll,
 } from "framer-motion";
 import { Divide, Instagram } from "react-feather";
 import NavBar from "./NavBar";
@@ -220,13 +219,6 @@ const MainHome = () => {
   const h1name = h1?.name;
 
   const x = useMotionValue(0);
-  const { scrollY } = useScroll();
-
-  useEffect(() => {
-    return scrollY.onChange((latest) => {
-      console.log("Page scroll: ", latest);
-    });
-  }, []);
 
   const variants = {
     default: {

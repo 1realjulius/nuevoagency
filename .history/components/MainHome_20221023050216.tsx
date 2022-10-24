@@ -7,7 +7,6 @@ import {
   useSpring,
   useTransform,
   useMotionValue,
-  useScroll,
 } from "framer-motion";
 import { Divide, Instagram } from "react-feather";
 import NavBar from "./NavBar";
@@ -220,13 +219,6 @@ const MainHome = () => {
   const h1name = h1?.name;
 
   const x = useMotionValue(0);
-  const { scrollY } = useScroll();
-
-  useEffect(() => {
-    return scrollY.onChange((latest) => {
-      console.log("Page scroll: ", latest);
-    });
-  }, []);
 
   const variants = {
     default: {
@@ -343,13 +335,7 @@ const MainHome = () => {
       {/* About Secton */}
       <section className="bg w-[100vw] h-[200vh] ">
         <div className="w-full bg-white text-black h-full flex flex-col px-4 md:px-20">
-          <motion.div
-            initial={{ x: 0 }}
-            animate={{ y: [1, 20, 40] }}
-            className="text-4xl"
-          >
-            hello
-          </motion.div>
+          <div className="text-4xl">hello</div>
         </div>
       </section>
       {/* Photography Section */}

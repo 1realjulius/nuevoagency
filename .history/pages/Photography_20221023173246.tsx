@@ -163,7 +163,7 @@ const Photography = () => {
           </div>
           {/* Sticky Scroll Effect for the pictures */}
           {/* Image One */}
-          <motion.div className="sticky top-3 md:p-2 md:rounded-lg md:bg-black">
+          <div className="sticky top-3 md:p-2 md:rounded-lg md:bg-black">
             <div className="relative h-[90vh] flex flex-col md:flex-row md:space-x-2">
               <div className="w-full h-full hidden md:flex md:flex-1">
                 <div className="w-full h-full flex flex-col items-center justify-center p-4">
@@ -253,12 +253,9 @@ const Photography = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
           {/* image Two */}
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            className="sticky top-3 md:p-2 md:rounded-lg md:bg-black"
-          >
+          <div className="sticky top-3 md:p-2 md:rounded-lg md:bg-black">
             <div className="relative h-[90vh] flex flex-col md:flex-row md:space-x-2">
               <div className="w-full h-full hidden md:flex md:flex-1">
                 <div className="w-full h-full flex flex-col items-center justify-center p-4">
@@ -348,12 +345,9 @@ const Photography = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
           {/* Image three */}
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            className="sticky top-3 md:p-2 md:rounded-lg md:bg-black"
-          >
+          <div className="sticky top-3 md:p-2 md:rounded-lg md:bg-black">
             <div className="relative h-[90vh] flex flex-col md:flex-row md:space-x-2">
               <div className="w-full h-full hidden md:flex md:flex-1">
                 <div className="w-full h-full flex flex-col items-center justify-center p-4">
@@ -443,12 +437,9 @@ const Photography = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
           {/* Image Four */}
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            className="sticky top-3 md:p-2 md:rounded-lg md:bg-black"
-          >
+          <div className="sticky top-3 md:p-2 md:rounded-lg md:bg-black">
             <div className="relative h-[90vh] flex flex-col md:flex-row md:space-x-2">
               <div className="w-full h-full hidden md:flex md:flex-1">
                 <div className="w-full h-full flex flex-col items-center justify-center p-4">
@@ -538,7 +529,7 @@ const Photography = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
         {/* Industry Numbers */}
         <div>

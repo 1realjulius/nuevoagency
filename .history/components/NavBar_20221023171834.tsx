@@ -101,7 +101,7 @@ const NavBar = () => {
                         </div>
                       </Link>
                     </div>
-                    <div className="flex-1 flex flex-col justify-center">
+                    <div className="">
                       <div className="flex flex-col items-start justify-start text-4xl md:text-6xl">
                         <div className="py-2 px-8">
                           <Link href="/About">
@@ -143,11 +143,38 @@ const NavBar = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex flex-col  w-full pb-10 px-4">
+                    <div className="flex flex-col  w-full pb-10">
+                      <div className="py-2 px-8 ">
+                        <div className="border-t-2 pt-4 border-[#E8EAED]">
+                          <div className="flex flex-row items-center space-x-4">
+                            <div>
+                              <Link href="#">
+                                <div className="cursor-pointer">
+                                  <h1>Instagram</h1>
+                                </div>
+                              </Link>
+                            </div>
+                            <div>
+                              <Link href="#">
+                                <div className="cursor-pointer">
+                                  <h1>Twitter</h1>
+                                </div>
+                              </Link>
+                            </div>
+                            <div>
+                              <Link href="#">
+                                <div className="cursor-pointer">
+                                  <h1>Facebook</h1>
+                                </div>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       {/* email Subscribe */}
-                      <div className="flex flex-row items-center mb-10  border-t-2 pt-4 border-[#E8EAED]">
+                      <div className="flex flex-row items-center mb-10 px-4">
                         {/* icon for Subscribe */}
-                        <div className="hidden md:flex">
+                        <div className="hidden">
                           <span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -167,27 +194,8 @@ const NavBar = () => {
                         </div>
                         {/* Sunscribe Form */}
                         <div className="p-2 w-full md:w-[50%] items-start">
-                          <div className="pb-2 flex flex-row items-center">
-                            {/* icon for Subscribe */}
-                            <div className="md:hidden">
-                              <span>
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  strokeWidth="1.5"
-                                  stroke="currentColor"
-                                  className="w-8 h-8"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                            <h1 className="text-xl">
+                          <div className="py-2">
+                            <h1 className="text-2xl">
                               Get Our Pckages and Prices
                             </h1>
                           </div>

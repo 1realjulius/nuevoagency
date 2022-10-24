@@ -7,7 +7,6 @@ import {
   useSpring,
   useTransform,
   useMotionValue,
-  useScroll,
 } from "framer-motion";
 import { Divide, Instagram } from "react-feather";
 import NavBar from "./NavBar";
@@ -220,21 +219,6 @@ const MainHome = () => {
   const h1name = h1?.name;
 
   const x = useMotionValue(0);
-  const { scrollY } = useScroll();
-
-  useEffect(() => {
-    return scrollY.onChange((latest) => {
-      console.log("Page scroll: ", latest);
-    });
-  }, []);
-
-  const variants = {
-    default: {
-      x: -6,
-      y: -6,
-      transition: { ease: "easeOut", duration: 0.5 },
-    },
-  };
 
   return (
     <section className="w-[100%] h-[100vh] ">
@@ -342,14 +326,54 @@ const MainHome = () => {
       </section>
       {/* About Secton */}
       <section className="bg w-[100vw] h-[200vh] ">
-        <div className="w-full bg-white text-black h-full flex flex-col px-4 md:px-20">
+        <div className="w-full bg-white text-black h-full flex flex-col items-center justify-center px-4 md:px-20">
+          {/* about text */}
           <motion.div
-            initial={{ x: 0 }}
-            animate={{ y: [1, 20, 40] }}
-            className="text-4xl"
+            animate={{
+              x: [0, 10, 10, 0],
+              transition: { offsets: [0, 0.2, 0.8, 1] },
+            }}
           >
-            hello
+            <h1 className="text-3xl md:text-7xl text-center">
+              <span>Here at </span>
+              <span>Nuevo</span>{" "}
+              <span>Our Aim is to make Exceptional Memories</span>{" "}
+              <span>From Our Client's Experiences</span>
+            </h1>
           </motion.div>
+          {/* text writer and btns */}
+          <div className="py-6 flex flex-col w-full items-center justify-center">
+            {/* text writer */}
+            <div className="flex flex-col md:flex-row items-center justify-center space-x-4">
+              <div>
+                <div className="p-2">
+                  <Image
+                    src="/Assets/prince-01.jpg"
+                    width="60px"
+                    height="60px"
+                    alt=""
+                    className="object-cover rounded-full"
+                  />
+                </div>
+              </div>
+              <div>
+                <h1 className="text-lg md:text-2xl">
+                  <span className="text-[#828282]">CEO, </span>
+                  <span>Lead Photographer.</span>
+                </h1>
+              </div>
+            </div>
+            {/* btns */}
+            <div className="py-4">
+              <div>
+                <Link href="/About">
+                  <div className="px-4 py-3 border-2 border-black rounded-full">
+                    <h1 className="text-xl">About Us</h1>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* Photography Section */}

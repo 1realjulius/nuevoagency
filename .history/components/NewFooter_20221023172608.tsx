@@ -7,7 +7,7 @@ const NewFooter = () => {
 
   return (
     <div className="-z-10 flex flex-col ">
-      <div className="bg-white pt-2 text-black flex flex-row justify-between px-4 z-20 border-t-2">
+      <div className="bg-white pt-2 md:pt-4 md:py-4 text-black flex flex-row justify-between px-4 z-20 border-t-2">
         <div>
           <Link href="/">
             <div className="flex flex-row items-center cursor-pointer">

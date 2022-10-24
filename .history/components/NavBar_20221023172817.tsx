@@ -101,7 +101,7 @@ const NavBar = () => {
                         </div>
                       </Link>
                     </div>
-                    <div className="flex-1 flex flex-col justify-center">
+                    <div className="flex-1 bg-blue-300 flex flex-col">
                       <div className="flex flex-col items-start justify-start text-4xl md:text-6xl">
                         <div className="py-2 px-8">
                           <Link href="/About">

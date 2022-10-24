@@ -220,13 +220,8 @@ const MainHome = () => {
   const h1name = h1?.name;
 
   const x = useMotionValue(0);
-  const { scrollY } = useScroll();
-
-  useEffect(() => {
-    return scrollY.onChange((latest) => {
-      console.log("Page scroll: ", latest);
-    });
-  }, []);
+  const {scrollY} = useScroll()
+  const yScroll = useTransform[scrollY,[0,1],[1,100]]]
 
   const variants = {
     default: {
