@@ -331,6 +331,10 @@ const MainHome = () => {
                     </div>
                   </div>
                 </div>
+                {/* scroll down btn */}
+                <div className="absolute bottom-0 right-0 hidden md:flex">
+                  scroll down
+                </div>
               </div>
             </div>
           </div>
