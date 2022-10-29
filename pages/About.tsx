@@ -65,11 +65,6 @@ const About = () => {
     },
   ];
 
-  const Services = [
-    { id: 1, img: "/Assets/landscape.jpg", name: "Photography" },
-    { id: 2, img: "/Assets/landscape.jpg", name: "Videography" },
-    { id: 3, img: "/Assets/landscape.jpg", name: "Mentoring" },
-  ];
   return (
     <div className="bg-black min-h-screen min-w-full text-white font-FredokaOneRegular">
       {/* navbar */}
@@ -94,6 +89,43 @@ const About = () => {
       </div>
       {/* main */}
       <div className="px-4 pt-8">
+        <div className="md:px-10 py-4">
+          <h1 className="text-4xl md:pt-10  pt-10 md:text-8xl md:pr-20 font-FredokaOneRegular py-2">
+            <span>About </span>
+            <span className="text-[#828282]">Us</span>
+          </h1>
+        </div>
+        {/* Our Goals */}
+        <div>
+          <div className="flex flex-col md:flex-row md:px-16 py-4 md:py-12">
+            <div className="flex-1 flex flex-col items-start px-2">
+              <div className="border-b-[3px] border-[#828282] mb-4 pb-1 pr-2 ">
+                <h2 className="text-xl md:text-2xl">Our Aims</h2>
+              </div>
+              <div>
+                <h1 className="text-2xl md:text-5xl">
+                  From the moment our company was founded, we have helped our
+                  clients find exceptional solutions for their businesses ,
+                  creating memorable brands and digital products.
+                </h1>
+              </div>
+            </div>
+            <div className="flex-1 hidden md:flex px-2">
+              <div className="">
+                <div className="">
+                  <motion.img
+                    initial={{ y: 30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -30, opacity: 0 }}
+                    src="/Assets/landscape.jpg"
+                    alt=""
+                    className="object-cover h-[300px] md:h-[420px] w-[100vw] rounded-xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* header */}
         <div className="">
           <div className="md:px-10 py-4">
@@ -206,35 +238,33 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* Our Goals */}
-        <div>
-          <div className="flex flex-col md:flex-row md:px-16 py-4 md:py-12">
-            <div className="flex-1 flex flex-col items-start px-2">
-              <div className="border-b-[3px] border-[#828282] mb-4 pb-1 pr-2 ">
-                <h2 className="text-xl md:text-2xl">Our Aims</h2>
-              </div>
-              <div>
-                <h1 className="text-2xl md:text-4xl">
-                  From the moment our company was founded, we have helped our
-                  clients find exceptional solutions for their businesses ,
-                  creating memorable brands and digital products. Our expertise
-                  grows with each year, and our accumulated experience empowers
-                  us to develop products exactly as they should be.
-                </h1>
+        {/* Work Images */}
+        <div className="flex flex-col md:flex-row items-center px-2 md:px-16 md:py-20 ">
+          <div className="flex-1 hidden md:flex px-2">
+            <div className="">
+              <div className="">
+                <motion.img
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -30, opacity: 0 }}
+                  src="/Assets/landscape.jpg"
+                  alt=""
+                  className="object-cover h-[300px] md:h-[420px] w-[100vw] rounded-xl"
+                />
               </div>
             </div>
-            <div className="flex-1 hidden md:flex px-2">
+          </div>
+          <div className="flex-1 hidden md:flex px-2">
+            <div className="">
               <div className="">
-                <div className="">
-                  <motion.img
-                    initial={{ y: 30, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -30, opacity: 0 }}
-                    src="/Assets/landscape.jpg"
-                    alt=""
-                    className="object-cover h-[300px] md:h-[420px] w-[100vw] rounded-xl"
-                  />
-                </div>
+                <motion.img
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -30, opacity: 0 }}
+                  src="/Assets/landscape.jpg"
+                  alt=""
+                  className="object-cover h-[300px] md:h-[420px] w-[100vw] rounded-xl"
+                />
               </div>
             </div>
           </div>
@@ -288,40 +318,6 @@ const About = () => {
           <div className="py-10">
             <h1 className="text-2xl md:text-7xl">support@nuevostodios.com</h1>
           </div>
-          <motion.div className="">
-            <div className="m-2">
-              <Link href="/Contact">
-                <motion.div
-                  layout
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 1 }}
-                  transition={{ ease: "easeOut", duration: 0.2 }}
-                  className={` ${
-                    1 < 2
-                      ? "px-4 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer flex flex-row items-center space-x-2"
-                      : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer flex flex-row items-center space-x-2 "
-                  }`}
-                >
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
-                      <path
-                        fillRule="evenodd"
-                        d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </span>
-                  <h1>Book a shoot</h1>
-                </motion.div>
-              </Link>
-            </div>
-          </motion.div>
         </div>
       </div>
       {/* footer */}
