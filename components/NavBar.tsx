@@ -89,6 +89,7 @@ const NavBar = () => {
                   className="relative pt-8 w-full h-screen"
                 >
                   <div className="flex flex-col justify-between h-full">
+                    {/* Nav Logo */}
                     <div className="px-8 ">
                       <Link href="/">
                         <div className="border-b-2 border-[#E8EAED] cursor-pointer">
@@ -102,12 +103,20 @@ const NavBar = () => {
                         </div>
                       </Link>
                     </div>
+                    {/* links */}
                     <div className="flex-1 flex flex-col justify-center">
                       <div className="flex flex-col items-start justify-start text-4xl md:text-6xl">
                         <div className="py-2 px-8">
                           <Link href="/About">
                             <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
                               <h1>About</h1>
+                            </div>
+                          </Link>
+                        </div>
+                        <div className="py-2 px-8">
+                          <Link href="/Contact">
+                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300">
+                              <h1>Contact</h1>
                             </div>
                           </Link>
                         </div>
@@ -132,18 +141,9 @@ const NavBar = () => {
                             </div>
                           </Link>
                         </div>
-                        <div className="py-2 px-8">
-                          <Link href="#">
-                            <div className="cursor-pointer md:py-2 text-black hover:text-[#828282] hover:duration-300 relative">
-                              <span className="absolute top-0 -right-14 text-xs text-[#828282]">
-                                Coming Soon
-                              </span>
-                              <h1>Mentoring</h1>
-                            </div>
-                          </Link>
-                        </div>
                       </div>
                     </div>
+                    {/* Email Subscribe Section */}
                     <EmailSubscribe />
                   </div>
                 </motion.div>

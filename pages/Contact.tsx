@@ -127,11 +127,11 @@ const Contact = () => {
       {/* main */}
       <div className="px-4 md:px-10 md:py-10 pt-6">
         {/* Hero text */}
-        <div className="py-10">
+        <div className="py-10 md:pb-16">
           <div className="py-4">
-            <h1 className="py-2 text-[34px] md:text-6xl space-y-3 leading-none">
+            <h1 className="py-2 text-[48px] md:text-8xl space-y-3 leading-none">
               <span className="">Heyy There </span> <br />
-              <span className="py-2 pr-4 text-2xl md:text-3xl border-b-[3px] text-[#828282] border-[#828282]">
+              <span className="py-2 pr-4 text-[26px] md:text-6xl border-b-[3px] text-[#828282] border-[#828282]">
                 Tell Us About Your Event
               </span>
             </h1>
@@ -147,7 +147,7 @@ const Contact = () => {
             {/* interested Services */}
             <div className="flex flex-col items-start justify-start">
               <div className="pb-4">
-                <h1 className="text-2xl md:text-3xl text-[#828282]">
+                <h1 className="text-2xl md:text-4xl text-[#828282]">
                   I'm Interested in...
                 </h1>
               </div>
@@ -349,41 +349,7 @@ const Contact = () => {
       </div>
       {/* footer */}
       <div className="">
-        <div className="-z-10 flex flex-col ">
-          <div className="bg-white pt-2 md:pt-4 md:py-4 text-black flex flex-row justify-between px-4 z-20 border-t-2">
-            <div>
-              <Link href="/">
-                <div className="flex flex-row items-center cursor-pointer">
-                  <span className="text-lg pb-1">©</span>
-                  <span>
-                    <span className="">
-                      <span className="relative">
-                        <Image
-                          src="/Assets/footerlogo.png"
-                          width="102px"
-                          height="20px"
-                          alt=""
-                          className="object-contain"
-                        />
-                      </span>
-                    </span>
-                  </span>
-                  <span className="pb-1">• 2022</span>
-                </div>
-              </Link>
-            </div>
-            <div className="hidden md:flex">
-              <Link href="#">
-                <h1 className="cursor-pointer">Terms & Conditions</h1>
-              </Link>
-            </div>
-            <div className="md:hidden">
-              <Link href="#">
-                <h1 className="cursor-pointer text-[#828282] ">T&C</h1>
-              </Link>
-            </div>
-          </div>
-        </div>
+        <NewFooter />
       </div>
     </div>
   );

@@ -74,13 +74,10 @@ const EmailSubscribe = () => {
               <input
                 type="email"
                 name="SenderEmail"
-                // onChange={(event: any) => {
-                //   setSubscriberEmail(event.target.value);
-                // }}
-                className="h-12 w-full p-2 py-3 outline-none bg-[#E5E7EB] placeholder:text-black md:rounded-l-lg md:rounded-r-none rounded-lg"
+                className="h-12 w-full p-2 py-3 outline-none bg-[#E5E7EB] placeholder:text-black/40 md:rounded-l-lg md:rounded-r-none rounded-lg"
                 placeholder="your@example.com"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e: any) => setEmail(e.target.value)}
               />
             </div>
             <div className="py-2 flex flex-col ">
