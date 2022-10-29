@@ -49,7 +49,7 @@ const Videography = () => {
       {/* main  */}
       <div className="px-4 md:px-16 pt-16">
         {/* heder */}
-        <div className="flex flex-col  w-full py-2 pb-6">
+        <div className="flex flex-col items-center justify-center text-center w-full py-2 pb-6">
           <h1 className="text-[38px] md:pt-10 md:text-8xl md:pr-20 font-FredokaOneRegular pt-6 pb-4 leading-none">
             <span>We Make Perfect Memories From Experiences </span>
             <span className="text-[#828282]">With Awsome Videos</span>
