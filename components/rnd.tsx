@@ -1,7 +1,13 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState } from "react";
+import { Link, Instagram } from "react-feather";
 
 const Rnd = () => {
+  const [name, setName] = useState("");
+  setName("julius");
+  console.log(name);
+
   const PhotographyImages = [
     {
       id: 1,
@@ -142,6 +148,86 @@ const Rnd = () => {
   return (
     <div className="flex flex-col items-center justify-center overflow-hidden">
       {/* photography section */}
+
+      <div>
+        <div className="relative h-full w-full flex flex-col justify-end overflow-hidden">
+          <div className="absolute top-[2px] left-[0px] w-full md:w-[50vw] p-2 h-full space-y-2">
+            <div className="grid grid-cols-2  md:grid-cols-2 gap-2 md:gap-4 h-64 w-full z-10">
+              hhw
+            </div>
+          </div>
+          <div className="z-20 absolute bottom-16 left-0 md:py-10 md:right-2 md:text-end">
+            <div>
+              {/* herotext */}
+              <motion.div
+                initial={{ y: -30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="text-[72px] md:text-[110px] px-2 md:px-5 py-2 leading-none space-y-3"
+              >
+                <motion.h1>
+                  <motion.span>Make </motion.span> <br />
+                  <motion.span>Aswome </motion.span> <br />
+                  <motion.span>Memories </motion.span> <br />
+                  <motion.span>With Us.</motion.span>
+                </motion.h1>
+              </motion.div>
+              {/* Hero Secondary text */}
+              <div className="px-4 flex flex-col md:items-end">
+                <p className="text-[#828282] flex flex-row items-center text-base md:text-xl">
+                  <span>• We Make Memories From Your Experiences.</span>
+                </p>
+              </div>
+              {/* CTA buttons */}
+              <div className="px-4 flex flex-col md:items-end py-4">
+                <div className="flex flex-row items-center text-xl">
+                  {/* contact btn */}
+                  <motion.div className="">
+                    <div className="m-2">
+                      <Link href="/Contact">
+                        <motion.div
+                          layout
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 1 }}
+                          transition={{ ease: "easeOut", duration: 0.2 }}
+                          className={` ${
+                            1 < 2
+                              ? "px-4 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
+                              : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer "
+                          }`}
+                        >
+                          <h1>Book a shoot</h1>
+                        </motion.div>
+                      </Link>
+                    </div>
+                  </motion.div>
+                  {/* ig Page */}
+                  <div>
+                    <div className="m-2">
+                      <Link href="/Contact">
+                        <motion.div
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 1 }}
+                          initial={{ opacity: 1 }}
+                          transition={{ ease: "easeOut", duration: 0.2 }}
+                          className={` ${
+                            1 < 2
+                              ? "px-2 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
+                              : "px-2 py-2 border-2 border-white text-white rounded-full cursor-pointer "
+                          }`}
+                        >
+                          <Instagram className="w-6 h-6" />
+                        </motion.div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        ;
+      </div>
       <div className="relative ">
         <div className="flex flex-col items-center justify-center">
           {PhotographyImages.map((Pslide, index) => (

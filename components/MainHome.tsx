@@ -13,13 +13,14 @@ import { Divide, Instagram } from "react-feather";
 import NavBar from "./NavBar";
 import ComingSoon from "./ComingSoon";
 import { withMouseOverArea } from "./Magnetic";
+import NewFooter from "./NewFooter";
 
 const MainHome = () => {
   const bgImages = [
     {
       id: 1,
       imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
+      imgStyle: "h-[224px] md:h-[480px] w-[100vw]",
       img: "/Assets/nhero4.jpg",
     },
     {
@@ -36,156 +37,21 @@ const MainHome = () => {
     },
     {
       id: 4,
-      imgContainerStyle: "hidden md:flex",
+      imgContainerStyle: "col-span-1 md:col-span-1",
       imgStyle: "h-28 md:h-56 w-[100vw]",
       img: "/Assets/nHome5.jpg",
     },
-  ];
-
-  const photographyImages = [
-    {
-      id: 1,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 2,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 3,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 4,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
     {
       id: 5,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
+      imgContainerStyle: "col-span-1 md:col-span-1",
+      imgStyle: "h-28 md:h-56 w-[100vw]",
+      img: "/Assets/nHome5.jpg",
     },
     {
       id: 6,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 7,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 8,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 9,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 10,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 11,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 12,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 13,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 14,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 15,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 16,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 17,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 18,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 19,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 20,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 21,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 22,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 23,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
-    },
-    {
-      id: 24,
-      imgContainerStyle: "col-span-1 row-span-2 md:col-span-1",
-      imgStyle: "h-[200px] md:h-[480px] w-[100vw]",
-      img: "/Assets/nhero4.jpg",
+      imgContainerStyle: "col-span-1 md:col-span-1",
+      imgStyle: "h-28 md:h-56 w-[100vw]",
+      img: "/Assets/nHome5.jpg",
     },
   ];
 
@@ -237,55 +103,44 @@ const MainHome = () => {
   };
 
   return (
-    <section className="w-[100%] h-[100vh] ">
+    <section className="min-h-screen ">
       {/* childern */}
       <div>
         <NavBar />
       </div>
-      {/* home */}
-      <section className="w-[100vw] h-[100vh]">
-        <div className="w-[100vw] h-[100vh] bg-black text-white font-FredokaOneRegular">
-          <div className="relative h-full w-full flex flex-col justify-end overflow-hidden">
-            <div className="absolute top-[2px] left-[0px] w-full md:w-[50vw] p-2 h-full space-y-2">
-              <div className="grid grid-cols-2  md:grid-cols-2 gap-2 md:gap-4 h-64 w-full z-10">
-                {bgImages.map((img) => (
-                  <div
-                    key={img.id}
-                    className={`${img.imgContainerStyle} flex flex-col relative`}
-                  >
-                    <motion.img
-                      initial={{ y: 30, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      src={img.img}
-                      alt=""
-                      className={`${img.imgStyle} object-cover`}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="z-20 absolute bottom-16 left-0 md:py-10 md:right-2 md:text-end">
-              <div>
-                {/* herotext */}
-                <motion.div
-                  initial={{ y: -30, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.3 }}
-                  className="text-[72px] md:text-[110px] px-2 md:px-5 py-2 leading-none space-y-3"
-                >
-                  <motion.h1>
-                    <motion.span>Make </motion.span> <br />
-                    <motion.span>Aswome </motion.span> <br />
-                    <motion.span>Memories </motion.span> <br />
-                    <motion.span>With Us.</motion.span>
-                  </motion.h1>
-                </motion.div>
-                {/* Hero Secondary text */}
-                <div className="px-4 flex flex-col md:items-end">
-                  <p className="text-[#828282] flex flex-row items-center text-base md:text-xl">
-                    <span>• We Make Memories From Your Experiences.</span>
-                  </p>
+      {/* hero section */}
+      <div className="w-ful p-4 md:py-8 ">
+        <div className="flex flex-col items-center justify-center">
+          <div className=" py-4">
+            <div className="flex flex-col items-center justify-center">
+              <div className="py-8">
+                {/* Nav Logo */}
+                <div className="px-8 ">
+                  <Link href="/">
+                    <div className="cursor-pointer">
+                      <Image
+                        src="/Assets/whitefooterlogo.png"
+                        width="182px"
+                        height="40px"
+                        alt=""
+                        className="object-contain"
+                      />
+                    </div>
+                  </Link>
                 </div>
+              </div>
+              <div className="">
+                <h1 className="text-[55px] leading-none md:text-8xl text-center">
+                  <span>Make Awsome </span>
+                  <br />
+                  <span className="text-[#828282]">Memories </span>
+                  <span>From Your </span>
+                  <span>Best </span>
+                  <br />
+                  <span className="text-[#828282]">Experiences.</span>
+                </h1>
+              </div>
+              <div className="py-4">
                 {/* CTA buttons */}
                 <div className="px-4 flex flex-col md:items-end py-4">
                   <div className="flex flex-row items-center text-xl">
@@ -335,7 +190,151 @@ const MainHome = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      {/* photography section */}
+      <div className=" p-4 md:py-10 ">
+        <div>
+          <div className="h-[70vh] md:h-[64vh] relative overflow-hidden">
+            <div className="w-full h-full">
+              <div className="grid grid-cols-2  md:grid-cols-4 gap-2 md:gap-4 h-full">
+                {bgImages.map((img) => (
+                  <div
+                    key={img.id}
+                    className={`${img.imgContainerStyle} flex flex-col relative`}
+                  >
+                    <motion.img
+                      initial={{ y: 30, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      src={img.img}
+                      alt=""
+                      className={`${img.imgStyle} object-cover`}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="absolute bottom-0 bg-black/50 w-full flex flex-col items-center py-6">
+              <div>
+                <h1 className="text-[40px] md:text-[60px] leading-none text-center">
+                  Save memories with Images
+                </h1>
+              </div>
+              <div>
+                {/* contact btn */}
+                <motion.div className="">
+                  <div className="m-2">
+                    <Link href="/Photography">
+                      <motion.div
+                        layout
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1 }}
+                        transition={{ ease: "easeOut", duration: 0.2 }}
+                        className={` ${
+                          1 < 2
+                            ? "px-4 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
+                            : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer "
+                        }`}
+                      >
+                        <h1>View Photography</h1>
+                      </motion.div>
+                    </Link>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* videography section */}
+      <div className=" p-4 md:py-6 ">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex-1">
+            <div className="w-full md:h-[500px] h-[200px] relative">
+              <Image
+                src="/Assets/bright-rain.png"
+                layout="fill"
+                className="object-cover rounded"
+              />
+            </div>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center py-4 md:py-0">
+              <div>
+                <h1 className="text-[40px] md:text-8xl leading-none text-center">
+                  Save memories with Videos
+                </h1>
+              </div>
+              <div>
+                {/* contact btn */}
+                <motion.div className="">
+                  <div className="m-2">
+                    <Link href="/Videography">
+                      <motion.div
+                        layout
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1 }}
+                        transition={{ ease: "easeOut", duration: 0.2 }}
+                        className={` ${
+                          1 < 2
+                            ? "px-4 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
+                            : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer "
+                        }`}
+                      >
+                        <h1>View Videography</h1>
+                      </motion.div>
+                    </Link>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* events  */}
+      <div className=" p-4 md:py-6 md:px-10 ">
+        <div className="relative flex flex-col items-center">
+          <div className="w-full md:h-[600px] h-[400px] relative">
+            <Image
+              src="/Assets/bright-rain.png"
+              layout="fill"
+              className="object-cover rounded "
+            />
+          </div>
+          <div className="absolute bottom-0 bg-black/50 w-full flex flex-col items-center py-2">
+            <div>
+              <h1 className="text-[40px] md:text-[60px] leading-none text-center">
+                Make memories with Our Events
+              </h1>
+            </div>
+            <div>
+              {/* Events  btn */}
+              <motion.div className="">
+                <div className="m-2">
+                  <Link href="/Events">
+                    <motion.div
+                      layout
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 1 }}
+                      transition={{ ease: "easeOut", duration: 0.2 }}
+                      className={` ${
+                        1 < 2
+                          ? "px-4 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
+                          : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer "
+                      }`}
+                    >
+                      <h1>View Events</h1>
+                    </motion.div>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* footer */}
+      <div>
+        <NewFooter />
+      </div>
     </section>
   );
 };
