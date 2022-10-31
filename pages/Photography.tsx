@@ -9,8 +9,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Instagram } from "react-feather";
-import { text } from "stream/consumers";
-import MainFooter from "../components/MainFooter";
 import NavBar from "../components/NavBar";
 import NewFooter from "../components/NewFooter";
 

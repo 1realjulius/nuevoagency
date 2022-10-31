@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import MainFooter from "../components/MainFooter";
 import { Instagram, Youtube } from "react-feather";
 import NavBar from "../components/NavBar";
 import { motion, useTransform } from "framer-motion";

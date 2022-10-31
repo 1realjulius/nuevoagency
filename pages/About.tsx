@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Facebook, Instagram, Twitter } from "react-feather";
-import MainFooter from "../components/MainFooter";
 import { motion } from "framer-motion";
 import NavBar from "../components/NavBar";
 import NewFooter from "../components/NewFooter";

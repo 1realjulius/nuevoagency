@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import MainFooter from "../components/MainFooter";
 import NavBar from "../components/NavBar";
 import NewFooter from "../components/NewFooter";
 

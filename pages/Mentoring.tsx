@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import MainFooter from "../components/MainFooter";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Instagram } from "react-feather";
 import NavBar from "../components/NavBar";
 import CustomCursor from "../components/CustomCursor";
+import NewFooter from "../components/NewFooter";
 
 const Mentoring = () => {
   const pFeatureImg = [
@@ -477,7 +477,7 @@ const Mentoring = () => {
       </div>
       {/* footer */}
       <motion.div className="">
-        <MainFooter />
+        <NewFooter />
       </motion.div>
     </div>
   );

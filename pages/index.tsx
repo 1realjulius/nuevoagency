@@ -1,11 +1,6 @@
-import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useEffect, useState } from "react";
-import ComingSoon from "../components/ComingSoon";
 import MainHome from "../components/MainHome";
-import NavBar from "../components/NavBar";
-import NewHome from "../components/NewHome";
 
 const Home: NextPage = () => {
   return (
