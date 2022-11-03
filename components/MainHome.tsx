@@ -121,8 +121,8 @@ const MainHome = () => {
                     <div className="cursor-pointer">
                       <Image
                         src="/Assets/whitefooterlogo.png"
-                        width="182px"
-                        height="40px"
+                        width="182"
+                        height="40"
                         alt=""
                         className="object-contain"
                       />
@@ -252,12 +252,12 @@ const MainHome = () => {
           <div className="flex-1">
             {/* replace this vid with the actual one */}
             <div className="w-full relative pt-[56.25%] rounded overflow-hidden bg-gray-200/10">
-              <ReactPlayer
+              {/* <ReactPlayer
                 url="https://www.youtube.com/watch?v=p_nGCfhfex8"
                 width="100%"
                 height="100%"
                 className="absolute top-0 left-0"
-              />
+              /> */}
             </div>
           </div>
           <div className=" flex-1 flex flex-col items-center justify-center">
@@ -294,16 +294,16 @@ const MainHome = () => {
         </div>
       </div>
       {/* events  */}
-      <div className=" p-4 md:py-6 md:px-10 ">
+      <div className=" p-4 md:py-16 py-6 md:px-10 ">
         <div className="relative flex flex-col items-center">
-          <div className="w-full pt-[56.25%]  relative bg-white/20">
-            <ReactPlayer
+          <div className="w-full pt-[56.25%]  relative bg-white/20 rounded overflow-hidden">
+            {/* <ReactPlayer
               url="https://www.youtube.com/watch?v=p_nGCfhfex8"
               width="100%"
               height="100%"
               //controls
               className="absolute top-0 left-0 object-contain"
-            />
+            /> */}
             {/* <video
               controls
               src="/Assets/testvid.mp4"
@@ -312,71 +312,40 @@ const MainHome = () => {
               height="100%"
             /> */}
           </div>
-          <div className="absolute bottom-0 bg-black/50 w-full flex flex-col items-center py-2">
-            <div>
-              <h1 className="text-[40px] md:text-[60px] leading-none text-center">
-                Make memories with Our Events
-              </h1>
-            </div>
-            <div>
-              {/* Events  btn */}
-              <motion.div className="">
-                <div className="m-2">
-                  <Link href="/Events">
-                    <motion.div
-                      layout
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 1 }}
-                      transition={{ ease: "easeOut", duration: 0.2 }}
-                      className={` ${
-                        1 < 2
-                          ? "px-4 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
-                          : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer "
-                      }`}
-                    >
-                      <h1>View Events</h1>
-                    </motion.div>
-                  </Link>
-                </div>
-              </motion.div>
-            </div>
+        </div>
+        <div className="bg-black/50 w-full flex flex-col items-center py-2">
+          <div>
+            <h1 className="text-[40px] md:text-[60px] leading-none text-center">
+              Make memories with Our Events
+            </h1>
+          </div>
+          <div>
+            {/* Events  btn */}
+            <motion.div className="">
+              <div className="m-2">
+                <Link href="/Events">
+                  <motion.div
+                    layout
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 1 }}
+                    transition={{ ease: "easeOut", duration: 0.2 }}
+                    className={` ${
+                      1 < 2
+                        ? "px-4 py-2  bg-white text-black rounded-full border-2 border-transparent cursor-pointer"
+                        : "px-4 py-2 border-2 border-white text-white rounded-full cursor-pointer "
+                    }`}
+                  >
+                    <h1>View Events</h1>
+                  </motion.div>
+                </Link>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
       {/* contact section */}
-      <div className="">
-        <div className="md:px-10 px-4 md:py-10 py-6 bg-white text-black">
-          <div className="w-full h-full flex flex-col md:flex-row items-end md:justify-between bg-black text-white p-2 rounded py-10 px-10oxll,,, ,">
-            <div>
-              <h1 className="text-[40px] md:text-8xl leading-none">
-                <span>Have An</span>
-                <br />
-                <span>Event In Mind</span>
-              </h1>
-            </div>
-            <Link href="/Contact">
-              <div className="flex flex-row items-center space-x-2">
-                <h1 className="text-[40px] md:text-8xl text-[#828282]">
-                  Contact Us
-                </h1>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-10 h-10 md:w-20 md:h-20 "
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </span>
-              </div>
-            </Link>
-          </div>
-        </div>
+      <div className="bg-white text-black border-t border-[#828282]">
+        {/* put the contact section here */}
       </div>
       {/* footer */}
       <div>

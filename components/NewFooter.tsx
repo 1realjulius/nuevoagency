@@ -11,32 +11,27 @@ const NewFooter = () => {
         <div>
           <Link href="/">
             <div className="flex flex-row items-center cursor-pointer">
-              <span className="text-lg pb-1">©</span>
-              <span>
+              <span className="text-lg">©</span>
+              <span className="mb-[2px]">
                 <span className="">
                   <span className="relative">
                     <Image
                       src="/Assets/footerlogo.png"
-                      width="102px"
-                      height="20px"
+                      width="102"
+                      height="20"
                       alt=""
                       className="object-contain"
                     />
                   </span>
                 </span>
               </span>
-              <span className="pb-1">• 2022</span>
+              <span className="">• 2022</span>
             </div>
           </Link>
         </div>
-        <div className="hidden md:flex">
+        <div className="">
           <Link href="#">
             <h1 className="cursor-pointer">Terms & Conditions</h1>
-          </Link>
-        </div>
-        <div className="md:hidden">
-          <Link href="#">
-            <h1 className="cursor-pointer text-[#828282] ">T&C</h1>
           </Link>
         </div>
       </div>

@@ -77,8 +77,8 @@ const About = () => {
             <div className="cursor-pointer">
               <Image
                 src="/Assets/whitefooterlogo.png"
-                width="202px"
-                height="40px"
+                width="202"
+                height="40"
                 alt=""
                 className="object-contain"
               />
