@@ -161,8 +161,8 @@ const ComingSoon = () => {
                     <span className="">
                       <Image
                         src="/Assets/footerlogo.png"
-                        width="102px"
-                        height="20px"
+                        width="102"
+                        height="20"
                         alt=""
                         className="object-contain"
                       />
