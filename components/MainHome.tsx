@@ -346,7 +346,7 @@ const MainHome = () => {
       {/* contact section */}
       <div className="">
         <div className="md:px-10 px-4 md:py-10 py-6 bg-white text-black">
-          <div className="w-full h-full flex flex-col md:flex-row items-end md:justify-between bg-black text-white p-2 rounded py-10 px-10">
+          <div className="w-full h-full flex flex-col md:flex-row items-end md:justify-between bg-black text-white p-2 rounded py-10 px-10oxll,,, ,">
             <div>
               <h1 className="text-[40px] md:text-8xl leading-none">
                 <span>Have An</span>
@@ -367,9 +367,9 @@ const MainHome = () => {
                     className="w-10 h-10 md:w-20 md:h-20 "
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     />
                   </svg>
                 </span>
