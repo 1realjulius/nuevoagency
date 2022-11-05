@@ -45,7 +45,7 @@ const EmailSubscribe = () => {
           </span>
         </div>
         {/* Sunscribe Form */}
-        <div className="p-2 w-full md:w-[50%] items-start">
+        <div className="p-2 w-full md:w-[60%] items-start">
           <div className="pb-2 flex flex-row items-center">
             {/* icon for Subscribe */}
             <div className="md:hidden">
@@ -66,7 +66,7 @@ const EmailSubscribe = () => {
                 </svg>
               </span>
             </div>
-            <h1 className="text-xl">Get Our Pckages and Prices</h1>
+            <h1 className="text-xl">Get All Our Pckages and Prices</h1>
           </div>
           <div className="flex flex-col md:flex-row ">
             {/* user Email */}

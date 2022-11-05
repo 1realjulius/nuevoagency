@@ -81,7 +81,7 @@ const NavBar = () => {
         <div className="">
           <AnimatePresence mode="sync">
             {open && (
-              <div className="fixed top-0 right-0 w-full md:w-[50vw] min-h-screen bg-white z-30 text-black overflow-hidden">
+              <div className="fixed top-0 right-0 w-full md:w-[36vw] min-h-screen bg-white z-30 text-black overflow-hidden">
                 <motion.div
                   initial={{ x: 100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
