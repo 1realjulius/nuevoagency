@@ -87,13 +87,6 @@ const MainHome = () => {
   const h1name = h1?.name;
 
   const x = useMotionValue(0);
-  const { scrollY } = useScroll();
-
-  useEffect(() => {
-    return scrollY.onChange((latest) => {
-      console.log("Page scroll: ", latest);
-    });
-  }, []);
 
   const variants = {
     default: {
@@ -106,9 +99,6 @@ const MainHome = () => {
   return (
     <section className="min-h-screen ">
       {/* childern */}
-      <div>
-        <NavBar />
-      </div>
       {/* hero section */}
       <div className="w-ful p-4 md:py-8 ">
         <div className="flex flex-col items-center justify-center">

@@ -103,11 +103,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black relative min-h-screen min-w-full text-white font-FredokaOneRegular select-none">
-      {/* navbar */}
-      <div className="z-40">
-        <NavBar />
-      </div>
+    <div
+      data-scroll-section
+      className="bg-black relative min-h-screen min-w-full text-white font-FredokaOneRegular select-none"
+    >
       {/* Logo */}
       <div className="absolute top-5 left-5 md:left-10">
         <div className="">

@@ -128,7 +128,10 @@ const OtherHome = () => {
   };
 
   return (
-    <div className="bg-slate-100 flex flex-col overflow-hidden text-black font-FredokaOneRegular">
+    <div
+      data-scroll-section
+      className="bg-slate-100 flex flex-col overflow-hidden text-black font-FredokaOneRegular"
+    >
       <div className="px-4 md:px-16 pt-10">
         <div className="pt-2">
           <div className="md:py-10">

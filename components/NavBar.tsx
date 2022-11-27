@@ -45,7 +45,7 @@ const NavBar = () => {
     setBtnOpen(!open);
   };
   return (
-    <div className="overflow-hidden w-full z-40 flex select-none">
+    <div className="overflow-hidden w-full z-40 flex select-none fixed font-FredokaOneRegular">
       <div className="flex flex-col items-center justify-center ">
         {/* Hanburger Manu Itself */}
         <div

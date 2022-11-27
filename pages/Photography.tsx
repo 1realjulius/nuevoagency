@@ -52,11 +52,10 @@ const Photography = () => {
 
   let y = useTransform(scrollY, [0, 600], ["0%", "100%"]);
   return (
-    <div className="bg-[#161719] text-white flex flex-col font-FredokaOneRegular z-20 relative">
-      {/* navbar */}
-      <div className="sticky top-0 z-50">
-        <NavBar />
-      </div>
+    <div
+      data-scroll-section
+      className="bg-[#161719] text-white flex flex-col font-FredokaOneRegular z-20 relative"
+    >
       {/* Logo */}
       <div className="absolute top-5 left-5 md:left-10">
         <div className="">

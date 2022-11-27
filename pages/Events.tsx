@@ -8,11 +8,10 @@ import NewFooter from "../components/NewFooter";
 
 const Events = () => {
   return (
-    <div className="bg-black min-h-screen min-w-screen text-white flex flex-col font-FredokaOneRegular">
-      {/* navbar */}
-      <div className="z-40">
-        <NavBar />
-      </div>
+    <div
+      data-scroll-section
+      className="bg-black min-h-screen min-w-screen text-white flex flex-col font-FredokaOneRegular"
+    >
       {/* Logo */}
       <div className="absolute top-5 left-5 md:left-10">
         <div className="">
@@ -45,7 +44,6 @@ const Events = () => {
               <div className="m-2">
                 <Link href="#">
                   <motion.div
-                    layout
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 1 }}
                     transition={{ ease: "easeOut", duration: 0.2 }}
@@ -80,7 +78,6 @@ const Events = () => {
               <div className="m-2">
                 <Link href="#">
                   <motion.div
-                    layout
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 1 }}
                     transition={{ ease: "easeOut", duration: 0.2 }}
@@ -98,10 +95,10 @@ const Events = () => {
         </div>
         {/* hero Video */}
         <div>
-          <div className="">
+          <div data-scroll-section className="">
             {/* Make Video Parallax */}
             <motion.img
-              layoutId="img"
+              data-scroll-speed="-10"
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -30, opacity: 0 }}

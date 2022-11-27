@@ -43,7 +43,10 @@ const Mentoring = () => {
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "50"]);
 
   return (
-    <div className="bg-[#161719] min-h-screen min-w-screen text-white flex flex-col font-FredokaOneRegular">
+    <div
+      data-scroll-section
+      className="bg-[#161719] min-h-screen min-w-screen text-white flex flex-col font-FredokaOneRegular"
+    >
       {/* navbar */}
       <div className="sticky top-0 z-50">
         <NavBar />

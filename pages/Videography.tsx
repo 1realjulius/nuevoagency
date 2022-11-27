@@ -25,7 +25,10 @@ const Videography = () => {
   ];
 
   return (
-    <div className="bg-black min-h-screen min-w-screen text-white flex flex-col font-FredokaOneRegular">
+    <div
+      data-scroll-section
+      className="bg-black min-h-screen min-w-screen text-white flex flex-col font-FredokaOneRegular"
+    >
       {/* navbar */}
       <div className="z-40">
         <NavBar />

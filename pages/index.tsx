@@ -4,7 +4,10 @@ import MainHome from "../components/MainHome";
 
 const Home: NextPage = () => {
   return (
-    <div className="min-w-full font-FredokaOneRegular min-h-screen bg-black text-white">
+    <div
+      data-scroll-section
+      className="min-w-full font-FredokaOneRegular min-h-screen bg-black text-white"
+    >
       <Head>
         <title>Nuevo Agency</title>
         <meta name="description" content="Nuevo Creative Agency." />

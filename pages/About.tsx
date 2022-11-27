@@ -65,11 +65,10 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-black min-h-screen min-w-full text-white font-FredokaOneRegular">
-      {/* navbar */}
-      <div className="sticky top-0 z-50">
-        <NavBar />
-      </div>
+    <div
+      data-scroll-section
+      className="bg-black min-h-screen min-w-full text-white font-FredokaOneRegular"
+    >
       {/* Logo */}
       <div className="absolute top-5 left-5">
         <div className="">
